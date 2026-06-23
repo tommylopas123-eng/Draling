@@ -3,6 +3,32 @@
 > Pasos a seguir. Marcá con [x] lo que vamos completando y agregá/cambiá lo que haga falta.
 > Última actualización: 2026-06-23.
 
+---
+
+## 🔖 RETOMAR ACÁ (para el próximo chat / sesión)
+> Si abrís un chat nuevo: leé `CLAUDE.md` y esta carpeta `betina-potap/` para
+> ponerte al día. Estado al 2026-06-23: ya está hecho todo el análisis, catálogo,
+> oferta, propuesta, outreach, contenido, landing, catálogo PDF diseñado y la lista
+> de prospectos. Todo también en Google Drive (carpeta replai > Betina Potap empresa).
+
+### Próximos pasos concretos (en orden)
+1. **Completar contactos de coworkings (Prioridad 1)** → entrar a la web/IG de cada
+   coworking de `PROSPECTOS.md` / la planilla y cargar mail o Instagram. (Lo puede
+   hacer Claude.) Empezar por los ⭐ (Núñez/Belgrano) y Palermo.
+2. **Calcular precios finales de un box** con Betina (costeo real) → ajustar
+   `OFERTA-Y-PRECIOS.md` y el catálogo PDF.
+3. **Sumar fotos de productos** al catálogo PDF (Tommy consigue 4-5+ fotos lindas).
+4. **Elegir 2-3 productos nuevos** para prototipar (de `PRODUCTOS-B2B.md`).
+5. **Betina:** crear el Gmail comercial y definir el mínimo de compra.
+6. Empezar a contactar coworkings con los cold emails de `OUTREACH.md`.
+
+### Recordatorios de entrega (ver CLAUDE.md)
+- Material → PDF. Datos/planillas → Google Sheets en la carpeta de Drive.
+- Google Drive: carpeta "replai" > "Betina Potap empresa" (cuenta tommylopas123@gmail.com).
+- Las skills (marketing, canvas-design) están en `.claude/skills/` y se reactivan al iniciar sesión.
+
+---
+
 ## Objetivo
 Vender los productos de Betina Potap a **empresas / startups** (canal B2B),
 empezando por un estudio de mercado y un catálogo orientado a empresas.
