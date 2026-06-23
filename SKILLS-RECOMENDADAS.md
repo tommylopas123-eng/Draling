@@ -4,9 +4,14 @@
 > haciendo: (a) ayudar a Betina Potap a vender B2B y (b) construir Replai a futuro.
 > Última actualización: 2026-06-23.
 
-> ⚠️ Estas NO están instaladas todavía. Son skills externas de la comunidad.
-> Se instalan con la CLI `skills` (ej: `npx skills add <repo> --skill <nombre>`).
-> Antes de instalar conviene revisar el SKILL.md de cada una (código de terceros).
+> ✅ INSTALADAS: el 2026-06-23 se revisaron e instalaron 17 skills enfocadas en
+> el negocio de Betina Potap, en `.claude/skills/`. Ver `.claude/skills/ATTRIBUTION.md`.
+> Revisión de seguridad: solo contienen Markdown, sin scripts ejecutables.
+>
+> **Skills instaladas:** customer-research · competitor-profiling · competitor-analysis ·
+> icp-builder · copywriting · pricing · offers · cold-email · emails · prospecting ·
+> sales-enablement · marketing-plan · social · content-calendar · write-landing ·
+> product-marketing · local-seo
 
 ## Para el negocio de tu mamá (corto plazo)
 
