@@ -44,4 +44,32 @@
 | Crackers de garbanzos | 250 g (10/12 unidades) | 10 g | $9.000 |
 
 > ✅ Menú Proteico completo (10 fotos cargadas).
-> ⏳ Pendiente: otros menús/catálogos si los hay (panes sin TACC, viandas, dulces, catering).
+
+---
+
+## Menú Naturista
+
+> Alimentos naturales **sin gluten, sin lácteos y sin azúcares**.
+
+### Panes
+
+| Producto | Precio |
+|----------|--------|
+| Pan de trigo sarraceno | $12.000 |
+| Pan de lino | $12.000 |
+| Pan de mijo | $12.000 |
+| Pan de almendras | $14.000 |
+
+### Bagels
+
+| Producto | Precio |
+|----------|--------|
+| Bagels de mijo / sarraceno | $12.000 la docena (tamaño chico) |
+
+### Crutones
+
+| Producto | Precio |
+|----------|--------|
+| Crutones de mijo / sarraceno | $12.000 |
+
+> ⏳ Sección "Salado" en camino (frascos, tartas base de arroz, veggie burgers...).
