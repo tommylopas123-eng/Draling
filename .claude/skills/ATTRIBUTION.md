@@ -10,3 +10,10 @@ Revisar la licencia de cada repo fuente antes de uso comercial.
 | local-seo | https://github.com/kostja94/marketing-skills |
 
 Revisadas el 2026-06-23: solo contienen instrucciones Markdown (sin scripts ejecutables).
+
+## Skills de diseño (agregadas 2026-06-23)
+| Skill | Repo fuente | Licencia |
+|-------|-------------|----------|
+| canvas-design (+ canvas-fonts) | https://github.com/anthropics/skills | Apache 2.0 |
+
+canvas-design: solo metodología de diseño (Markdown) + fuentes tipográficas (.ttf). Sin scripts ejecutables.
