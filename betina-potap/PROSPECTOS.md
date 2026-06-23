@@ -127,6 +127,74 @@ Apuntar acá primero. Ofrecer snacking para el espacio común + ser el proveedor
 
 ---
 
+# 📇 COWORKINGS — LISTA AMPLIADA CON CONTACTO (ampliación 2026-06-23)
+> Investigación ampliada: se sumaron coworkings que no estaban + se completó el
+> dato de contacto (web / IG / dirección). El mail directo no siempre figura
+> público: el canal real de contacto es el **formulario de la web** o el **DM de IG**
+> (ahí responden community managers). ⭐ = cerca de Colegiales (tu zona).
+
+### Tu zona ⭐ (Núñez / Belgrano / Colegiales / Saavedra)
+| Coworking | Dirección | Contacto |
+|-----------|-----------|----------|
+| ⭐ Belephant | Av. del Libertador 6680 (Núñez) y 6343 (Belgrano) | belephant.co · IG @belephant.co |
+| ⭐ Ronda Coworking | Ciudad de la Paz 1042 (Belgrano) | rondacoworking.com/belgrano · IG @rondacoworking |
+| ⭐ La Maquinita (Núñez) | Núñez | lamaquinita.co · IG @lamaquinita.co |
+| ⭐ Coreworks | Núñez | buscar IG @coreworks (form web) |
+| ⭐ Join Coworking | Belgrano / Barrio Chino | IG @joincoworking |
+| ⭐ Working & Co (Belgrano) | Belgrano | workingand.co (form de contacto) |
+| ⭐ Polo DOT (hub) | Saavedra (Au. Gral. Paz / Triunvirato) | polodot.com.ar |
+
+### Palermo (Soho / Hollywood) — máxima concentración
+| Coworking | Dirección | Contacto |
+|-----------|-----------|----------|
+| AreaTres | Malabia 1720 (Soho) | areatres.com · IG @areatres |
+| Manawa Coworking | Nicaragua 4817 (Soho) | manawacoworking.com · IG @manawacoworking |
+| La Maquinita | Niceto Vega (Soho) y Godoy Cruz (Hollywood) | lamaquinita.co |
+| **Huerta Dorrego** *(nuevo)* | Av. Dorrego 2133 (Hollywood) | huertacoworking.com · IG @huertacoworking |
+| **Huerta Humboldt** *(nuevo)* | Humboldt 1967 (Hollywood) | huertacoworking.com |
+| **Usina Cowork** *(dirección nueva)* | Castillo 1366 (Palermo) | IG @usinacowork (form web) |
+| **Urban Station** *(nuevo)* | Palermo (y Microcentro) | urbanstation.co — ya ofrecen café+snacks, buen fit |
+| Hit Cowork | varias sedes Palermo | hitcowork.com |
+| Working & Co | Palermo | workingand.co |
+| WeWork | Palermo (varias) | wework.com (form corporativo) |
+
+### Villa Crespo
+| Coworking | Dirección | Contacto |
+|-----------|-----------|----------|
+| Joy Cowork | Villa Crespo | IG @joycowork |
+| La Maquinita | Villa Crespo | lamaquinita.co |
+| Working & Co | Villa Crespo | workingand.co |
+
+### Microcentro / Recoleta
+| Coworking | Dirección | Contacto |
+|-----------|-----------|----------|
+| **Urban Station Microcentro** *(nuevo)* | Microcentro | urbanstation.co |
+| **Huerta Microcentro** *(nuevo)* | Microcentro | huertacoworking.com |
+| Ronda Coworking | Recoleta | rondacoworking.com · IG @rondacoworking |
+| Spaces / Regus | Microcentro | spacesworks.com / regus.com.ar |
+| WeWork | Microcentro | wework.com |
+
+### Zona Norte (hasta Don Torcuato)
+| Coworking | Dirección | Contacto |
+|-----------|-----------|----------|
+| **HQ Vicente López** *(dirección nueva)* | Av. del Libertador 101, piso 10 | hq.com · IG @hq.arg |
+| **HQ Olivos** *(nuevo)* | Av. del Libertador 2442, piso 4 | hq.com |
+| **HQ San Isidro – Las Lomas** *(nuevo)* | Magliano 3071 | hq.com |
+| **Urbana Vicente López** *(confirmado)* | centro comercial Vicente López | urbanace.com.ar |
+| Office Club | Vicente López | officeclub.com.ar |
+| La Maquinita Libertador | Vicente López | lamaquinita.co/ubicaciones/libertador |
+| WeWork Libertador 1000 | Vicente López | wework.com |
+
+> 💡 **Plataforma puente:** existe **Pluria** (pluria.co), que agrupa coworkings y
+> vende acceso a empresas. No es cliente directo, pero sirve para detectar qué
+> espacios tienen demanda corporativa.
+
+> 💡 **Cómo conseguir el mail exacto:** entrar a la web → sección "Contacto" o
+> "Eventos / Corporativo", o mandar DM por IG presentándose. Para los chicos, el
+> IG suele ser el canal más rápido. Para WeWork/Spaces/HQ usar el form corporativo.
+
+---
+
 # 🥈 PRIORIDAD 2 — Empresas directas (sirven, pero rinden menos por contacto)
 Se contactan igual, en paralelo, pero con menos prioridad que los coworkings.
 

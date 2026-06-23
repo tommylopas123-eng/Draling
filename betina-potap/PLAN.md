@@ -12,14 +12,16 @@
 > de prospectos. Todo también en Google Drive (carpeta replai > Betina Potap empresa).
 
 ### Próximos pasos concretos (en orden)
-1. **Completar contactos de coworkings (Prioridad 1)** → entrar a la web/IG de cada
-   coworking de `PROSPECTOS.md` / la planilla y cargar mail o Instagram. (Lo puede
-   hacer Claude.) Empezar por los ⭐ (Núñez/Belgrano) y Palermo.
+1. [x] **Ampliar y completar contactos de coworkings** → lista ampliada con contacto
+   (web/IG/dirección) en `PROSPECTOS.md` + planilla `coworkings-contacto.csv`. Se
+   sumaron varios nuevos (Huerta Dorrego/Humboldt, Urban Station, HQ x3, etc.).
 2. **Calcular precios finales de un box** con Betina (costeo real) → ajustar
-   `OFERTA-Y-PRECIOS.md` y el catálogo PDF.
-3. **Sumar fotos de productos** al catálogo PDF (Tommy consigue 4-5+ fotos lindas).
-4. **Elegir 2-3 productos nuevos** para prototipar (de `PRODUCTOS-B2B.md`).
-5. **Betina:** crear el Gmail comercial y definir el mínimo de compra.
+   `OFERTA-Y-PRECIOS.md` y el catálogo PDF. *(Tommy: aún sin datos de precios.)*
+3. **Sumar fotos de productos** al catálogo PDF. *(Tommy: aún sin fotos.)*
+4. [x] **Investigación de mercado + propuestas de productos nuevos** →
+   `INVESTIGACION-PRODUCTOS-2026.md`. Recomendados para prototipar: barrita proteica,
+   mix de snack en sobre individual, Box Regalo Betina. **Falta: Betina elige 2-3.**
+5. **Betina:** crear el Gmail comercial y definir el mínimo de compra. *(arranca tras 1-4)*
 6. Empezar a contactar coworkings con los cold emails de `OUTREACH.md`.
 
 ### Recordatorios de entrega (ver CLAUDE.md)
@@ -91,7 +93,8 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - [ ] **Betina:** elegir 2-3 productos nuevos para prototipar (de `PRODUCTOS-B2B.md`)
 - [ ] **Betina:** crear el Gmail comercial y definir mínimo de compra
 - [x] Primera lista de prospectos por categoría → `PROSPECTOS.md`
-- [ ] Armar planilla con 25-30 empresas concretas (nombre + link + contacto)
+- [x] Armar planilla de coworkings con contacto (32 espacios) → `coworkings-contacto.csv`
+- [x] Investigación de mercado de producto + propuestas nuevas → `INVESTIGACION-PRODUCTOS-2026.md`
 - [ ] **Betina:** empezar a contactar (arrancar por coworkings)
 - [ ] Conseguir el primer cliente y pedir testimonio (prueba social)
 
@@ -108,6 +111,8 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - `OUTREACH.md` — prospección + cold emails
 - `CONTENIDO.md` — plan de redes/contenido
 - `LANDING.md` — copy de la landing page
+- `PROSPECTOS.md` + `coworkings-contacto.csv` — prospectos y planilla de coworkings con contacto
+- `INVESTIGACION-PRODUCTOS-2026.md` — investigación de mercado + propuestas de productos nuevos
 
 ## Notas / decisiones
 - Diferencial clave (de la Fase 5): "sin TACC" solo NO alcanza (Social Lunch ya lo
