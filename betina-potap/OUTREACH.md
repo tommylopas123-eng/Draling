@@ -74,3 +74,51 @@ Startups/PyMEs de 15–80 personas con oficina en CABA cerca de Colegiales
 - La **muestra gratis** es la mejor arma: un producto artesanal se vende probándolo.
 - Hacer seguimiento (la mayoría de las ventas salen en el 2º/3º contacto).
 - Anotar todo en la planilla y no dejar a nadie sin respuesta.
+
+---
+
+## 📨 MENSAJES LISTOS PARA COPIAR Y PEGAR (por tipo de prospecto)
+> Reemplazá lo que está [entre corchetes]. Empezá por los ⭐ de tu zona.
+
+### A) COWORKINGS — DM de Instagram (el canal más rápido)
+> ¡Hola [nombre del cowork]! 👋 Soy Betina, hago comida artesanal sin gluten, sin
+> lácteos y sin azúcar acá en Colegiales. Me encantaría proponerles ser el snacking
+> saludable del espacio común y/o el proveedor "healthy" recomendado para las
+> empresas que alojan. ¿Les dejo una muestra gratis para que la prueben? Sin compromiso 🌱
+
+### B) COWORKINGS — Mail (si tienen form/mail)
+**Asunto:** snacking saludable para [Cowork]
+> Hola [Nombre],
+>
+> Soy Betina Potap, hago alimentos artesanales sin gluten, sin lácteos y sin azúcar
+> (Colegiales). Trabajo con oficinas armando boxes de snacks donde comen todos,
+> también celíacos y veganos.
+>
+> Para un coworking como [Cowork] veo dos formas de sumar: snacking para el espacio
+> común y coffee breaks para los eventos que organizan.
+>
+> ¿Les dejo una muestra gratis para el equipo? Sin compromiso.
+>
+> Betina · @betinapotap.naturista · WhatsApp 11 6629 3150
+
+### C) PRODUCTORAS (rodajes + oficina)
+**Asunto:** catering sano para rodajes
+> Hola [Nombre], soy Betina (alimentos artesanales sin gluten/lácteos/azúcar).
+> En los rodajes el catering suele ser pesado y deja afuera a los que tienen
+> restricciones. Armo opciones ricas y livianas que comen todos — para el set y
+> para la oficina. ¿Te paso opciones o les dejo una muestra para probar?
+>
+> Betina · @betinapotap.naturista
+
+### D) AGENCIAS / ESTUDIOS (oficina estable + regalo a clientes)
+**Asunto:** snacks oficina + regalo para clientes
+> Hola [Nombre], soy Betina, hago snacks artesanales sin gluten/lácteos/azúcar.
+> Dos ideas para [Empresa]: el picoteo sano de la oficina (que comen todos) y un
+> regalo distinto para clientes/equipo (box saludable con tu marca, ideal fin de año).
+> ¿Te mando opciones y precios, o una muestra para que la prueben?
+>
+> Betina · @betinapotap.naturista
+
+### Seguimiento (sirve para todos) — a los 3-4 días
+> Hola [Nombre], te reescribo por las dudas se haya traspapelado 🙂 La muestra
+> gratis sigue en pie cuando quieran probar. ¿Les viene bien esta semana?

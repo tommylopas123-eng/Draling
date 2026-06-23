@@ -113,6 +113,7 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - `LANDING.md` — copy de la landing page
 - `PROSPECTOS.md` + `prospectos-b2b.csv` — prospectos y planilla ÚNICA con contactos (Sheets)
 - `INVESTIGACION-PRODUCTOS-2026.md` — investigación de mercado + propuestas de productos nuevos
+- `BOX-REGALO.md` — propuesta de regalo corporativo (Box Regalo Betina)
 
 ## Notas / decisiones
 - Diferencial clave (de la Fase 5): "sin TACC" solo NO alcanza (Social Lunch ya lo
