@@ -94,12 +94,12 @@ Garbanzo · Mijo · Brócoli · Acelga
 **Tortillas / Fajitas — 10 unidades $17.000**
 Coliflor · Lentejas · Espinaca
 
-**Empanadas de trigo sarraceno** *(precio a confirmar)*
+**Empanadas de trigo sarraceno — ~$4.500 c/u · ~$54.000 docena** *(confirmar)*
 Atún · Calabaza · Brócoli · Champiñón · Cebolla y puerro
 
 **Rebozador**
-Mandioca y maíz — 1/2 kg $10.000 *(kg a confirmar)* ·
-Almendras y semillas — *(precio a confirmar)*
+Mandioca y maíz — 1/2 kg $10.000 · kg $18.000 ·
+Almendras y semillas — 1/2 kg $11.000 · kg $14.000 *(confirmar)*
 
 **Frascos**
 Gomasio (sésamo tostado con sal marina) — $7.500 ·
