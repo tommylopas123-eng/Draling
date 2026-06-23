@@ -17,16 +17,18 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - [ ] Anotar vida útil de cada producto
 - [ ] Confirmar si puede **facturar a empresas**
 
-## Fase 2 — Estudio de mercado B2B
-- [ ] Definir a qué tipo de empresas apuntar (startups, oficinas, coworkings)
-- [ ] Investigar formatos B2B que funcionan (office snacking, desayunos, regalos corporativos)
-- [ ] Analizar precios de referencia del mercado
-- [ ] Detectar la necesidad/dolor que resolvemos a las empresas
+## Fase 2 — Estudio de mercado B2B → ver `ANALISIS-B2B.md`
+- [x] Definir a qué tipo de empresas apuntar (startups, oficinas, coworkings)
+- [x] Investigar formatos B2B que funcionan (office snacking, desayunos, regalos corporativos)
+- [x] Analizar precios de referencia del mercado (competencia: Social Lunch, VUOI, etc.)
+- [x] Detectar la necesidad/dolor que resolvemos a las empresas
 
-## Fase 3 — Selección de productos para B2B
-- [ ] Filtrar productos por criterios B2B (vida útil, porcionable, margen, escalable)
-- [ ] Armar **shortlist** de productos estrella para empresas
-- [ ] Diseñar 2-3 **combos / boxes** para vender (ej: box desayuno, box snacks, welcome kit)
+## Fase 3 — Selección de productos para B2B → ver `ANALISIS-B2B.md`
+- [x] Filtrar productos por criterios B2B (vida útil, porcionable, margen, escalable)
+- [x] Armar **shortlist** de productos estrella para empresas
+- [x] Diseñar 2-3 **combos / boxes** para vender (ej: box desayuno, box snacks, welcome kit)
+- [ ] Validar capacidad de producción semanal con Betina
+- [ ] Definir precios B2B finales (con margen real)
 
 ## Fase 4 — Catálogo mejorado
 - [ ] Crear catálogo orientado a empresas (presentación profesional)
