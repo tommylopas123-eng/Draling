@@ -11,7 +11,7 @@
 6. Productos para B2B (vida útil + ideas nuevas)
 7. Oferta y precios
 8. Propuesta comercial (one-pager)
-9. Outreach — cómo conseguir empresas
+9. Outreach
 10. Contenido y redes
 11. Landing page (copy)
 12. Plan / checklist
@@ -604,15 +604,20 @@ corporativos**, no comedor diario.
 > Análisis de qué productos del catálogo sirven para empresas + ideas de productos
 > nuevos a desarrollar. Última actualización: 2026-06-23.
 > Insight central: los menús actuales (proteico/naturista) son para público final.
-> Para B2B necesitamos productos **listos para consumir** y de **vida útil larga**.
+> Para B2B el filtro principal es que sea **listo para consumir**. La vida útil
+> NO es un límite excluyente: como hay entrega L-V en toda CABA, los frescos también
+> sirven, ajustando la **frecuencia de entrega** a la duración de cada producto.
 
-## Los 2 filtros para que un producto sirva en B2B
+## El filtro real para B2B
 
-1. **Listo para consumir** (que cada empleado lo agarre y coma, sin preparar nada).
-2. **Vida útil suficiente** (que aguante el ciclo de entrega + días en la oficina).
+1. **Listo para consumir** (que cada empleado lo agarre y coma, sin preparar nada). ← el que manda
+2. **Frecuencia de entrega acorde a la vida útil** (no es "solo larga vida"):
+   - Larga vida (crackers, barritas, granola, dátiles, garbanzos) → 1 entrega/semana alcanza.
+   - Vida corta (brownies, budín, dips, frescos) → entregar más seguido (2x semana)
+     o que la oficina los tenga en heladera. **También sirven**, solo cambia la logística.
 
-Por eso los **panes** (aunque son el producto de mayor margen) **no funcionan solos**
-para empresas: hay que cortarlos/prepararlos y duran poco fresco.
+Los **panes** (mayor margen) no funcionan *solos* en B2B porque hay que prepararlos
+(cortar/untar), no por la duración. Pero sí entran como parte de un coffee break/desayuno.
 
 ## Semáforo de productos actuales para B2B
 
@@ -637,10 +642,17 @@ para empresas: hay que cortarlos/prepararlos y duran poco fresco.
 - Panes frescos (4-7 días, hay que cortarlos) → mejor solo para coffee break puntual.
 - Viandas/comidas del Menú Proteico → solo para "Día Saludable" puntual, no snacking.
 
-## Conclusión para los boxes
-- **Box Snacking Semanal** → armarlo con los 🟢 (crackers, barritas, granola,
-  garbanzos, dátiles, bomboncitos). Son los que aguantan la semana en la oficina.
-- **Box Coffee Break / Día puntual** → ahí sí entran los 🟡 (brownies, budín, dips, panes).
+## Conclusión para los boxes (corregida)
+- **Box Snacking Semanal (1 entrega/semana)** → base de 🟢 (crackers, barritas,
+  granola, garbanzos, dátiles, bomboncitos) **+ algún fresco** (brownie, budín, dip)
+  para que el equipo lo disfrute los primeros días. No tiene que ser solo larga vida.
+- **Box Snacking Reforzado (2 entregas/semana)** → permite meter **más frescos**
+  (dips, budín, brownies, incluso panes para desayuno). Más rico y variado.
+- **Box Coffee Break / Día puntual** → frescos sin problema (brownies, budín, dips,
+  panes), porque se consumen el mismo día.
+
+> La regla simple: **cuanto más fresco el producto, más seguido entregamos.**
+> La frecuencia de entrega es la palanca, no excluir los frescos.
 
 ---
 
@@ -665,8 +677,10 @@ Objetivo: **listos para consumir + larga vida + porción individual**. Lo que pe
 10. **Biscotti sin azúcar** (para acompañar el café/mate de la oficina).
 
 ### Por qué estos
-- Todos son **secos o de baja humedad** → duran más sin conservantes.
-- Todos son **listos para consumir** y **porcionables** individualmente.
+- Son **listos para consumir** y **porcionables** individualmente (lo que sí importa siempre).
+- Muchos son secos/baja humedad → **bonus**: duran más y simplifican la logística,
+  pero NO es excluyente. También podemos sumar frescos individuales (ej: mini budín,
+  vasitos de yogur vegetal con granola, mini brownie envuelto) entregándolos más seguido.
 - Se apalancan en lo que Betina ya domina (frutos secos, semillas, dátiles, cacao).
 
 ## Próximo paso sugerido
