@@ -41,12 +41,37 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - [x] Detectar oportunidades / diferenciadores para Betina Potap
 - [ ] Pedir cotización real a Social Lunch + 1-2 más (para fijar precios B2B)
 
-## Fase 6 — Salir a vender
-- [ ] Lista de empresas/startups objetivo para contactar
-- [ ] Material de venta listo (catálogo + propuesta)
-- [ ] Primer contacto y seguimiento
+## Fase 4 — Catálogo / oferta B2B → ver `OFERTA-Y-PRECIOS.md` y `PROPUESTA-COMERCIAL.md`
+- [x] Definir ICP (a qué empresas apuntar) → `ICP.md`
+- [x] Diseñar oferta / combos / boxes → `OFERTA-Y-PRECIOS.md`
+- [x] Definir precios B2B propuestos (a validar con costos reales)
+- [x] Armar propuesta comercial / one-pager → `PROPUESTA-COMERCIAL.md`
+- [x] Copy de landing page → `LANDING.md`
+
+## Fase 6 — Salir a vender → ver `OUTREACH.md` y `CONTENIDO.md`
+- [x] Método para armar lista de empresas objetivo → `OUTREACH.md`
+- [x] Material de venta listo (propuesta + cold emails + landing)
+- [x] Plan de contenido/redes → `CONTENIDO.md`
+- [ ] **Betina:** validar precios con costos reales (margen)
+- [ ] **Betina:** armar lista concreta de 20-30 empresas y empezar a contactar
+- [ ] Conseguir el primer cliente y pedir testimonio (prueba social)
 
 ---
 
+## Resumen: documentos del proyecto
+- `EMPRESA.md` — info del negocio
+- `CATALOGO.md` — catálogo completo con precios ✅
+- `ANALISIS-B2B.md` — estudio de mercado y recomendación
+- `COMPETENCIA.md` — análisis de competencia (Fase 5)
+- `ICP.md` — a qué empresas venderle
+- `OFERTA-Y-PRECIOS.md` — boxes/combos y precios B2B
+- `PROPUESTA-COMERCIAL.md` — one-pager de venta
+- `OUTREACH.md` — prospección + cold emails
+- `CONTENIDO.md` — plan de redes/contenido
+- `LANDING.md` — copy de la landing page
+
 ## Notas / decisiones
-- (Acá vamos anotando cambios de rumbo, ideas y decisiones importantes.)
+- Diferencial clave (de la Fase 5): "sin TACC" solo NO alcanza (Social Lunch ya lo
+  tiene). El diferencial real es: artesanal + sin gluten/lácteos/azúcar TODO junto +
+  inclusión + boxes a medida. Canal: snacking/coffee/regalos, NO almuerzo diario.
+- Todo lo de IA/automatización para Replai queda para más adelante (ver `VISION.md`).
