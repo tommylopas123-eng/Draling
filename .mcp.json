@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "google-trends": {
+      "command": "npx",
+      "args": ["-y", "@andrewlwn77/google-trends-mcp"]
+    }
+  }
+}
