@@ -119,57 +119,62 @@ for i, (a, b) in enumerate(pills):
     x = 56 + i * (bw + 20); rrect(x, y - 110, bw, 100, 10, CARD); leaf(x + bw / 2, y - 34, 18, 6, 90, TEAL)  # hojita centrada en la tarjeta
     c.setFillColor(col(TEALD)); c.setFont("Serif", 17); c.drawCentredString(x + bw / 2, y - 66, a)
     c.setFont("Serif", 20); c.drawCentredString(x + bw / 2, y - 90, b)
-y -= 150; center_label("ARTESANAL   ·   FRESCO   ·   INCLUSIVO", y, 12, "Sans", GOLD, 4); y -= 36
+y -= 150; center_label("ARTESANAL   ·   FRESCO   ·   INCLUSIVO", y, 12, "Sans", GOLD, 4); y -= 40
 c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.line(56, y, W - 56, y)
-c.setFillColor(col(INK)); c.setFont("SerifI", 13); c.drawCentredString(W / 2, y - 28, "“Que nadie del equipo quede afuera de la mesa.”")
-
-# --- Banner destacado: CATERING PARA EMPRESAS (lo más importante, con hoja entera) ---
-by = 150; bh = 108; bx = 56; bwd = W - 112
-rrect(bx, by, bwd, bh, 16, FOREST); rrect(bx, by, bwd, bh, 16, FOREST, GOLD, 1.6)
-leaf(bx + 56, by + bh / 2 - 26, 52, 17, 90, GOLD)  # hoja entera grande = la opción más importante
-c.setFillColor(col(GOLD)); c.setFont("SansB", 9.5)
-c.drawString(bx + 108, by + bh - 26, "LO MÁS ELEGIDO POR EMPRESAS")
-c.setFillColor(col(CREAM)); c.setFont("Serif", 20)
-c.drawString(bx + 108, by + bh - 52, "Catering para empresas y oficinas")
-para("Coffee breaks, días saludables y eventos corporativos a medida, para equipos enteros y todas las dietas.",
-     bx + 108, by + bh - 72, 11.5, bwd - 108 - 26, 15, "Sans", SAGE)
-c.showPage()
+c.setFillColor(col(INK)); c.setFont("SerifI", 13); c.drawCentredString(W / 2, y - 30, "“Que nadie del equipo quede afuera de la mesa.”")
+sprig(70, 90, 1.1, -15, SAGE, 0.8); c.showPage()
 
 # ---------- helper: tarjeta de propuesta ----------
-def box_card(num, title, desc, incl, price, y_top, accent=TEAL, h=300, tsize=21):
+def box_card(num, title, desc, incl, price, y_top, accent=TEAL, h=300, tsize=21, dsize=11.5, dlead=16):
     x = 56; w = W - 112; rrect(x, y_top - h, w, h, 14, CARD); rrect(x, y_top - h, w, h, 14, CARD, accent, 1.2)
     c.setFillColor(col(accent)); c.setFont("Display", 40); c.drawString(x + 26, y_top - 58, num); leaf(x + w - 44, y_top - 40, 20, 7, 40, accent)
     c.setFillColor(col(FOREST)); c.setFont("Serif", tsize); c.drawString(x + 92, y_top - 50, title)
-    yy = para(desc, x + 92, y_top - 78, 11.5, w - 160, 16, "Sans", INK) - 6
-    c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawString(x + 92, yy, "Incluye"); yy = para(incl, x + 92, yy - 16, 10.5, w - 160, 15, "Sans", INK)
+    yy = para(desc, x + 92, y_top - 78, dsize, w - 130, dlead, "Sans", INK) - 6
+    c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawString(x + 92, yy, "Incluye"); yy = para(incl, x + 92, yy - 16, 10.5, w - 130, 15, "Sans", INK)
     c.setFillColor(col(accent)); c.roundRect(x + 92, y_top - h + 22, w - 184, 40, 8, fill=1, stroke=0)
     c.setFillColor(col(CREAM)); c.setFont("SansB", 14); c.drawCentredString(x + w / 2, y_top - h + 36, price)
 
-# ---------- PÁGINA 3 — Propuestas 1-2 ----------
-bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 100, "Nuestras propuestas")
-box_card("01", "Box Snacking Semanal",
-         "El picoteo sano para la semana. Lo dejamos en la cocina de tu oficina y el equipo se sirve. "
-         "Por suscripción (semanal o quincenal); se puede pausar cuando quieras.",
-         "barritas, granola, crackers, garbanzos tostados, dátiles, bomboncitos y algún fresco del día.",
-         "Desde $8.000 por persona / semana", H - 135, TEAL, h=265)
-box_card("02", "Box Coffee Break",
-         "Para reuniones, capacitaciones o desayunos de equipo. Llega listo para servir, fresco del día.",
-         "budín, granola, pancakes de banana y cacao, dátiles rellenos y blend de hierbas para mate.",
-         "Desde $58.000  ·  10 a 12 personas", H - 135 - 285, TEALD, h=255)
-sprig(W - 70, 80, 1.1, 150, SAGE, 0.8); c.showPage()
+# ---------- PÁGINA 3 — PROPUESTA ESTRELLA: CATERING PARA EMPRESAS (página entera, sin número) ----------
+bg(CREAM); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1)
+sprig(W - 60, H - 105, 1.2, 150, SAGE, 0.6); sprig(60, 110, 1.2, -25, SAGE, 0.6)
+leaf(W / 2, H - 165, 80, 27, 90, GOLD)  # hoja entera grande = protagonista de la propuesta estrella
+center_label("NUESTRA PROPUESTA ESTRELLA PARA EMPRESAS", H - 205, 10.5, "Sans", TEALD, 3)
+c.setFillColor(col(FOREST)); c.setFont("Display", 33); c.drawCentredString(W / 2, H - 250, "Catering para empresas"); c.drawCentredString(W / 2, H - 289, "y oficinas")
+parac("Llevamos la comida de nuestro menú —proteico y naturista— a tus eventos, capacitaciones, "
+      "desayunos de equipo y “días saludables”. Todo fresco, artesanal y apto para todas las dietas: "
+      "sin gluten, sin lácteos y sin azúcar. Una sola compra donde come todo el equipo, sin que nadie "
+      "quede afuera de la mesa.", H - 328, 12.5, W * 0.74, 19, "Sans", INK)
+fmts = [("Coffee breaks", "Para reuniones y desayunos de equipo."),
+        ("Días saludables", "Un día sano para todo el equipo."),
+        ("Eventos corporativos", "Catering a medida para tu evento.")]
+fy = H - 430; bw = (W - 112 - 40) / 3
+for i, (t, d) in enumerate(fmts):
+    x = 56 + i * (bw + 20); rrect(x, fy - 98, bw, 98, 12, CARD); leaf(x + bw / 2, fy - 30, 16, 5.5, 90, TEAL)
+    c.setFillColor(col(TEALD)); c.setFont("SansB", 12); c.drawCentredString(x + bw / 2, fy - 52, t)
+    para(d, x + 12, fy - 70, 9.5, bw - 24, 12, "Sans", INK, "center")
+iy = fy - 132
+c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawCentredString(W / 2, iy, "INCLUYE")
+parac("Bowls, wraps, pollo, pescado y opciones veggie, más colaciones dulces y saladas, a elección.", iy - 18, 11.5, W * 0.78, 16, "Sans", INK)
+pb_y = 152; rrect(W / 2 - 188, pb_y, 376, 64, 12, FOREST)
+c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, pb_y + 43, "DESDE")
+c.setFillColor(col(CREAM)); c.setFont("SansB", 17); c.drawCentredString(W / 2, pb_y + 21, "$15.000 por persona  ·  mínimo 10")
+center_label("PEDÍ TU PROPUESTA A MEDIDA  ·  MUESTRA GRATIS", 74, 9, "Sans", TEALD, 2.5); c.showPage()
 
-# ---------- PÁGINA 4 — Propuestas 3-4 ----------
-bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 100, "Nuestras propuestas")
+# ---------- PÁGINA 4 — Las otras propuestas (más chicas) ----------
+bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 25); c.drawString(56, H - 82, "Nuestras otras propuestas")
+box_card("01", "Box Snacking Semanal",
+         "Picoteo sano de la semana, listo en la cocina de tu oficina. Por suscripción; se puede pausar.",
+         "barritas, granola, crackers, dátiles y bomboncitos.",
+         "Desde $8.000 por persona / semana", H - 108, TEAL, h=215, tsize=18, dsize=11, dlead=14)
+box_card("02", "Box Coffee Break",
+         "Para reuniones o desayunos de equipo. Llega listo para servir, fresco del día.",
+         "budín, granola, pancakes y dátiles rellenos.",
+         "Desde $58.000  ·  10 a 12 personas", H - 108 - 233, TEALD, h=215, tsize=18, dsize=11, dlead=14)
 box_card("03", "Welcome Kit · Regalo Corporativo",
-         "Caja regalo premium para dar la bienvenida a quienes entran, para fin de año o para regalar a clientes. "
-         "Se puede sumar el branding de tu empresa.",
-         "barritas, bomboncitos, granola, crackers, brownie y blend de mate, en caja con tarjeta.",
-         "Desde $22.000 por kit  ·  premium $32.000", H - 135, GOLD, h=265, tsize=18)
-box_card("04", "Día Saludable · Catering",
-         "Las comidas de nuestro menú proteico para un evento o un “día sano” del equipo. Bowls, wraps, pollo, pescado y opciones veggie.",
-         "comida proteica a elección + colación, según el menú.",
-         "Desde $15.000 por persona  ·  mínimo 10", H - 135 - 285, "#5AA89F", h=255)
-sprig(70, 80, 1.1, -15, SAGE, 0.8); c.showPage()
+         "Para bienvenida, fin de año o regalar a clientes. Podés sumar tu branding.",
+         "barritas, granola, crackers y brownie, en caja con tarjeta.",
+         "Desde $22.000 por kit  ·  premium $32.000", H - 108 - 466, GOLD, h=215, tsize=16, dsize=11, dlead=14)
+c.showPage()
 
 # ---------- PÁGINA 5 — Por qué + Cómo funciona ----------
 bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 110, "¿Por qué Betina Potap?")
