@@ -35,10 +35,11 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - [ ] Definir precios B2B (por volumen / suscripción)
 - [ ] Armar propuesta comercial / pitch para enviar a empresas
 
-## Fase 5 — Estudio de la competencia
-- [ ] Identificar otras empresas del rubro saludable B2B
-- [ ] Analizar sus productos, precios y propuesta
-- [ ] Detectar oportunidades / diferenciadores para Betina Potap
+## Fase 5 — Estudio de la competencia → ver `COMPETENCIA.md`
+- [x] Identificar otras empresas del rubro saludable B2B
+- [x] Analizar sus productos, precios y propuesta
+- [x] Detectar oportunidades / diferenciadores para Betina Potap
+- [ ] Pedir cotización real a Social Lunch + 1-2 más (para fijar precios B2B)
 
 ## Fase 6 — Salir a vender
 - [ ] Lista de empresas/startups objetivo para contactar
