@@ -74,10 +74,10 @@
 
 ### Salado
 
-**Veggie burgers — $10.000**
-Yamaní + lentejas y morrón · Yamaní + calabaza y champiñón · Garbanzo y perejil ·
+**Veggie burgers — $11.000** (excepto quinoa y zanahoria: $12.000)
+Yamaní + lentejas y morrón · Yamaní + aduki y champiñón · Garbanzo y perejil ·
 Mijo y champiñón · Mijo, puerro y zanahoria · Lentejas y brócoli ·
-Lentejas y zanahoria · Quinoa y zanahoria
+Lentejas y zanahoria · Quinoa y zanahoria ($12.000)
 
 **Soufflés — $10.000**
 Calabaza · Brócoli · Verduras grilladas · Puerro · Zapallitos
@@ -103,10 +103,12 @@ Almendras y semillas — 1/2 kg $11.000 · kg $14.000 *(confirmar)*
 
 **Frascos**
 Gomasio (sésamo tostado con sal marina) — $7.500 ·
-Rawmesan (queso vegano: semillas de girasol, levadura nutricional, cúrcuma) — $8.000
+Rawmesan (queso vegano: zapallo, girasol, levadura nutricional, cúrcuma) — $8.000
 
-**Pizzas** *(precios a confirmar)*
-Pizzeta de coliflor · Prepizzas (trigo sarraceno, garbanzo, arroz)
+**Pizzas**
+Pizzetas de coliflor — 3 x $10.000 · 6 x $18.000 ·
+Prepizzas (trigo sarraceno, garbanzo, arroz) — individuales: 3 x $10.000 · 6 x $18.000 ·
+grandes: 1 x $9.000 · 3 x $21.000
 
 ### Colaciones (saladas)
 
@@ -155,5 +157,6 @@ Diente de león, boldo, burrito, cedrón, té verde, manzanilla, marcela,
 coco rallado, menta, melisa y cola de caballo
 
 > ✅ Catálogo completo: Menú Proteico + Menú Naturista.
-> ⚠️ Pendiente confirmar precios borrosos: empanadas de trigo sarraceno,
-> rebozadores y pizzas (sección Salado).
+> ✅ Confirmados: veggie burgers, frascos y pizzas.
+> ⚠️ Falta confirmar (estaban borrosos, en otra página): empanadas de trigo
+> sarraceno y rebozador de almendras y semillas.
