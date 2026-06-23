@@ -25,4 +25,23 @@
 | Bowl de garbanzos crunchy | Vegetales grillados, hummus, garbanzos crocantes y tahini | 25 g | $12.000 |
 | Tarta de pollo y calabaza | Con masa de trigo sarraceno | 45 g | $14.000 |
 
-> ⏳ Pendiente: resto del catálogo (más imágenes en camino).
+### Colaciones dulces
+
+| Producto | Descripción | Proteína/porción | Precio |
+|----------|-------------|------------------|--------|
+| Dátiles con pasta de maní y choco al 80% | 5 unidades | 10 g | $6.500 |
+| Cheesecake proteico | Yogur griego con proteína, huevos y frutos rojos | 20 g | $10.000 |
+| Mousse de chocolate proteico | Yogur, cacao, pasta de maní | 15 g | $10.000 |
+| Brownie | Yogur, huevos de campo, cacao amargo, pasta de maní, choco al 80% | 10 g | $4.000 c/u · $12.000 x4 |
+| Parfait | Yogur, granola, frutos rojos | 15 g | $10.000 |
+
+### Colaciones saladas
+
+| Producto | Descripción | Proteína/porción | Precio |
+|----------|-------------|------------------|--------|
+| Garbanzos tostados | Porción 100 g | 10 g | $7.000 |
+| Hummus de garbanzos | Porción 100 g | 10 g | $10.000 |
+| Crackers de garbanzos | 250 g (10/12 unidades) | 10 g | $9.000 |
+
+> ✅ Menú Proteico completo (10 fotos cargadas).
+> ⏳ Pendiente: otros menús/catálogos si los hay (panes sin TACC, viandas, dulces, catering).
