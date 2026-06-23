@@ -30,11 +30,18 @@
 
 ## Formato de entrega al usuario (IMPORTANTE)
 - El usuario **no tiene Excel ni lee archivos .md/.docx** cómodamente.
-- **Documentos/material → entregar siempre en PDF** (usar `SendUserFile`).
+- **Documentos/material → entregar como GOOGLE DOCS** (NO PDFs). Método que funciona y
+  NO se traba: armar el contenido como **HTML** y subirlo con el Google Drive MCP
+  (`mcp__Google_Drive__create_file`) usando `contentMimeType: text/html` → Drive lo
+  convierte solo en Google Doc con formato (títulos, tablas, negritas). Pasar el link.
+  - ⚠️ NO usar PDF ni LibreOffice/`soffice` (está roto en el entorno) ni intentar
+    generar PDFs: se traba. Siempre Google Doc vía Drive MCP.
 - **Datos/planillas → subir a Google Sheets** (Google Drive MCP: subir el CSV con
   `contentMimeType: text/csv` para que se convierta en planilla de Google), y pasar el link.
 - Mantener los `.md` y `.csv` en el repo como fuente, pero lo que se le manda al
-  usuario va en PDF / Google Sheets.
+  usuario va en Google Docs / Google Sheets.
+- Carpeta de Drive: "replai" > "Betina Potap empresa"
+  (id `1rRspj4i9fItQppKFZ1ItA71DsV8MGu4D`, cuenta tommylopas123@gmail.com).
 
 ## Flujo de trabajo
 - Mantener actualizado `betina-potap/PLAN.md` (marcar `[x]` lo completado).

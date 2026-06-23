@@ -93,7 +93,7 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - [ ] **Betina:** elegir 2-3 productos nuevos para prototipar (de `PRODUCTOS-B2B.md`)
 - [ ] **Betina:** crear el Gmail comercial y definir mínimo de compra
 - [x] Primera lista de prospectos por categoría → `PROSPECTOS.md`
-- [x] Armar planilla de coworkings con contacto (32 espacios) → `coworkings-contacto.csv`
+- [x] Armar planilla ÚNICA de prospectos con contacto (coworkings + productoras + agencias + hubs) → `prospectos-b2b.csv` (en Sheets)
 - [x] Investigación de mercado de producto + propuestas nuevas → `INVESTIGACION-PRODUCTOS-2026.md`
 - [ ] **Betina:** empezar a contactar (arrancar por coworkings)
 - [ ] Conseguir el primer cliente y pedir testimonio (prueba social)
@@ -111,7 +111,7 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - `OUTREACH.md` — prospección + cold emails
 - `CONTENIDO.md` — plan de redes/contenido
 - `LANDING.md` — copy de la landing page
-- `PROSPECTOS.md` + `coworkings-contacto.csv` — prospectos y planilla de coworkings con contacto
+- `PROSPECTOS.md` + `prospectos-b2b.csv` — prospectos y planilla ÚNICA con contactos (Sheets)
 - `INVESTIGACION-PRODUCTOS-2026.md` — investigación de mercado + propuestas de productos nuevos
 
 ## Notas / decisiones
