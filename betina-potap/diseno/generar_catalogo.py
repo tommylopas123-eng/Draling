@@ -201,12 +201,19 @@ sprig(W - 70, 90, 1.1, 150, SAGE, 0.7); c.showPage()
 
 # ---------- PÁGINA 6 — Cierre / contacto ----------
 bg(FOREST); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.setStrokeAlpha(0.5); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1); c.setStrokeAlpha(1)
-sprig(70, H - 110, 1.6, -20, SAGE, 0.6); sprig(W - 70, 150, 1.6, 160, SAGE, 0.5)
-c.setFillColor(col(CREAM)); c.setFont("Display", 30); c.drawCentredString(W / 2, H / 2 + 40, "¿Lista tu oficina"); c.drawCentredString(W / 2, H / 2 + 4, "para comer mejor?")
-c.setFillColor(col(GOLD)); c.setFont("Script", 26); c.drawCentredString(W / 2, H / 2 - 38, "pedí tu muestra gratis")
-rrect(W / 2 - 180, 180, 360, 90, 12, "#2C5A4E"); c.setFillColor(col(CREAM)); c.setFont("Sans", 12); c.drawCentredString(W / 2, 242, "WhatsApp")
-c.setFont("SansB", 17); c.drawCentredString(W / 2, 220, "11 6629 3150"); c.setFont("Sans", 12); c.setFillColor(col(SAGE)); c.drawCentredString(W / 2, 196, "@betinapotap.naturista")
-center_label("BETINA POTAP · ALIMENTOS NATURALES · CABA", 90, 9, "Sans", SAGE, 2.5); c.showPage()
+sprig(62, H - 76, 1.15, -22, SAGE, 0.55); sprig(W - 70, 150, 1.6, 160, SAGE, 0.5)
+c.setFillColor(col(CREAM)); c.setFont("Display", 30); c.drawCentredString(W / 2, H - 150, "¿Lista tu oficina"); c.drawCentredString(W / 2, H - 188, "para comer mejor?")
+c.setFillColor(col(GOLD)); c.setFont("Script", 26); c.drawCentredString(W / 2, H - 232, "pedí tu muestra gratis")
+parac("Escribinos y coordinamos una muestra gratis para tu equipo.", H - 274, 12, W * 0.72, 16, "Sans", SAGE)
+# Tres recuadros de contacto: WhatsApp, Instagram y TikTok
+contacts = [("WhatsApp", "11 6629 3150"), ("Instagram", "@betinapotap.naturista"), ("TikTok", "@betinapotap.naturista")]
+cw = (W - 112 - 40) / 3; ch = 100; cy = H - 430
+for i, (lab, val) in enumerate(contacts):
+    x = 56 + i * (cw + 20); rrect(x, cy, cw, ch, 12, "#2C5A4E")
+    leaf(x + cw / 2, cy + ch - 24, 14, 5, 90, SAGE)
+    c.setFillColor(col(SAGE)); c.setFont("SansB", 11); c.drawCentredString(x + cw / 2, cy + ch - 48, lab)
+    c.setFillColor(col(CREAM)); c.setFont("SansB", 11.5); c.drawCentredString(x + cw / 2, cy + 34, val)
+center_label("BETINA POTAP · ALIMENTOS NATURALES · CABA", 110, 9, "Sans", SAGE, 2.5); c.showPage()
 
 c.save()
 print("Catálogo generado: Catalogo-Comercial-Betina-Potap.pdf")
