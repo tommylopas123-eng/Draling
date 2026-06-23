@@ -72,4 +72,40 @@
 |----------|--------|
 | Crutones de mijo / sarraceno | $12.000 |
 
-> ⏳ Sección "Salado" en camino (frascos, tartas base de arroz, veggie burgers...).
+### Salado
+
+**Veggie burgers — $10.000**
+Yamaní + lentejas y morrón · Yamaní + calabaza y champiñón · Garbanzo y perejil ·
+Mijo y champiñón · Mijo, puerro y zanahoria · Lentejas y brócoli ·
+Lentejas y zanahoria · Quinoa y zanahoria
+
+**Soufflés — $10.000**
+Calabaza · Brócoli · Verduras grilladas · Puerro · Zapallitos
+
+**Tartas (base de trigo sarraceno) — $12.000**
+Acelga y calabaza · Champiñón y curry · Cebolla y berenjena ·
+Verduras grilladas · Puerro y cebolla · Zapallitos
+
+**Toques (croquetas) — 250 g $10.000 · 500 g $18.000**
+Garbanzo · Mijo · Brócoli · Acelga
+
+**Milanesas de gírgolas — 1/4 kg $12.000 · 1/2 kg $20.000**
+
+**Tortillas / Fajitas — 10 unidades $17.000**
+Coliflor · Lentejas · Espinaca
+
+**Empanadas de trigo sarraceno** *(precio a confirmar)*
+Atún · Calabaza · Brócoli · Champiñón · Cebolla y puerro
+
+**Rebozador**
+Mandioca y maíz — 1/2 kg $10.000 *(kg a confirmar)* ·
+Almendras y semillas — *(precio a confirmar)*
+
+**Frascos**
+Gomasio (sésamo tostado con sal marina) — $7.500 ·
+Rawmesan (queso vegano: semillas de girasol, levadura nutricional, cúrcuma) — $8.000
+
+**Pizzas** *(precios a confirmar)*
+Pizzeta de coliflor · Prepizzas (trigo sarraceno, garbanzo, arroz)
+
+> ⏳ Sección "Colaciones" del Menú Naturista en camino.
