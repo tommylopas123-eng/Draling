@@ -11,7 +11,7 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 
 ## Fase 1 — Conocer el negocio (base)
 - [x] Crear documento con la info de la empresa (`EMPRESA.md`)
-- [ ] Cargar el **catálogo completo** (productos, precios, presentaciones)
+- [x] Cargar el **catálogo completo** (productos, precios, presentaciones) → `CATALOGO.md`
 - [ ] Definir capacidad de producción semanal
 - [ ] Identificar productos más vendidos y de mayor margen
 - [ ] Anotar vida útil de cada producto

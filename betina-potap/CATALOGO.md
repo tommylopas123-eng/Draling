@@ -108,4 +108,52 @@ Rawmesan (queso vegano: semillas de girasol, levadura nutricional, cúrcuma) —
 **Pizzas** *(precios a confirmar)*
 Pizzeta de coliflor · Prepizzas (trigo sarraceno, garbanzo, arroz)
 
-> ⏳ Sección "Colaciones" del Menú Naturista en camino.
+### Colaciones (saladas)
+
+**Snacks**
+Garbanzos tostados salteados — $7.000 / $9.000 ·
+Almendras activadas tostadas saladas — 100 g $9.000 · 250 g $18.000
+
+**Crackers — 1/4 $9.000 · 1/2 $16.000**
+Semillas y orégano · Almendras y arroz · Harina de garbanzos
+
+**Dips — pote $9.000**
+Hummus de garbanzos · Zanahoria y cúrcuma · Girasol con cúrcuma
+
+### Colaciones (dulces)
+
+**Budín — $12.000**
+Algarroba, banana y trigo sarraceno · Banana, cacao y coco ·
+Húmedo de chocolate al 80% (cacao amargo, pasta de maní y dátiles)
+
+**Barritas — $3.000 c/u · $29.000 x12**
+Dátiles, maní, arroz inflado, cacao amargo
+
+**Pancakes de banana y cacao — $5.000 x4 · $9.000 x12**
+Leche de coco, harina de almendras y cacao amargo
+
+**Dátiles rellenos — $5.000 x4 · $9.000 x12**
+Pasta de maní y choco 80% con sal marina · Nuez, choco 80% y coco ·
+Arándano, choco 80% y maní
+
+**Crocante dulce — $7.000 x4 · $16.000 x12**
+Dátiles, almendras, arroz inflado, pasta de maní, chocolate 80% y sal marina
+
+**Brownies — $4.000 c/u · $13.000 x4**
+Trigo sarraceno, cacao amargo, chocolate al 80%
+
+**Bomboncitos — $7.000 x4 · $16.000 x12**
+Dátiles, almendras y cacao amargo
+
+**Granola — 250 g $10.000 · 500 g $18.000**
+Frutos secos, semillas, coco rallado, banana y miel
+
+### Otros
+
+**Blend de hierbas para mate — 100 g $6.000 · 200 g $13.000**
+Diente de león, boldo, burrito, cedrón, té verde, manzanilla, marcela,
+coco rallado, menta, melisa y cola de caballo
+
+> ✅ Catálogo completo: Menú Proteico + Menú Naturista.
+> ⚠️ Pendiente confirmar precios borrosos: empanadas de trigo sarraceno,
+> rebozadores y pizzas (sección Salado).
