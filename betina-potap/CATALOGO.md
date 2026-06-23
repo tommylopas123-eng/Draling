@@ -91,15 +91,15 @@ Garbanzo · Mijo · Brócoli · Acelga
 
 **Milanesas de gírgolas — 1/4 kg $12.000 · 1/2 kg $20.000**
 
-**Tortillas / Fajitas — 10 unidades $17.000**
+**Tortillas / Fajitas — 12 unidades $17.000**
 Coliflor · Lentejas · Espinaca
 
-**Empanadas de trigo sarraceno — ~$4.500 c/u · ~$54.000 docena** *(confirmar)*
+**Empanadas de trigo sarraceno — $4.000 c/u · $40.000 docena**
 Atún · Calabaza · Brócoli · Champiñón · Cebolla y puerro
 
 **Rebozador**
-Mandioca y maíz — 1/2 kg $10.000 · kg $18.000 ·
-Almendras y semillas — 1/2 kg $11.000 · kg $14.000 *(confirmar)*
+Mandioca y maíz — 1/2 kg $10.000 · 1 kg $18.000 ·
+Almendras y semillas — 1/2 kg $11.000 · 1 kg $19.000
 
 **Frascos**
 Gomasio (sésamo tostado con sal marina) — $7.500 ·
@@ -156,7 +156,4 @@ Frutos secos, semillas, coco rallado, banana y miel
 Diente de león, boldo, burrito, cedrón, té verde, manzanilla, marcela,
 coco rallado, menta, melisa y cola de caballo
 
-> ✅ Catálogo completo: Menú Proteico + Menú Naturista.
-> ✅ Confirmados: veggie burgers, frascos y pizzas.
-> ⚠️ Falta confirmar (estaban borrosos, en otra página): empanadas de trigo
-> sarraceno y rebozador de almendras y semillas.
+> ✅ Catálogo COMPLETO y con todos los precios confirmados (Menú Proteico + Menú Naturista).
