@@ -1,31 +1,47 @@
-empresa,categoria,zona,cerca_colegiales,contacto,estado,notas
-Depende Comunicación,Productora,Colegiales,si,,por contactar,al lado
-Oficina Burman,Productora,Colegiales,si,,por contactar,al lado
-Primo Audiovisual,Productora,Palermo,no,,por contactar,
-Turbo Trueno,Productora,Palermo,no,,por contactar,
-Romana Audiovisual,Productora,Palermo,no,,por contactar,
-Grupo Mulata,Productora,Palermo,no,,por contactar,
-Nunchaku Cine,Productora,Chacarita,no,,por contactar,
-25P Films,Productora,Chacarita,no,,por contactar,
-Inland Studio,Productora,Chacarita,no,,por contactar,
-Vasko Films,Productora,Chacarita,no,,por contactar,
-Krill Films,Productora,Chacarita,no,,por contactar,
-Cayo Agencia,Agencia,Palermo,no,,por contactar,
-Pragmativa,Agencia,Palermo,no,,por contactar,Gorriti 6046
-Libre,Agencia,Palermo,no,,por contactar,
-Fly by Net,Agencia,Palermo/Belgrano,no,,por contactar,
-BDG Buenos Aires,Agencia,CABA,no,,por contactar,
-Axent Studio,Agencia,CABA,no,,por contactar,
-DESANDA,Agencia,CABA,no,,por contactar,
-Nueva Comunicación,Agencia,CABA,no,,por contactar,
-Belephant,Coworking,Núñez/Belgrano,si,,por contactar,un deal=muchas empresas
-Ronda Coworking,Coworking,Belgrano,si,,por contactar,
-La Maquinita,Coworking,Palermo/Núñez,no,,por contactar,
-AreaTres,Coworking,Palermo Soho,no,,por contactar,
-Manawa,Coworking,Palermo Soho,no,,por contactar,
-Working & Co,Coworking,Palermo/Belgrano,no,,por contactar,
-WeWork,Coworking,Palermo,no,,por contactar,
-Spaces/Regus,Coworking,Microcentro/Palermo,no,,por contactar,
-Wayra,Aceleradora,Palermo Hollywood,no,,por contactar,eventos
-Polo IT,Aceleradora,CABA,no,,por contactar,
-Polo DOT,Aceleradora,Saavedra,si,,por contactar,
+prioridad,categoria,empresa,zona,cerca_colegiales,contacto,estado,notas
+1,Coworking,Belephant,Núñez/Belgrano,si,,por contactar,Av Libertador 6680
+1,Coworking,Coreworks,Núñez,si,,por contactar,
+1,Coworking,La Maquinita (Núñez),Núñez,si,,por contactar,
+1,Coworking,Ronda Coworking,Belgrano,si,,por contactar,Ciudad de la Paz 1042
+1,Coworking,Join Coworking,Belgrano,si,,por contactar,Barrio Chino
+1,Coworking,Working & Co (Belgrano),Belgrano,si,,por contactar,
+1,Coworking,AreaTres,Palermo Soho,no,,por contactar,
+1,Coworking,Manawa,Palermo Soho,no,,por contactar,Nicaragua 4817
+1,Coworking,La Maquinita (Palermo),Palermo,no,,por contactar,Soho y Hollywood
+1,Coworking,Huerta Coworking,Palermo Hollywood,no,,por contactar,
+1,Coworking,Usina Cowork,Palermo,no,,por contactar,
+1,Coworking,Hit Cowork,Palermo,no,,por contactar,varias sedes
+1,Coworking,Working & Co (Palermo),Palermo,no,,por contactar,
+1,Coworking,WeWork (Palermo),Palermo,no,,por contactar,
+1,Coworking,Joy Cowork,Villa Crespo,no,,por contactar,
+1,Coworking,La Maquinita (Villa Crespo),Villa Crespo,no,,por contactar,
+1,Coworking,Working & Co (Villa Crespo),Villa Crespo,no,,por contactar,
+1,Coworking,Spaces/Regus,Microcentro,no,,por contactar,
+1,Coworking,Ronda (Recoleta),Recoleta,no,,por contactar,
+1,Coworking,La Maquinita (Vicente López),Vicente López,no,,por contactar,zona norte
+1,Coworking,WeWork Libertador 1000,Vicente López,no,,por contactar,zona norte
+1,Coworking,Urbana Vicente López,Vicente López,no,,por contactar,zona norte
+1,Coworking,Office Club,Vicente López,no,,por contactar,zona norte
+1,Coworking,HQ,Olivos/San Isidro,no,,por contactar,zona norte
+2,Productora,Depende Comunicación,Colegiales,si,,por contactar,
+2,Productora,Oficina Burman,Colegiales,si,,por contactar,
+2,Productora,Primo Audiovisual,Palermo,no,,por contactar,
+2,Productora,Turbo Trueno,Palermo,no,,por contactar,
+2,Productora,Romana Audiovisual,Palermo,no,,por contactar,
+2,Productora,Grupo Mulata,Palermo,no,,por contactar,
+2,Productora,Nunchaku Cine,Chacarita,no,,por contactar,
+2,Productora,25P Films,Chacarita,no,,por contactar,
+2,Productora,Inland Studio,Chacarita,no,,por contactar,
+2,Productora,Vasko Films,Chacarita,no,,por contactar,
+2,Productora,Krill Films,Chacarita,no,,por contactar,
+2,Agencia,Cayo Agencia,Palermo,no,,por contactar,
+2,Agencia,Pragmativa,Palermo,no,,por contactar,Gorriti 6046
+2,Agencia,Libre,Palermo,no,,por contactar,
+2,Agencia,Fly by Net,Palermo/Belgrano,no,,por contactar,
+2,Agencia,BDG Buenos Aires,CABA,no,,por contactar,
+2,Agencia,Axent Studio,CABA,no,,por contactar,
+2,Agencia,DESANDA,CABA,no,,por contactar,
+2,Agencia,Nueva Comunicación,CABA,no,,por contactar,
+2,Aceleradora,Wayra,Palermo Hollywood,no,,por contactar,eventos
+2,Aceleradora,Polo DOT,Saavedra,si,,por contactar,
+2,Aceleradora,Polo IT,CABA,no,,por contactar,

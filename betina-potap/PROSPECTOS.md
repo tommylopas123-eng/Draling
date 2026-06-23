@@ -71,57 +71,85 @@ Empresa | Categoría | Zona | Web/IG | Contacto | Estado | Notas
 
 ---
 
-## 📋 LISTA CONCRETA — Tanda 1 (lista para contactar)
-> El contacto exacto (mail/IG/tel) se busca en la web de cada una. ⭐ = pegado a Colegiales.
+## 📋 LISTA CONCRETA — ordenada por zona y prioridad
+> El contacto exacto (mail/IG/tel) se busca en la web de cada una. ⭐ = cerca de Colegiales.
+> Planilla editable: `prospectos-tanda1.csv`.
 
-### Productoras (Distrito Audiovisual — al lado de Colegiales)
-| Empresa | Zona | Rubro |
-|---------|------|-------|
-| ⭐ Depende Comunicación | Colegiales | TV/contenido |
-| ⭐ Oficina Burman | Colegiales | Cine |
-| Primo Audiovisual | Palermo | Publicidad |
-| Turbo Trueno | Palermo | TV |
-| Romana Audiovisual | Palermo | Cine |
-| Grupo Mulata | Palermo | TV |
-| Nunchaku Cine | Chacarita | Cine |
-| 25P Films | Chacarita | Publicidad |
-| Inland Studio | Chacarita | Animación |
-| Vasko Films | Chacarita | TV |
-| Krill Films | Chacarita | Cine/TV |
+# 🥇 PRIORIDAD 1 — COWORKINGS (lo que más vende: un acuerdo = muchas empresas)
+Apuntar acá primero. Ofrecer snacking para el espacio común + ser el proveedor
+"healthy" recomendado a las empresas que alojan + coffee breaks para sus eventos.
+
+### Núñez / Belgrano / Colegiales (tu zona ⭐)
+| Coworking | Dirección / zona |
+|-----------|------------------|
+| ⭐ Belephant | Núñez — Av. del Libertador 6680 / Belgrano 6343 |
+| ⭐ Coreworks | Núñez |
+| ⭐ La Maquinita (sede Núñez) | Núñez |
+| ⭐ Ronda Coworking | Belgrano — Ciudad de la Paz 1042 |
+| ⭐ Join Coworking | Belgrano / Barrio Chino |
+| ⭐ Working & Co (sede Belgrano) | Belgrano |
+
+### Palermo (Soho / Hollywood) — alta concentración
+| Coworking | Zona |
+|-----------|------|
+| AreaTres | Palermo Soho |
+| Manawa | Palermo Soho — Nicaragua 4817 |
+| La Maquinita | Palermo Soho y Palermo Hollywood |
+| Huerta Coworking | Palermo Hollywood |
+| Usina Cowork | Palermo |
+| Hit Cowork | Palermo (y otras sedes) |
+| Working & Co | Palermo |
+| WeWork | Palermo |
+
+### Villa Crespo
+| Coworking | Zona |
+|-----------|------|
+| Joy Cowork | Villa Crespo |
+| La Maquinita | Villa Crespo |
+| Working & Co | Villa Crespo |
+
+### Microcentro / Recoleta
+| Coworking | Zona |
+|-----------|------|
+| Spaces / Regus | Microcentro / Palermo |
+| Ronda Coworking | Recoleta |
+
+### Zona Norte (hasta Don Torcuato)
+| Coworking | Zona |
+|-----------|------|
+| La Maquinita | Vicente López |
+| WeWork Libertador 1000 | Vicente López |
+| Urbana Vicente López | Vicente López |
+| Office Club | Vicente López |
+| HQ | Olivos / San Isidro |
+
+> ~25 coworkings. Empezar por los ⭐ (tu barrio) y de ahí Palermo.
+
+---
+
+# 🥈 PRIORIDAD 2 — Empresas directas (sirven, pero rinden menos por contacto)
+Se contactan igual, en paralelo, pero con menos prioridad que los coworkings.
+
+### Productoras (Distrito Audiovisual — pegado a Colegiales)
+| Empresa | Zona |
+|---------|------|
+| ⭐ Depende Comunicación | Colegiales |
+| ⭐ Oficina Burman | Colegiales |
+| Primo Audiovisual · Turbo Trueno · Romana · Grupo Mulata | Palermo |
+| Nunchaku · 25P Films · Inland · Vasko · Krill | Chacarita |
 
 ### Agencias de publicidad / marketing
 | Empresa | Zona |
 |---------|------|
-| Cayo Agencia | Palermo |
-| Pragmativa | Palermo (Gorriti 6046) |
-| Libre (Pancho Esposito) | Palermo |
-| Fly by Net | Palermo/Belgrano |
-| BDG Buenos Aires | CABA |
-| Axent Studio | CABA |
-| DESANDA | CABA |
-| Nueva Comunicación | CABA |
+| Cayo · Pragmativa (Gorriti 6046) · Libre · Fly by Net | Palermo |
+| BDG · Axent · DESANDA · Nueva Comunicación | CABA |
 
-### Coworkings (un acuerdo = muchas empresas)
-| Espacio | Zona |
-|---------|------|
-| ⭐ Belephant | Núñez / Belgrano |
-| ⭐ Ronda Coworking | Belgrano |
-| La Maquinita | Palermo / Villa Crespo / Núñez |
-| AreaTres | Palermo Soho |
-| Manawa | Palermo Soho |
-| Working & Co | Palermo / Villa Crespo / Belgrano |
-| WeWork | Palermo y otras |
-| Spaces / Regus | Microcentro / Palermo |
-
-### Aceleradoras / hubs
+### Aceleradoras / hubs (bonus: eventos con catering)
 | Lugar | Zona |
 |-------|------|
 | Wayra (Telefónica) | Palermo Hollywood |
-| Polo IT Buenos Aires | CABA |
 | ⭐ Polo DOT | Saavedra |
-
-> Total tanda 1: ~30 empresas. Empezar por las ⭐ (más cerca) y los coworkings.
-> La planilla editable está en `prospectos-tanda1.csv`.
+| Polo IT Buenos Aires | CABA |
 
 ---
 
