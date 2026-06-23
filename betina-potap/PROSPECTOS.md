@@ -71,7 +71,63 @@ Empresa | Categoría | Zona | Web/IG | Contacto | Estado | Notas
 
 ---
 
-Fuentes: [Coworkings BA (Desky)](https://www.desky.la/blog/mejores-coworking-buenos-aires-2026-guia-de-precios-y-ubicaciones) ·
+## 📋 LISTA CONCRETA — Tanda 1 (lista para contactar)
+> El contacto exacto (mail/IG/tel) se busca en la web de cada una. ⭐ = pegado a Colegiales.
+
+### Productoras (Distrito Audiovisual — al lado de Colegiales)
+| Empresa | Zona | Rubro |
+|---------|------|-------|
+| ⭐ Depende Comunicación | Colegiales | TV/contenido |
+| ⭐ Oficina Burman | Colegiales | Cine |
+| Primo Audiovisual | Palermo | Publicidad |
+| Turbo Trueno | Palermo | TV |
+| Romana Audiovisual | Palermo | Cine |
+| Grupo Mulata | Palermo | TV |
+| Nunchaku Cine | Chacarita | Cine |
+| 25P Films | Chacarita | Publicidad |
+| Inland Studio | Chacarita | Animación |
+| Vasko Films | Chacarita | TV |
+| Krill Films | Chacarita | Cine/TV |
+
+### Agencias de publicidad / marketing
+| Empresa | Zona |
+|---------|------|
+| Cayo Agencia | Palermo |
+| Pragmativa | Palermo (Gorriti 6046) |
+| Libre (Pancho Esposito) | Palermo |
+| Fly by Net | Palermo/Belgrano |
+| BDG Buenos Aires | CABA |
+| Axent Studio | CABA |
+| DESANDA | CABA |
+| Nueva Comunicación | CABA |
+
+### Coworkings (un acuerdo = muchas empresas)
+| Espacio | Zona |
+|---------|------|
+| ⭐ Belephant | Núñez / Belgrano |
+| ⭐ Ronda Coworking | Belgrano |
+| La Maquinita | Palermo / Villa Crespo / Núñez |
+| AreaTres | Palermo Soho |
+| Manawa | Palermo Soho |
+| Working & Co | Palermo / Villa Crespo / Belgrano |
+| WeWork | Palermo y otras |
+| Spaces / Regus | Microcentro / Palermo |
+
+### Aceleradoras / hubs
+| Lugar | Zona |
+|-------|------|
+| Wayra (Telefónica) | Palermo Hollywood |
+| Polo IT Buenos Aires | CABA |
+| ⭐ Polo DOT | Saavedra |
+
+> Total tanda 1: ~30 empresas. Empezar por las ⭐ (más cerca) y los coworkings.
+> La planilla editable está en `prospectos-tanda1.csv`.
+
+---
+
+Fuentes: [Distrito Audiovisual (GCBA)](https://buenosaires.gob.ar/noticias/empresas-en-el-distrito-audiovisual) ·
+[Agencias Palermo (UP)](https://www.palermo.edu/dyc/aap/agencias.html) ·
+[Coworkings BA (Desky)](https://www.desky.la/blog/mejores-coworking-buenos-aires-2026-guia-de-precios-y-ubicaciones) ·
 [La Maquinita](https://lamaquinita.co/) · [Belephant](https://belephant.co/) ·
 [Ronda](https://www.rondacoworking.com/) · [Working&Co](https://www.workingand.co/) ·
 [Distrito Audiovisual (GCBA)](https://buenosaires.gob.ar/noticias/empresas-en-el-distrito-audiovisual) ·

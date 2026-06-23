@@ -48,7 +48,14 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - [x] Armar propuesta comercial / one-pager → `PROPUESTA-COMERCIAL.md`
 - [x] Copy de landing page → `LANDING.md`
 
-## Fase 6 — Salir a vender → ver `OUTREACH.md` y `CONTENIDO.md`
+## Fase 7 — Catálogo comercial (diseño) → `Catalogo-Comercial-Betina-Potap.pdf`
+- [x] Diseñar catálogo PDF premium (skill canvas-design, estética "Jardín Sereno")
+- [ ] **PENDIENTE: sumar fotos de TODOS los productos** con una breve descripción c/u
+      (Tommy consigue 4-5+ fotos en buena calidad → Claude las integra)
+- [ ] **PENDIENTE: ajustar precios finales** del catálogo (los calcula Betina + Tommy
+      con ayuda de Claude, sobre costos reales)
+- [ ] **PENDIENTE: corregir textos** del catálogo según lo que marque Betina al leerlo
+
 - [x] Método para armar lista de empresas objetivo → `OUTREACH.md`
 - [x] Material de venta listo (propuesta + cold emails + landing)
 - [x] Plan de contenido/redes → `CONTENIDO.md`
