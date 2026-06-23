@@ -28,6 +28,14 @@
   - SEO local (CABA) → `local-seo`
 - Mencionar brevemente qué skill se está usando, pero no pedir permiso para usarla.
 
+## Formato de entrega al usuario (IMPORTANTE)
+- El usuario **no tiene Excel ni lee archivos .md/.docx** cómodamente.
+- **Documentos/material → entregar siempre en PDF** (usar `SendUserFile`).
+- **Datos/planillas → subir a Google Sheets** (Google Drive MCP: subir el CSV con
+  `contentMimeType: text/csv` para que se convierta en planilla de Google), y pasar el link.
+- Mantener los `.md` y `.csv` en el repo como fuente, pero lo que se le manda al
+  usuario va en PDF / Google Sheets.
+
 ## Flujo de trabajo
 - Mantener actualizado `betina-potap/PLAN.md` (marcar `[x]` lo completado).
 - Commitear y pushear los cambios a la rama de trabajo.
