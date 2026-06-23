@@ -52,7 +52,11 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - [x] Método para armar lista de empresas objetivo → `OUTREACH.md`
 - [x] Material de venta listo (propuesta + cold emails + landing)
 - [x] Plan de contenido/redes → `CONTENIDO.md`
-- [ ] **Betina:** validar precios con costos reales (margen)
+- [x] **Betina:** validar precios con costos reales (margen) → confirmado, ver `EMPRESA.md`
+- [x] Datos operativos (capacidad, logística, facturación, contacto) → `EMPRESA.md`
+- [x] Definir qué productos sirven para B2B por vida útil → `PRODUCTOS-B2B.md`
+- [ ] **Betina:** elegir 2-3 productos nuevos para prototipar (de `PRODUCTOS-B2B.md`)
+- [ ] **Betina:** crear el Gmail comercial y definir mínimo de compra
 - [ ] **Betina:** armar lista concreta de 20-30 empresas y empezar a contactar
 - [ ] Conseguir el primer cliente y pedir testimonio (prueba social)
 

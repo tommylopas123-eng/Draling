@@ -1,20 +1,20 @@
 # 📘 BETINA POTAP — Dossier completo del proyecto B2B
 
-> Documento único que reúne todo el trabajo. Generado el 2026-06-23.
-> Para detalle por tema, cada sección viene de su archivo correspondiente.
+> Documento único que reúne todo el trabajo. Actualizado el 2026-06-23.
 
 ## Índice
-1. La empresa
+1. La empresa (con datos operativos)
 2. Catálogo completo
 3. Análisis de mercado B2B
 4. Análisis de competencia
 5. ICP — a qué empresas venderle
-6. Oferta y precios
-7. Propuesta comercial (one-pager)
-8. Outreach — cómo conseguir empresas
-9. Contenido y redes
-10. Landing page (copy)
-11. Plan / checklist
+6. Productos para B2B (vida útil + ideas nuevas)
+7. Oferta y precios
+8. Propuesta comercial (one-pager)
+9. Outreach — cómo conseguir empresas
+10. Contenido y redes
+11. Landing page (copy)
+12. Plan / checklist
 
 ---
 
@@ -72,12 +72,58 @@ El objetivo inmediato es:
 
 ## Datos a completar
 
-- [ ] Catálogo completo con precios y presentaciones
-- [ ] Capacidad de producción (cuánto puede producir por semana)
-- [ ] Productos con mayor margen
-- [ ] Productos más vendidos hoy
-- [ ] Vida útil de cada producto
-- [ ] ¿Tiene factura / forma de facturar a empresas?
+- [x] Catálogo completo con precios y presentaciones → `CATALOGO.md`
+- [x] Capacidad de producción (ver abajo)
+- [x] Productos con mayor margen (ver abajo)
+- [x] Productos más vendidos hoy (ver abajo)
+- [x] Vida útil de cada producto (ver abajo)
+- [x] Forma de facturar a empresas (ver abajo)
+
+## Datos operativos (confirmados por Betina, 2026-06-23)
+
+### Costos y márgenes
+- El costo del producto va del **20% al 50%** según el producto → margen del 50-80%.
+- Confirmado: los precios B2B propuestos dejan ganancia.
+
+### Capacidad de producción
+- **~20 boxes por día** es un buen promedio (depende del volumen de cada box).
+- Puede atender **~10 empresas/clientes en simultáneo** con la estructura actual.
+- Escalable sumando horas de trabajo y personal.
+
+### Logística de entrega
+- **Cobertura:** toda CABA + Zona Norte hasta Don Torcuato.
+- **Entrega:** la hace "Papi" en principio; si crece el volumen, se terceriza.
+- **Días:** lunes a viernes.
+- **Envío:** se decide incluir el costo de envío **dentro del precio del producto**,
+  con un **mínimo de compra** (mejor que cobrar envío aparte).
+
+### Facturación
+- Emite **Factura C** (monotributo). Con las empresas con las que ya trabajó nunca fue problema.
+
+### Datos de contacto
+- **Mail comercial:** se va a crear un Gmail nuevo (pendiente definir dirección).
+- **WhatsApp B2B:** 11 6629 3150 (el de Betina por ahora; si se desborda, habilitar otro número).
+
+### Productos más vendidos (estrella)
+Panes · crackers · dips · dátiles · brownies · budín de chocolate · barritas.
+
+### Productos de mayor margen
+- **Panes** (por costo y tiempo de producción) — PERO solos no sirven para empresas
+  enteras: para B2B necesitamos productos **listos para consumir**.
+
+### Vida útil (clave para B2B)
+| Producto | Duración |
+|----------|----------|
+| Productos frescos (general) | 4-5 días fresco · 6-7 días en heladera |
+| Crackers | 2-3 semanas |
+| Barritas de semillas | 2 semanas |
+| Dátiles (rellenos) | 2 semanas en heladera |
+| Brownies | 1 semana en heladera |
+| Budín | 1 semana en heladera |
+| Dips | 1 semana en heladera |
+
+> ⚠️ Son alimentos **sin conservantes** → vida útil corta. Esto define qué productos
+> sirven para snacking corporativo (ver `PRODUCTOS-B2B.md`).
 
 
 ---
@@ -555,6 +601,83 @@ corporativos**, no comedor diario.
 ---
 
 
+> Análisis de qué productos del catálogo sirven para empresas + ideas de productos
+> nuevos a desarrollar. Última actualización: 2026-06-23.
+> Insight central: los menús actuales (proteico/naturista) son para público final.
+> Para B2B necesitamos productos **listos para consumir** y de **vida útil larga**.
+
+## Los 2 filtros para que un producto sirva en B2B
+
+1. **Listo para consumir** (que cada empleado lo agarre y coma, sin preparar nada).
+2. **Vida útil suficiente** (que aguante el ciclo de entrega + días en la oficina).
+
+Por eso los **panes** (aunque son el producto de mayor margen) **no funcionan solos**
+para empresas: hay que cortarlos/prepararlos y duran poco fresco.
+
+## Semáforo de productos actuales para B2B
+
+### 🟢 SIRVEN YA (larga vida + listos para consumir) — la base del snacking
+| Producto | Vida útil | Por qué sirve |
+|----------|-----------|---------------|
+| **Crackers** | 2-3 semanas | El mejor para B2B: dura, se pica, se combina con dip |
+| **Barritas de semillas** | 2 semanas | Individual, perfecta para escritorio |
+| **Dátiles rellenos** | 2 semanas (heladera) | Snack dulce premium, aguanta |
+| **Granola** | larga (seca) | En frasco/pote, rinde mucho |
+| **Garbanzos tostados / almendras activadas** | larga (seco) | Snack salado, larga vida |
+| **Bomboncitos / crocante dulce** | media-larga | Dulce sano para la tarde |
+
+### 🟡 SIRVEN PARA PEDIDOS PUNTUALES (vida corta, coffee break del día)
+| Producto | Vida útil | Uso |
+|----------|-----------|-----|
+| Brownies | 1 semana (heladera) | Coffee break / día del pedido |
+| Budín (choco) | 1 semana (heladera) | Coffee break / desayuno |
+| Dips (hummus, etc.) | 1 semana (heladera) | Combo con crackers, pedido fresco |
+
+### 🔴 NO SIRVEN SOLOS PARA B2B (vida corta / requieren preparación)
+- Panes frescos (4-7 días, hay que cortarlos) → mejor solo para coffee break puntual.
+- Viandas/comidas del Menú Proteico → solo para "Día Saludable" puntual, no snacking.
+
+## Conclusión para los boxes
+- **Box Snacking Semanal** → armarlo con los 🟢 (crackers, barritas, granola,
+  garbanzos, dátiles, bomboncitos). Son los que aguantan la semana en la oficina.
+- **Box Coffee Break / Día puntual** → ahí sí entran los 🟡 (brownies, budín, dips, panes).
+
+---
+
+## 💡 Ideas de productos NUEVOS para desarrollar (perfil corporativo)
+Objetivo: **listos para consumir + larga vida + porción individual**. Lo que pediste.
+
+### Prioridad alta (fáciles a partir de lo que ya hace)
+1. **Mix de snacks en sobre individual** — frutos secos + semillas activadas +
+   garbanzos tostados, en porción individual. Larga vida, ideal escritorio.
+2. **Crackers en porción individual + mini dip** — el combo estrella, empaquetado.
+3. **Barritas en más sabores** (ya son el producto ideal): proteica, energética,
+   cacao, frutos rojos. Empaque individual con marca.
+4. **Granola en pote individual** (desayuno de oficina listo).
+5. **Bocaditos/energy balls** (dátil, cacao, maní, coco) — secos, larga vida, individuales.
+
+### Prioridad media (requieren ajustar receta para más duración)
+6. **Galletitas secas sin azúcar** (tipo cookie u avena) — horneadas, baja humedad =
+   más vida útil que un budín.
+7. **Grisines / palitos / taralli sin TACC** — snack salado seco, larga vida.
+8. **Turrón / garrapiñada saludable** (frutos secos + endulzante natural) — larga vida.
+9. **Chips horneados** (garbanzo, kale, batata) — snack salado seco.
+10. **Biscotti sin azúcar** (para acompañar el café/mate de la oficina).
+
+### Por qué estos
+- Todos son **secos o de baja humedad** → duran más sin conservantes.
+- Todos son **listos para consumir** y **porcionables** individualmente.
+- Se apalancan en lo que Betina ya domina (frutos secos, semillas, dátiles, cacao).
+
+## Próximo paso sugerido
+- Elegir **2-3 productos nuevos** de la lista para prototipar.
+- Definir el contenido final de cada box solo con productos 🟢 + nuevos de larga vida.
+- (Opcional) Probar empaque individual con la marca para el snacking de escritorio.
+
+
+---
+
+
 > Diseño de oferta con skills `offers` + `pricing`. Última actualización: 2026-06-23.
 > ⚠️ PRECIOS PROPUESTOS (punto de partida). Validar contra costos reales y margen
 >    antes de salir a vender. Betina debe confirmar que cada combo deja ganancia.
@@ -617,11 +740,19 @@ Las comidas del Menú Proteico para un evento o un "día sano" del equipo.
 | 31+ | -15% + entrega prioritaria |
 | Suscripción anual | -15% / 1 mes bonificado |
 
-## ⚠️ Checklist antes de publicar precios
-- [ ] Calcular costo real de insumos + mano de obra por combo.
-- [ ] Confirmar que cada combo deja al menos 50-60% de margen.
-- [ ] Validar logística de entrega semanal (¿quién lleva, qué días?).
-- [ ] Definir mínimo de pedido que sea rentable.
+## Datos confirmados (2026-06-23)
+- **Margen:** ✅ confirmado. Costo del producto 20-50% → margen 50-80%.
+- **Capacidad:** ~20 boxes/día · ~10 empresas en simultáneo (escalable).
+- **Entrega:** toda CABA + Z. Norte hasta Don Torcuato, lunes a viernes.
+- **Política de envío:** el costo de envío va **incluido en el precio**, con un
+  **mínimo de compra** (definir el mínimo, ej: $40.000-50.000 por entrega).
+- **Facturación:** Factura C (sin problema con empresas hasta ahora).
+
+## ⚠️ Pendiente de definir
+- [ ] Mínimo de compra por entrega (sugerido: $40.000–$50.000).
+- [ ] Cuánto sumar al precio para absorber el envío (ej: +8-12%).
+- [ ] Ajustar el mix de cada box a productos de **larga vida y listos para consumir**
+  (ver `PRODUCTOS-B2B.md`).
 
 
 ---
@@ -934,7 +1065,11 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - [x] Método para armar lista de empresas objetivo → `OUTREACH.md`
 - [x] Material de venta listo (propuesta + cold emails + landing)
 - [x] Plan de contenido/redes → `CONTENIDO.md`
-- [ ] **Betina:** validar precios con costos reales (margen)
+- [x] **Betina:** validar precios con costos reales (margen) → confirmado, ver `EMPRESA.md`
+- [x] Datos operativos (capacidad, logística, facturación, contacto) → `EMPRESA.md`
+- [x] Definir qué productos sirven para B2B por vida útil → `PRODUCTOS-B2B.md`
+- [ ] **Betina:** elegir 2-3 productos nuevos para prototipar (de `PRODUCTOS-B2B.md`)
+- [ ] **Betina:** crear el Gmail comercial y definir mínimo de compra
 - [ ] **Betina:** armar lista concreta de 20-30 empresas y empezar a contactar
 - [ ] Conseguir el primer cliente y pedir testimonio (prueba social)
 

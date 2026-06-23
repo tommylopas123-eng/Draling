@@ -62,8 +62,16 @@ Las comidas del Menú Proteico para un evento o un "día sano" del equipo.
 | 31+ | -15% + entrega prioritaria |
 | Suscripción anual | -15% / 1 mes bonificado |
 
-## ⚠️ Checklist antes de publicar precios
-- [ ] Calcular costo real de insumos + mano de obra por combo.
-- [ ] Confirmar que cada combo deja al menos 50-60% de margen.
-- [ ] Validar logística de entrega semanal (¿quién lleva, qué días?).
-- [ ] Definir mínimo de pedido que sea rentable.
+## Datos confirmados (2026-06-23)
+- **Margen:** ✅ confirmado. Costo del producto 20-50% → margen 50-80%.
+- **Capacidad:** ~20 boxes/día · ~10 empresas en simultáneo (escalable).
+- **Entrega:** toda CABA + Z. Norte hasta Don Torcuato, lunes a viernes.
+- **Política de envío:** el costo de envío va **incluido en el precio**, con un
+  **mínimo de compra** (definir el mínimo, ej: $40.000-50.000 por entrega).
+- **Facturación:** Factura C (sin problema con empresas hasta ahora).
+
+## ⚠️ Pendiente de definir
+- [ ] Mínimo de compra por entrega (sugerido: $40.000–$50.000).
+- [ ] Cuánto sumar al precio para absorber el envío (ej: +8-12%).
+- [ ] Ajustar el mix de cada box a productos de **larga vida y listos para consumir**
+  (ver `PRODUCTOS-B2B.md`).
