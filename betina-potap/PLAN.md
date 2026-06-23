@@ -57,7 +57,9 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - [x] Definir qué productos sirven para B2B por vida útil → `PRODUCTOS-B2B.md`
 - [ ] **Betina:** elegir 2-3 productos nuevos para prototipar (de `PRODUCTOS-B2B.md`)
 - [ ] **Betina:** crear el Gmail comercial y definir mínimo de compra
-- [ ] **Betina:** armar lista concreta de 20-30 empresas y empezar a contactar
+- [x] Primera lista de prospectos por categoría → `PROSPECTOS.md`
+- [ ] Armar planilla con 25-30 empresas concretas (nombre + link + contacto)
+- [ ] **Betina:** empezar a contactar (arrancar por coworkings)
 - [ ] Conseguir el primer cliente y pedir testimonio (prueba social)
 
 ---
