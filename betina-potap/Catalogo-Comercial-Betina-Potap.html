@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo para empresas — Betina Potap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Young+Serif&family=Outfit:wght@400;600;700&family=Nothing+You+Could+Do&family=Lora:ital@1&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F6F2E9; --forest:#22473C; --teal:#2C8A82; --teald:#1C5E57;
+    --sage:#9DBDAE; --gold:#BE9E55; --ink:#34362F; --card:#EFE9DA;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#e7e2d6;font-family:'Outfit',sans-serif;color:var(--ink);line-height:1.5;padding:24px 12px}
+  .page{background:var(--cream);max-width:760px;margin:0 auto 26px;padding:54px 50px;border-radius:6px;
+        box-shadow:0 6px 28px rgba(0,0,0,.10);position:relative;overflow:hidden}
+  .page.bordered{outline:1px solid var(--sage);outline-offset:-18px}
+  .display{font-family:'Gloock',serif;color:var(--forest);line-height:1.05}
+  .serif{font-family:'Young Serif',serif;color:var(--forest)}
+  .script{font-family:'Nothing You Could Do',cursive;color:var(--gold)}
+  .tag{font-family:'Outfit';letter-spacing:.22em;text-transform:uppercase;color:var(--teald);font-size:11px;font-weight:600}
+  .leaf{width:18px;height:30px;display:inline-block;background:var(--teal);
+        border-radius:50% 50% 50% 50%/60% 60% 40% 40%;transform:rotate(0deg);position:relative}
+  .leaf::after{content:"";position:absolute;left:50%;top:8%;width:1px;height:84%;background:var(--cream);transform:translateX(-50%)}
+  .leaf.sage{background:var(--sage)} .leaf.gold{background:var(--gold)}
+  .leaf.big{width:46px;height:78px}
+  /* PORTADA */
+  .cover{text-align:center}
+  .cover .tag{margin:6px 0 70px}
+  .cover h1{font-size:60px;margin-bottom:2px}
+  .cover .script{font-size:30px;margin-bottom:18px}
+  .divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:6px 0 30px}
+  .divider .line{width:70px;height:1px;background:var(--sage)}
+  .cover h2{font-size:22px;margin-top:6px}
+  .cover .sub{margin-top:8px;color:var(--ink)}
+  .cover .foot{margin-top:90px}
+  /* VALOR */
+  h2.big{font-family:'Gloock',serif;color:var(--forest);font-size:34px;line-height:1.1;margin-bottom:18px}
+  .lead{font-size:17px;max-width:78%;margin-bottom:34px}
+  .pills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:24px}
+  .pill{background:var(--card);border-radius:12px;padding:22px 10px;text-align:center}
+  .pill .leaf{margin-bottom:10px}
+  .pill .serif{display:block;font-size:21px;line-height:1.15}
+  .center-tag{text-align:center;color:var(--gold);letter-spacing:.28em;text-transform:uppercase;
+              font-weight:600;font-size:13px;margin:22px 0}
+  hr.soft{border:none;border-top:1px solid var(--sage);margin:14px 0}
+  .quote{text-align:center;font-family:'Lora',serif;font-style:italic;font-size:15px;margin-top:18px}
+  /* CATERING ESTRELLA */
+  .star{text-align:center}
+  .star .leaf.big{margin:6px auto 16px}
+  .star h2{font-family:'Gloock',serif;color:var(--forest);font-size:36px;line-height:1.1;margin:10px 0 16px}
+  .star .lead{max-width:80%;margin:0 auto 28px;font-size:16px;text-align:center}
+  .fmts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:26px}
+  .fmt{background:var(--card);border-radius:12px;padding:18px 12px;text-align:center}
+  .fmt .leaf{width:15px;height:25px;margin-bottom:8px}
+  .fmt b{color:var(--teald);display:block;margin-bottom:4px}
+  .fmt small{font-size:13px}
+  .incl{text-align:center;margin-bottom:18px}
+  .incl .tag{display:block;margin-bottom:6px}
+  .price{background:var(--forest);color:var(--cream);border-radius:12px;padding:16px;text-align:center;max-width:420px;margin:0 auto}
+  .price .tag{color:var(--gold);display:block;margin-bottom:4px}
+  .price b{font-size:19px}
+  .star .cta{text-align:center;margin-top:24px}
+  /* PROPUESTAS */
+  .prop{background:var(--card);border:1.4px solid var(--teal);border-radius:14px;padding:22px 26px;margin-bottom:20px;position:relative}
+  .prop .num{font-family:'Gloock',serif;font-size:40px;color:var(--teal);float:left;margin-right:18px;line-height:.9}
+  .prop h3{font-family:'Young Serif',serif;color:var(--forest);font-size:20px;margin-bottom:6px}
+  .prop p{font-size:14px;margin-bottom:8px}
+  .prop .inc-label{color:var(--teald);font-weight:700;font-size:13px}
+  .prop .pricebar{clear:both;background:var(--teal);color:var(--cream);text-align:center;font-weight:700;
+                  padding:11px;border-radius:8px;margin-top:12px}
+  .prop.t2{border-color:var(--teald)} .prop.t2 .num{color:var(--teald)} .prop.t2 .pricebar{background:var(--teald)}
+  .prop.t3{border-color:var(--gold)} .prop.t3 .num{color:var(--gold)} .prop.t3 .pricebar{background:var(--gold)}
+  /* POR QUE / COMO */
+  .why{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start}
+  .why .leaf{width:16px;height:26px;flex:none;margin-top:2px}
+  .why b{color:var(--teald)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+  .step{background:var(--forest);color:var(--cream);border-radius:12px;padding:22px 14px;text-align:center}
+  .step .n{font-family:'Gloock',serif;color:var(--gold);font-size:34px}
+  .step b{display:block;margin:6px 0}
+  .step small{font-size:12.5px}
+  /* CONTACTO */
+  .contact{background:var(--forest);color:var(--cream);text-align:center}
+  .contact h2{font-family:'Gloock',serif;color:var(--cream);font-size:32px;line-height:1.1;margin-bottom:8px}
+  .contact .script{font-size:26px;margin-bottom:14px}
+  .contact .sub{color:var(--sage);margin-bottom:34px}
+  .boxes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:40px}
+  .cbox{background:#2C5A4E;border-radius:12px;padding:20px 10px}
+  .cbox .leaf{width:14px;height:24px;margin-bottom:8px}
+  .cbox .lab{color:var(--sage);font-weight:700;font-size:13px;display:block;margin-bottom:4px}
+  .cbox .val{color:var(--cream);font-weight:700}
+  .contact .foot{color:var(--sage);letter-spacing:.2em;text-transform:uppercase;font-size:11px;margin-top:30px}
+  @media(max-width:560px){.page{padding:34px 22px}.lead,.star .lead{max-width:100%}
+    .pills,.fmts,.steps,.boxes{grid-template-columns:1fr}.cover h1{font-size:42px}.cover .script{font-size:24px}}
+</style>
+</head>
+<body>
+
+<!-- 1. PORTADA -->
+<section class="page bordered cover">
+  <div style="margin-bottom:14px"><span class="leaf sage"></span></div>
+  <div class="tag">Alimentos naturales · CABA</div>
+  <h1 class="display">Betina Potap</h1>
+  <div class="script">hecho a mano, con tiempo y cuidado</div>
+  <div class="divider"><span class="line"></span><span class="leaf sage"></span><span class="line"></span></div>
+  <h2 class="serif">Catálogo para empresas</h2>
+  <div class="sub">Snacks · Coffee breaks · Regalos corporativos · Catering</div>
+  <div class="foot tag">@betinapotap.naturista · WhatsApp 11 6629 3150</div>
+</section>
+
+<!-- 2. PROPUESTA DE VALOR -->
+<section class="page">
+  <h2 class="big">Comida real e inclusiva<br>para todo tu equipo.</h2>
+  <p class="lead">Llevamos comida saludable y artesanal a tu oficina. Una sola compra que incluye a todos
+    —intolerantes al gluten, veganos, diabéticos y a quienes entrenan. Nada industrial, nada en serie:
+    hecho a mano, fresco y a medida.</p>
+  <div class="pills">
+    <div class="pill"><span class="leaf"></span><span class="serif">Sin<br>gluten</span></div>
+    <div class="pill"><span class="leaf"></span><span class="serif">Sin<br>lácteos</span></div>
+    <div class="pill"><span class="leaf"></span><span class="serif">Sin<br>azúcar</span></div>
+  </div>
+  <div class="center-tag">Artesanal · Fresco · Inclusivo</div>
+  <hr class="soft">
+  <p class="quote">“Que nadie del equipo quede afuera de la mesa.”</p>
+</section>
+
+<!-- 3. CATERING (ESTRELLA) -->
+<section class="page bordered star">
+  <span class="leaf gold big"></span>
+  <div class="tag">Nuestra propuesta estrella para empresas</div>
+  <h2>Catering para empresas y oficinas</h2>
+  <p class="lead">Llevamos la comida de nuestro menú —proteico y naturista— a tus eventos, capacitaciones,
+    desayunos de equipo y “días saludables”. Todo fresco, artesanal y apto para todas las dietas:
+    sin gluten, sin lácteos y sin azúcar. Una sola compra donde come todo el equipo, sin que nadie quede afuera.</p>
+  <div class="fmts">
+    <div class="fmt"><span class="leaf"></span><b>Coffee breaks</b><small>Para reuniones y desayunos de equipo.</small></div>
+    <div class="fmt"><span class="leaf"></span><b>Días saludables</b><small>Un día sano para todo el equipo.</small></div>
+    <div class="fmt"><span class="leaf"></span><b>Eventos corporativos</b><small>Catering a medida para tu evento.</small></div>
+  </div>
+  <div class="incl"><span class="tag">Incluye</span>
+    Bowls, wraps, pollo, pescado y opciones veggie, más colaciones dulces y saladas, a elección.</div>
+  <div class="price"><span class="tag">Desde</span><b>$15.000 por persona · mínimo 10</b></div>
+  <div class="cta tag" style="color:var(--teald);margin-top:22px">Pedí tu propuesta a medida · Muestra gratis</div>
+</section>
+
+<!-- 4. OTRAS PROPUESTAS -->
+<section class="page">
+  <h2 class="big" style="font-size:28px;margin-bottom:22px">Nuestras otras propuestas</h2>
+  <div class="prop">
+    <span class="num">01</span>
+    <h3>Box Snacking Semanal</h3>
+    <p>Picoteo sano de la semana, listo en la cocina de tu oficina. Por suscripción; se puede pausar.</p>
+    <p><span class="inc-label">Incluye:</span> barritas, granola, crackers, dátiles y bomboncitos.</p>
+    <div class="pricebar">Desde $8.000 por persona / semana</div>
+  </div>
+  <div class="prop t2">
+    <span class="num">02</span>
+    <h3>Box Coffee Break</h3>
+    <p>Para reuniones o desayunos de equipo. Llega listo para servir, fresco del día.</p>
+    <p><span class="inc-label">Incluye:</span> budín, granola, pancakes y dátiles rellenos.</p>
+    <div class="pricebar">Desde $58.000 · 10 a 12 personas</div>
+  </div>
+  <div class="prop t3">
+    <span class="num">03</span>
+    <h3>Welcome Kit · Regalo Corporativo</h3>
+    <p>Para bienvenida, fin de año o regalar a clientes. Podés sumar tu branding.</p>
+    <p><span class="inc-label">Incluye:</span> barritas, granola, crackers y brownie, en caja con tarjeta.</p>
+    <div class="pricebar">Desde $22.000 por kit · premium $32.000</div>
+  </div>
+</section>
+
+<!-- 5. POR QUE + COMO -->
+<section class="page">
+  <h2 class="big" style="font-size:28px;margin-bottom:22px">¿Por qué Betina Potap?</h2>
+  <div class="why"><span class="leaf"></span><div><b>100% inclusivo.</b> Sin gluten + sin lácteos + sin azúcar, todo junto. Comen todos.</div></div>
+  <div class="why"><span class="leaf"></span><div><b>Artesanal y fresco.</b> Nada industrial ni envasado en serie. Hecho a mano.</div></div>
+  <div class="why"><span class="leaf"></span><div><b>A medida.</b> Armamos el box para tu equipo y tu frecuencia de entrega.</div></div>
+  <div class="why"><span class="leaf"></span><div><b>Sin riesgo.</b> Probás con muestra gratis y elegís sin compromiso.</div></div>
+  <hr class="soft" style="margin:26px 0">
+  <h2 class="big" style="font-size:26px;margin-bottom:16px">Cómo funciona</h2>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><b>Probás</b><small>Te mandamos una muestra gratis para que el equipo la pruebe.</small></div>
+    <div class="step"><div class="n">2</div><b>Elegís</b><small>El box y la frecuencia. Sin compromiso, se puede pausar.</small></div>
+    <div class="step"><div class="n">3</div><b>Recibís</b><small>Entregamos en tu oficina, de lunes a viernes.</small></div>
+  </div>
+</section>
+
+<!-- 6. CONTACTO -->
+<section class="page bordered contact">
+  <h2>¿Lista tu oficina<br>para comer mejor?</h2>
+  <div class="script">pedí tu muestra gratis</div>
+  <div class="sub">Escribinos y coordinamos una muestra gratis para tu equipo.</div>
+  <div class="boxes">
+    <div class="cbox"><span class="leaf sage"></span><span class="lab">WhatsApp</span><span class="val">11 6629 3150</span></div>
+    <div class="cbox"><span class="leaf sage"></span><span class="lab">Instagram</span><span class="val">@betinapotap.naturista</span></div>
+    <div class="cbox"><span class="leaf sage"></span><span class="lab">TikTok</span><span class="val">@betinapotap.naturista</span></div>
+  </div>
+  <div class="foot">Betina Potap · Alimentos naturales · CABA</div>
+</section>
+
+</body>
+</html>
