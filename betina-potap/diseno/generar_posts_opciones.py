@@ -51,7 +51,7 @@ def wrap(c, txt, x, y, size, width, lead, font, color, align="left"):
         y -= lead
     return y
 
-HEAD = "Llevá Betina a tu oficina"
+HEAD = "Llevá comida sana a tu oficina"
 SUB = "Snacks artesanales sin TACC, sin lácteos y sin azúcar. Comen todos, sin excepción."
 TAG = "@betinapotap.naturista"
 
@@ -63,10 +63,9 @@ def opcion_A():
     leaf(c, S/2-9, S-118, 30, 10, 90, TEAL)
     c.setFillColor(col(TEALD)); c.setFont("Sans", 20)
     c.drawCentredString(S/2, S-150, "B E T I N A   P O T A P")
-    photo_ph(c, 90, 360, S-180, 470)
-    c.setFillColor(col(FOREST)); c.setFont("Display", 54)
-    c.drawCentredString(S/2, 280, HEAD)
-    wrap(c, SUB, 130, 225, 24, S-260, 32, "Sans", INK, "center")
+    photo_ph(c, 90, 390, S-180, 460)
+    wrap(c, HEAD, 90, 320, 46, S-180, 54, "Display", FOREST, "center")
+    wrap(c, SUB, 130, 205, 24, S-260, 32, "Sans", INK, "center")
     c.setFillColor(col(GOLD)); c.setFont("SansB", 22)
     c.drawCentredString(S/2, 95, TAG)
     c.showPage(); c.save()
