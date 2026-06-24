@@ -30,6 +30,7 @@ datos del elaborador · logo oficial "Sin TACC" si está certificado.
 | **Papelera Damián** ⭐ | Carrasco 610, Floresta CABA | Genérico ya, x50 | Kraft c/ventana+zip 10×15, 11×15, 16×25, 20×30. Envío gratis CABA, retiro, Factura A/B. Tel (011) 4672-6108 / 5870-8740 |
 | **MercadoLibre** | Online | Testear con poca plata | Packs x50, varios vendedores/medidas |
 | **Naguara** | Ciudadela (despacho 24h CABA) | Logo impreso / escala | 150 mic, cert. ANMAT, personalizado desde 4.000 u, mín. $100.000+IVA |
+| **Cartokraft SRL** ⭐ (cajas a medida) | Dr. H. Vieytes 751, Villa Martelli | Caja del box a medida, SIN mínimo | Tel **(011) 4709-7005** · cartokraft.com.ar · L-V 9-13 / 14-17:30. Fabrican desde 1991 |
 | **BLF** (blf.com.ar) | Buenos Aires | Impreso a medida | Fabrican e imprimen doypack c/ventana |
 | **Bolsafilm** (bolsafilm.com.ar) | Buenos Aires | Fábrica flexibles | 55 años; pedir mínimos |
 | **Multienvases Online** / **Polinea** | Online | Genérico x50 | Doypack kraft 11×15 c/ventana+zip |

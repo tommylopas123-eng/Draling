@@ -1,8 +1,11 @@
 # Oferta B2B y precios — Betina Potap
 
-> Diseño de oferta con skills `offers` + `pricing`. Última actualización: 2026-06-23.
-> ⚠️ PRECIOS PROPUESTOS (punto de partida). Validar contra costos reales y margen
->    antes de salir a vender. Betina debe confirmar que cada combo deja ganancia.
+> Diseño de oferta con skills `offers` + `pricing`. Última actualización: 2026-06-24.
+> ✅ PRECIOS CONFIRMADOS por Betina (2026-06-24):
+>   - **Box Snacking (10 pers, 5 días):** básico solo secos **$8.000/persona** ·
+>     con frescos **$11.000/persona** (por semana).
+>   - **Catering / eventos:** **a medida** (el costo sale al armar el evento).
+>   - **Coffee Break** y **Welcome Kit:** todavía sin armar → **precio a confirmar**.
 
 ## Principio (ecuación de valor)
 No vendemos "comida". Vendemos: **un equipo cuidado y contento, sin que nadie quede
@@ -17,8 +20,10 @@ afuera (celíacos/veganos/diabéticos), sin esfuerzo para RRHH, y con imagen hea
 Abastecimiento semanal o quincenal de la cocina de la empresa.
 - **Contenido (por persona/semana):** 1 barrita + 1 bomboncito o crocante dulce +
   porción de garbanzos tostados o crackers + 1 opción dulce sin azúcar.
-- **Modelo:** suscripción por cantidad de personas (mínimo 8).
-- **Precio propuesto:** **$8.000 por persona / semana** (ej: 15 personas = $120.000/sem).
+- **Modelo:** suscripción por cantidad de personas (mínimo 10, 5 días = 50 colaciones).
+- **PRECIO CONFIRMADO:** básico solo secos **$8.000 por persona/semana** ·
+  con frescos (+ brownie y budín) **$11.000 por persona/semana**.
+  (Ej: 10 personas = $80.000/sem básico · $110.000/sem con frescos.)
 - **Por qué recurrente:** ingreso predecible, logística simple, fideliza.
 - **Variante quincenal** para equipos chicos.
 
@@ -26,21 +31,20 @@ Abastecimiento semanal o quincenal de la cocina de la empresa.
 Para reuniones, capacitaciones o desayunos de equipo.
 - **Contenido (10–12 personas):** 1 budín + 1 granola 500 g + 8 pancakes de banana
   y cacao + 8 dátiles rellenos + blend de hierbas para mate.
-- **Precio propuesto:** **$58.000** (10–12 personas).
-- **Add-on:** café/infusiones, +bandeja salada (crackers + hummus + garbanzos) $15.000.
+- **Precio: a confirmar** (Betina todavía no armó esta caja; el $58.000 era propuesto).
+- **Add-on:** café/infusiones, +bandeja salada (crackers + hummus + garbanzos).
 
 ### 🥉 3. Welcome Kit / Regalo Corporativo (ticket alto, estacional)
 Caja regalo premium para empleados nuevos, fin de año o clientes.
 - **Contenido (individual):** barritas + bomboncitos + granola chica + crackers +
   brownie + blend de mate, en caja con tarjeta y branding de la empresa.
-- **Precio propuesto:** **$22.000 por kit** (desde 10 unidades).
-  Versión premium (más productos + packaging especial): **$32.000**.
+- **Precio: a confirmar** (Betina todavía no armó el kit; el $22.000/$32.000 era propuesto).
 - **Branding de la empresa:** incluido desde 20 unidades.
 
 ### 4. Día Saludable (catering de almuerzo — puntual, NO comedor diario)
 Las comidas del Menú Proteico para un evento o un "día sano" del equipo.
 - **Contenido:** comida proteica a elección (bowls, wraps, pollo, pescado) + colación.
-- **Precio propuesto:** **$15.000 por persona** (mínimo 10), según platos elegidos.
+- **Precio: a medida** (el costo se calcula al armar cada evento, según platos y cantidad).
 - **Posicionamiento:** experiencia puntual, no reemplaza al proveedor de viandas diario.
 
 ## Componentes de oferta (para que convierta)

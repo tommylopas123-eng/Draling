@@ -23,7 +23,9 @@
 - Manawa: coffee break libre, comunidad creativa (Palermo Soho).
 - Huerta: huerta orgánica en el rooftop, comunidad de triple impacto, afters mensuales.
 - Urban Station: ya ofrecen café/té/snacks/frutas sin cargo (vibe coffee shop).
-- Usina / Hit / WeWork: sin gancho público específico → genérico.
+- Usina Cowork: jardines verdes ("bosque encantado"), cafetería con snacks incluidos, auditorio para meetups/eventos.
+- Hit Cowork: 7 sedes en BA, terrazas lindas, coffee shop en todas las sedes, eventos de networking.
+- WeWork: marca grande → genérico formal por formulario.
 - Oficina Burman: productora en Colegiales (cerca), cine/series → catering de rodaje.
 - Primo: productora publicitaria grande → catering set + oficina.
 - Pragmativa: agencia B2B en Palermo, reuniones con clientes → coffee break.
