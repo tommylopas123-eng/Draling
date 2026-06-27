@@ -9,7 +9,7 @@
 > Si abrís un chat nuevo: leé `CLAUDE.md` y esta carpeta `betina-potap/` para
 > ponerte al día. Estado al 2026-06-23: ya está hecho todo el análisis, catálogo,
 > oferta, propuesta, outreach, contenido, landing, catálogo PDF diseñado y la lista
-> de prospectos. Todo también en Google Drive (carpeta replai > Betina Potap empresa).
+> de prospectos. Todo también en Google Drive (carpeta draling > Betina Potap empresa).
 
 ### Próximos pasos concretos (en orden)
 1. **Completar contactos de coworkings (Prioridad 1)** → entrar a la web/IG de cada
@@ -24,7 +24,7 @@
 
 ### Recordatorios de entrega (ver CLAUDE.md)
 - Material → PDF. Datos/planillas → Google Sheets en la carpeta de Drive.
-- Google Drive: carpeta "replai" > "Betina Potap empresa" (cuenta tommylopas123@gmail.com).
+- Google Drive: carpeta "draling" > "Betina Potap empresa" (cuenta tommylopas123@gmail.com).
 - Las skills (marketing, canvas-design) están en `.claude/skills/` y se reactivan al iniciar sesión.
 
 ---
@@ -113,4 +113,4 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - Diferencial clave (de la Fase 5): "sin TACC" solo NO alcanza (Social Lunch ya lo
   tiene). El diferencial real es: artesanal + sin gluten/lácteos/azúcar TODO junto +
   inclusión + boxes a medida. Canal: snacking/coffee/regalos, NO almuerzo diario.
-- Todo lo de IA/automatización para Replai queda para más adelante (ver `VISION.md`).
+- Todo lo de IA/automatización para Draling queda para más adelante (ver `VISION.md`).

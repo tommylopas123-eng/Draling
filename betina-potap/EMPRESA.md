@@ -1,7 +1,7 @@
 # Betina Potap — Alimentos Naturales
 
 > Información central del negocio. Última actualización: 2026-06-23.
-> Este es el primer proyecto de Replai: ayudar a este negocio a vender B2B.
+> Este es el primer proyecto de Draling: ayudar a este negocio a vender B2B.
 
 ## Datos generales
 

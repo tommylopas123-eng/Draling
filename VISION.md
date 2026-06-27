@@ -1,10 +1,10 @@
-# Replai — Visión de la empresa
+# Draling — Visión de la empresa
 
-> Documento central. Guarda la idea fundacional de Replai. Última actualización: 2026-06-23.
+> Documento central. Guarda la idea fundacional de Draling. Última actualización: 2026-06-23.
 
-## ¿Qué es Replai?
+## ¿Qué es Draling?
 
-Replai es una empresa (proyecto a futuro) que ofrecerá una plataforma con
+Draling es una empresa (proyecto a futuro) que ofrecerá una plataforma con
 **distintas categorías** donde otras empresas puedan **automatizar sus tareas
 diarias mediante inteligencia artificial**.
 

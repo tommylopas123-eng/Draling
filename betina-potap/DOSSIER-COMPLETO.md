@@ -20,7 +20,7 @@
 
 
 > Información central del negocio. Última actualización: 2026-06-23.
-> Este es el primer proyecto de Replai: ayudar a este negocio a vender B2B.
+> Este es el primer proyecto de Draling: ayudar a este negocio a vender B2B.
 
 ## Datos generales
 
@@ -1105,7 +1105,7 @@ empezando por un estudio de mercado y un catálogo orientado a empresas.
 - Diferencial clave (de la Fase 5): "sin TACC" solo NO alcanza (Social Lunch ya lo
   tiene). El diferencial real es: artesanal + sin gluten/lácteos/azúcar TODO junto +
   inclusión + boxes a medida. Canal: snacking/coffee/regalos, NO almuerzo diario.
-- Todo lo de IA/automatización para Replai queda para más adelante (ver `VISION.md`).
+- Todo lo de IA/automatización para Draling queda para más adelante (ver `VISION.md`).
 
 
 ---

@@ -1,7 +1,7 @@
 # Top 20 Skills recomendadas (Claude Code / Agent Skills)
 
 > Investigación de skills de la comunidad en GitHub, filtradas para lo que estamos
-> haciendo: (a) ayudar a Betina Potap a vender B2B y (b) construir Replai a futuro.
+> haciendo: (a) ayudar a Betina Potap a vender B2B y (b) construir Draling a futuro.
 > Última actualización: 2026-06-23.
 
 > ✅ INSTALADAS: el 2026-06-23 se revisaron e instalaron 17 skills enfocadas en
@@ -33,14 +33,14 @@
 | 14 | **dossier** / market research | alirezarezvani/claude-skills | Armar informes de mercado/empresas objetivo |
 | 15 | **launch-strategy** | alirezarezvani/claude-skills | Lanzar la propuesta B2B al mercado |
 
-## Para construir Replai (mediano plazo)
+## Para construir Draling (mediano plazo)
 
 | # | Skill | Repo | Para qué nos sirve |
 |---|-------|------|--------------------|
-| 16 | **pmf-strategy** (product-market fit) | kostja94/marketing-skills | Validar el producto Replai con clientes reales |
-| 17 | **product-manager** | alirezarezvani/claude-skills | Definir features y roadmap de Replai |
-| 18 | **homepage-generator** | kostja94/marketing-skills | Homepage de Replai |
-| 19 | **process-mapper** | alirezarezvani/claude-skills | Mapear tareas a automatizar (core de Replai) |
+| 16 | **pmf-strategy** (product-market fit) | kostja94/marketing-skills | Validar el producto Draling con clientes reales |
+| 17 | **product-manager** | alirezarezvani/claude-skills | Definir features y roadmap de Draling |
+| 18 | **homepage-generator** | kostja94/marketing-skills | Homepage de Draling |
+| 19 | **process-mapper** | alirezarezvani/claude-skills | Mapear tareas a automatizar (core de Draling) |
 | 20 | **indie-hacker-strategy** / founder-mode | kostja94 · alirezarezvani | Estrategia de fundador / negocio bootstrapping |
 
 ## Repos fuente (catálogos de skills)
