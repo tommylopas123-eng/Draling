@@ -37,19 +37,20 @@ def etiqueta(p):
     c.setPageSize((LW, LH))
     c.setFillColor(col(CREAM)); c.rect(0, 0, LW, LH, fill=1, stroke=0)
     c.setStrokeColor(col(SAGE)); c.setLineWidth(0.6); c.rect(2*mm, 2*mm, LW-4*mm, LH-4*mm, fill=0, stroke=1)
-    c.setFillColor(col(FOREST)); c.setFont("Display", 11); c.drawCentredString(LW/2, LH-7*mm, "Betina Potap")
+    c.setFillColor(col(FOREST)); c.setFont("Display", 11); c.drawCentredString(LW/2, LH-6.5*mm, "Betina Potap")
+    c.setFillColor(col(TEALD)); c.setFont("Sans", 4.6); c.drawCentredString(LW/2, LH-9.5*mm, "A L I M E N T O S   N A T U R A L E S")
     # nombre (achica si es largo)
     nsz = 7.5
     while pdfmetrics.stringWidth(p["nombre"], "Serif", nsz) > LW-7*mm and nsz > 5.5:
         nsz -= 0.3
-    c.setFillColor(col(FOREST)); c.setFont("Serif", nsz); c.drawCentredString(LW/2, LH-11.5*mm, p["nombre"])
+    c.setFillColor(col(FOREST)); c.setFont("Serif", nsz); c.drawCentredString(LW/2, LH-13*mm, p["nombre"])
     claims = " · ".join(p.get("claims", DEFAULT_CLAIMS))
-    c.setFillColor(col(GOLD)); c.setFont("SansB", 5); c.drawCentredString(LW/2, LH-15*mm, claims)
-    c.setStrokeColor(col(SAGE)); c.setLineWidth(0.4); c.line(4*mm, LH-16.5*mm, LW-4*mm, LH-16.5*mm)
+    c.setFillColor(col(GOLD)); c.setFont("SansB", 5); c.drawCentredString(LW/2, LH-16.3*mm, claims)
+    c.setStrokeColor(col(SAGE)); c.setLineWidth(0.4); c.line(4*mm, LH-17.6*mm, LW-4*mm, LH-17.6*mm)
     ing = "Ingredientes: " + p["ingredientes"]
     nlines = len(simpleSplit(ing, "Sans", 5, LW-8*mm))
     isz, ild = (5, 5.6) if nlines <= 3 else (4.4, 5.0)
-    y = wrap(ing, 4*mm, LH-19.5*mm, isz, LW-8*mm, ild, "Sans", INK) - 1.5
+    y = wrap(ing, 4*mm, LH-20.4*mm, isz, LW-8*mm, ild, "Sans", INK) - 1.5
     c.setFont("Sans", 4.6); c.setFillColor(col(INK))
     c.drawString(4*mm, y, "Sin conservantes. Conservar en lugar fresco y seco."); y -= 5.2
     c.drawString(4*mm, y, "Elaborado por Betina Potap. Colegiales. CABA."); y -= 5.2
