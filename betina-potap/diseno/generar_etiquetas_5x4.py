@@ -54,14 +54,14 @@ def etiqueta(p):
     nsz = 7.5
     while pdfmetrics.stringWidth(p["nombre"], "Serif", nsz) > LW-7*mm and nsz > 5.5:
         nsz -= 0.3
-    c.setFillColor(col(FOREST)); c.setFont("Serif", nsz); c.drawCentredString(LW/2, LH-14.8*mm, p["nombre"])
+    c.setFillColor(col(FOREST)); c.setFont("Serif", nsz); c.drawCentredString(LW/2, LH-17.5*mm, p["nombre"])
     claims = " · ".join(p.get("claims", DEFAULT_CLAIMS))
-    c.setFillColor(col(GOLD)); c.setFont("SansB", 5); c.drawCentredString(LW/2, LH-17.6*mm, claims)
-    c.setStrokeColor(col(SAGE)); c.setLineWidth(0.4); c.line(4*mm, LH-18.9*mm, LW-4*mm, LH-18.9*mm)
+    c.setFillColor(col(GOLD)); c.setFont("SansB", 5); c.drawCentredString(LW/2, LH-20.3*mm, claims)
+    c.setStrokeColor(col(SAGE)); c.setLineWidth(0.4); c.line(4*mm, LH-21.6*mm, LW-4*mm, LH-21.6*mm)
     ing = "Ingredientes: " + p["ingredientes"]
     nlines = len(simpleSplit(ing, "Sans", 5, LW-8*mm))
     isz, ild = (5, 5.4) if nlines <= 3 else (4.4, 4.9)
-    y = wrap(ing, 4*mm, LH-21.5*mm, isz, LW-8*mm, ild, "Sans", INK) - 2
+    y = wrap(ing, 4*mm, LH-24.2*mm, isz, LW-8*mm, ild, "Sans", INK) - 2
     c.setFont("Sans", 4.6); c.setFillColor(col(INK))
     c.drawString(4*mm, y, "Sin conservantes. Conservar en lugar fresco y seco."); y -= 5.2
     c.drawString(4*mm, y, "Elaborado por Betina Potap. Colegiales. CABA."); y -= 5.2
