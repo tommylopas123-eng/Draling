@@ -119,6 +119,6 @@ def tarjeta():
 
 for p in PRODUCTOS:
     etiqueta(p)
-tarjeta()
+# tarjeta()  # la tarjeta del box va aparte, no en el PDF de etiquetas
 c.save()
-print(f"Generado: Etiquetas-Betina-Potap.pdf ({len(PRODUCTOS)} etiquetas + tarjeta)")
+print(f"Generado: Etiquetas-Betina-Potap.pdf ({len(PRODUCTOS)} etiquetas)")
