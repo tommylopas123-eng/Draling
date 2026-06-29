@@ -1,35 +1,68 @@
-# Mensajes personalizados para contactar (B2B)
-> Fuente de los mensajes. El doc para usar está en Drive (Betina Potap empresa):
-> "Mensajes para contactar - Betina Potap (personalizados)".
-> Skills: competitor-profiling (research) + cold-email. Última actualización: 2026-06-24.
-> Cada mensaje tiene un gancho REAL investigado de cada lugar. Donde no había info
-> pública específica, se marca como genérico (no se inventó nada).
+# Mensajes para contactar empresas (B2B) — Betina Potap
+> Última actualización: 2026-06-29.
+> Coworkings → DM de Instagram. Productoras/agencias/formales → mail.
+> Ritmo: 10-15 por día (cuenta nueva). No mandar catálogo en el 1er mensaje.
 
-## Cómo usar
-- Coworkings → DM de Instagram. Productoras/agencias/formales → mail.
-- Personalizar el nombre. No copiar todos iguales (ya están variados → evita bloqueos).
-- Ritmo: 10-15 DMs/día (cuenta nueva). NO mandar catálogo en el 1er mensaje.
-- Seguimiento a los 3-4 días.
+---
 
-## Ganchos reales usados (resumen)
-- Belephant: taller de marketing/redes semanal para la comunidad.
-- Ronda: patios/terrazas al aire libre, "sentirse como en casa", after office.
-- Coreworks: cafetería + parrillas + espacios verdes + eventos de networking (Núñez).
-- Join: +30 espacios con áreas de relax (info general).
-- Working&Co: "Working Moments" — desayunos saludables, frutas diarias, after office.
-- Polo DOT: ecosistema tech/fintech (Pomelo, Ripio, Geopagos) + eventos/demos.
-- La Maquinita: desayunos con frutas, clases de cocina, eco-friendly.
-- AreaTres: primer coworking del país, "más saludable y creativo", eventos #A3Global.
-- Manawa: coffee break libre, comunidad creativa (Palermo Soho).
-- Huerta: huerta orgánica en el rooftop, comunidad de triple impacto, afters mensuales.
-- Urban Station: ya ofrecen café/té/snacks/frutas sin cargo (vibe coffee shop).
-- Usina Cowork: jardines verdes ("bosque encantado"), cafetería con snacks incluidos, auditorio para meetups/eventos.
-- Hit Cowork: 7 sedes en BA, terrazas lindas, coffee shop en todas las sedes, eventos de networking.
-- WeWork: marca grande → genérico formal por formulario.
-- Oficina Burman: productora en Colegiales (cerca), cine/series → catering de rodaje.
-- Primo: productora publicitaria grande → catering set + oficina.
-- Pragmativa: agencia B2B en Palermo, reuniones con clientes → coffee break.
-- Cayo: agencia creativa (moda), Palermo. BDG: agencia marketing/comunicación.
+## ✅ MENSAJE PREDETERMINADO (plantilla)
+> Tono formal-cálido, enfocado en SALUD y BIENESTAR (no en patologías). Nombra las 4
+> opciones del catálogo. Por cada empresa se cambia solo el [GANCHO].
 
-> El texto completo de cada mensaje está en el Google Doc de Drive (es lo que se usa
-> para mandar). Acá queda el registro de los ganchos para no perderlos.
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida
+> natural y saludable en Colegiales. **[GANCHO de la empresa]**, y me pareció una buena
+> oportunidad para acercarles una propuesta pensada para cuidar la alimentación del equipo.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • **Box Snacking Semanal** para la oficina
+> • **Box Coffee Break** para reuniones y encuentros
+> • **Welcome Kit / Regalo Corporativo**
+> • **Catering** para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a
+> que el equipo coma mejor, con más energía y bienestar durante la jornada. Si les
+> interesa, con gusto les acerco una muestra sin compromiso para que la conozcan.
+> ¡Quedo a disposición!
+
+**Mensaje 2 (cuando responden con interés):**
+> ¡Buenísimo! Les paso el catálogo con las opciones y coordinamos la muestra.
+> ¿Cuántos son y qué día les queda cómodo? *(adjuntar catálogo PDF)*
+
+**Seguimiento (a los 3-4 días):**
+> Hola, ¿cómo están? Les escribo de nuevo por si se traspapeló el mensaje. La muestra
+> sigue en pie cuando quieran probar. ¿Les viene bien esta semana?
+
+---
+
+## Coworkings — gancho de cada uno (para reemplazar [GANCHO])
+
+### 1. Belephant — IG @belephant.co  ✅ (versión final guardada)
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida
+> natural y saludable en Colegiales. Vi que todas las semanas organizan el taller de
+> redes y marketing para su comunidad, y me pareció una buena oportunidad para acercarles
+> una propuesta pensada para cuidar la alimentación del equipo.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros (ideal para el taller)
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a
+> que el equipo coma mejor, con más energía y bienestar durante la jornada. Si les
+> interesa, con gusto les acerco una muestra sin compromiso para que la conozcan.
+> ¡Quedo a disposición!
+
+### Ganchos para los demás (reemplazar en la plantilla)
+- **Ronda Coworking** (@ronda.coworking): "Vi que tienen patios y terrazas y mucha onda de comunidad, con after office y eventos"
+- **Coreworks** (@coreworks.ar): "Vi que en Núñez tienen cafetería y organizan eventos de networking"
+- **Join Coworking** (@joincoworking): "Vi que tienen áreas de relax y encuentros para la comunidad"
+- **Working&Co** (@workingandcoar): "Vi que hacen los 'Working Moments' con desayunos saludables y fruta para la comunidad"
+- **La Maquinita** (@lamaquinitaco): "Vi que hacen desayunos con frutas, clases de cocina y cuidan el lado eco-friendly"
+- **AreaTres** (@areatres): "Sé que son un emblema del ecosistema emprendedor y que organizan eventos como #A3Global"
+- **Manawa** (@manawacoworking): "Vi que tienen coffee break libre para la comunidad en Palermo Soho"
+- **Huerta** (@huertacoworking): "Vi que tienen una huerta orgánica en la terraza y una comunidad de triple impacto"
+- **Urban Station** (@urbanstation): "Vi que ofrecen café, té y snacks para quienes trabajan ahí"
+
+> Nota: confirmar el @ exacto de cada uno buscando el nombre en Instagram antes de enviar.
+> Productoras/agencias y el gancho de cada una: ver el Google Doc de mensajes (Drive).
