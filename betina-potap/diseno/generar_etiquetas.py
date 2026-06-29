@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 """
-Genera la ETIQUETA de producto y la TARJETA del box para Betina Potap.
-Estética "Jardín Sereno". Salida: Etiquetas-y-Tarjeta-Betina-Potap.pdf
+Genera las ETIQUETAS de producto (una por cada uno) + la TARJETA del box.
+Estética "Jardín Sereno". Salida: Etiquetas-Betina-Potap.pdf (1 etiqueta por página + tarjeta).
 Uso: cd betina-potap && python3 diseno/generar_etiquetas.py
-Requiere: reportlab. Fuentes en .claude/skills/canvas-design/canvas-fonts.
 
-NOTA: La etiqueta usa "Crackers" como EJEMPLO. Para cada producto hay que cambiar
-el nombre, los ingredientes y el peso. Vencimiento y lote se completan por tanda
-(se imprimen en blanco para escribir a mano, o se ajustan acá).
+⚠️ BORRADOR: los ingredientes y el peso de cada producto vienen del catálogo y hay que
+CONFIRMARLOS con Betina (lista completa real + presentación). Vto y lote se completan por tanda.
+Para editar: cambiá la lista PRODUCTOS de abajo (nombre, ingredientes, peso).
 """
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
@@ -26,12 +25,33 @@ CREAM = "#F6F2E9"; FOREST = "#22473C"; TEAL = "#2C8A82"; TEALD = "#1C5E57"
 SAGE = "#9DBDAE"; GOLD = "#BE9E55"; INK = "#34362F"
 def col(h): return HexColor(h)
 
-c = canvas.Canvas("Etiquetas-y-Tarjeta-Betina-Potap.pdf")
+# ====== EDITAR ACÁ: un dict por producto (BORRADOR — confirmar con Betina) ======
+PRODUCTOS = [
+    {"nombre": "Crackers de semillas y orégano",
+     "ingredientes": "harina de garbanzos, semillas de lino, sésamo y girasol, orégano, aceite de oliva y sal marina.",
+     "peso": "250 g"},
+    {"nombre": "Barritas de dátil, maní y cacao",
+     "ingredientes": "dátiles, maní, arroz inflado y cacao amargo.",
+     "peso": "unidad (40 g aprox.)"},
+    {"nombre": "Granola natural",
+     "ingredientes": "frutos secos, semillas, coco rallado, banana y miel.",
+     "peso": "250 g"},
+    {"nombre": "Dátiles rellenos",
+     "ingredientes": "dátiles, pasta de maní, chocolate 80% y sal marina.",
+     "peso": "4 unidades"},
+    {"nombre": "Garbanzos tostados",
+     "ingredientes": "garbanzos, aceite, especias y sal marina.",
+     "peso": "100 g"},
+    {"nombre": "Bomboncitos de dátil y cacao",
+     "ingredientes": "dátiles, almendras y cacao amargo.",
+     "peso": "4 unidades"},
+]
 
-def leaf(x, y, length, wid, ang, color, alpha=1):
+c = canvas.Canvas("Etiquetas-Betina-Potap.pdf")
+
+def leaf(x, y, length, wid, ang, color):
     c.saveState(); c.translate(x, y); c.rotate(ang)
     c.setFillColor(col(color)); c.setStrokeColor(col(color)); c.setLineWidth(0.5)
-    if alpha < 1: c.setFillAlpha(alpha)
     p = c.beginPath(); p.moveTo(0, 0)
     p.curveTo(length*0.35, wid, length*0.7, wid, length, 0)
     p.curveTo(length*0.7, -wid, length*0.35, -wid, 0, 0)
@@ -39,59 +59,54 @@ def leaf(x, y, length, wid, ang, color, alpha=1):
     c.setStrokeColor(col(CREAM)); c.setLineWidth(0.4); c.line(length*0.06, 0, length*0.9, 0)
     c.restoreState()
 
-def para(txt, x, y, size, width, leading, font, color, align="left"):
+def wrap(txt, x, y, size, width, lead, font, color, align="left"):
     c.setFont(font, size); c.setFillColor(col(color))
-    for line in simpleSplit(txt, font, size, width):
-        if align == "center": c.drawCentredString(x + width/2, y, line)
-        else: c.drawString(x, y, line)
-        y -= leading
+    for ln in simpleSplit(txt, font, size, width):
+        if align == "center": c.drawCentredString(x + width/2, y, ln)
+        else: c.drawString(x, y, ln)
+        y -= lead
     return y
 
-# ---------- ETIQUETA DE PRODUCTO (90 x 65 mm) ----------
-LW, LH = 90*mm, 65*mm
-c.setPageSize((LW, LH))
-c.setFillColor(col(CREAM)); c.rect(0, 0, LW, LH, fill=1, stroke=0)
-c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(3*mm, 3*mm, LW-6*mm, LH-6*mm, fill=0, stroke=1)
-# cabecera marca
-leaf(LW/2 - 4, LH-12*mm, 8, 2.6, 90, TEAL)
-c.setFillColor(col(FOREST)); c.setFont("Display", 19); c.drawCentredString(LW/2, LH-21*mm, "Betina Potap")
-c.setFillColor(col(TEALD)); c.setFont("Sans", 6.5)
-c.drawCentredString(LW/2, LH-25*mm, "A L I M E N T O S   N A T U R A L E S")
-# producto (EJEMPLO)
-c.setFillColor(col(FOREST)); c.setFont("Serif", 12); c.drawCentredString(LW/2, LH-33*mm, "Crackers de semillas y orégano")
-# claims
-c.setFillColor(col(GOLD)); c.setFont("SansB", 7.5)
-c.drawCentredString(LW/2, LH-38*mm, "SIN GLUTEN  ·  SIN LÁCTEOS  ·  SIN AZÚCAR")
-c.setStrokeColor(col(SAGE)); c.setLineWidth(0.5); c.line(8*mm, LH-41*mm, LW-8*mm, LH-41*mm)
-# info obligatoria
-y = LH - 45*mm
-y = para("Ingredientes: harina de garbanzos, semillas de lino, sésamo y girasol, "
-         "aceite de oliva, orégano y sal marina.", 8*mm, y, 6.5, LW-16*mm, 8, "Sans", INK) - 1
-c.setFont("SansB", 6.5); c.setFillColor(col(INK)); c.drawString(8*mm, y, "Peso neto: 250 g")
-c.setFont("Sans", 6.5); c.drawRightString(LW-8*mm, y, "Sin conservantes · conservar en lugar fresco y seco")
-y -= 8
-c.setFont("Sans", 6.5); c.drawString(8*mm, y, "Elaborado por Betina Potap — Colegiales, CABA. Factura C (monotributo).")
-y -= 8
-c.setFont("Sans", 6.5); c.drawString(8*mm, y, "Vto: ___ / ___ / ___        Lote: __________")
-# pie contacto
-c.setFillColor(col(TEALD)); c.setFont("SansB", 6.5)
-c.drawCentredString(LW/2, 6*mm, "@betinapotap.naturista   ·   WhatsApp 11 6629 3150")
-c.showPage()
+def etiqueta(p):
+    LW, LH = 90*mm, 65*mm
+    c.setPageSize((LW, LH))
+    c.setFillColor(col(CREAM)); c.rect(0, 0, LW, LH, fill=1, stroke=0)
+    c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(3*mm, 3*mm, LW-6*mm, LH-6*mm, fill=0, stroke=1)
+    leaf(LW/2 - 4, LH-12*mm, 8, 2.6, 90, TEAL)
+    c.setFillColor(col(FOREST)); c.setFont("Display", 19); c.drawCentredString(LW/2, LH-21*mm, "Betina Potap")
+    c.setFillColor(col(TEALD)); c.setFont("Sans", 6.5)
+    c.drawCentredString(LW/2, LH-25*mm, "A L I M E N T O S   N A T U R A L E S")
+    c.setFillColor(col(FOREST)); c.setFont("Serif", 12); c.drawCentredString(LW/2, LH-33*mm, p["nombre"])
+    c.setFillColor(col(GOLD)); c.setFont("SansB", 7.5)
+    c.drawCentredString(LW/2, LH-38*mm, "SIN GLUTEN  ·  SIN LÁCTEOS  ·  SIN AZÚCAR")
+    c.setStrokeColor(col(SAGE)); c.setLineWidth(0.5); c.line(8*mm, LH-41*mm, LW-8*mm, LH-41*mm)
+    y = LH - 43*mm
+    y = wrap("Ingredientes: " + p["ingredientes"], 8*mm, y, 7, LW-16*mm, 9, "Sans", INK) - 5
+    c.setFont("Sans", 7); c.setFillColor(col(INK))
+    c.drawString(8*mm, y, "Sin conservantes · conservar en lugar fresco y seco."); y -= 9.5
+    c.drawString(8*mm, y, "Elaborado por Betina Potap. Colegiales. CABA."); y -= 9.5
+    c.drawString(8*mm, y, "Fecha de elaboración: ___ / ___ / ___")
+    c.setFillColor(col(TEALD)); c.setFont("SansB", 6.5)
+    c.drawCentredString(LW/2, 4.5*mm, "@betinapotap.naturista   ·   WhatsApp 11 6629 3150")
+    c.showPage()
 
-# ---------- TARJETA DEL BOX (90 x 55 mm) ----------
-TW, TH = 90*mm, 55*mm
-c.setPageSize((TW, TH))
-c.setFillColor(col(FOREST)); c.rect(0, 0, TW, TH, fill=1, stroke=0)
-c.setStrokeColor(col(SAGE)); c.setLineWidth(0.7); c.setStrokeAlpha(0.5)
-c.rect(3*mm, 3*mm, TW-6*mm, TH-6*mm, fill=0, stroke=1); c.setStrokeAlpha(1)
-leaf(TW/2 - 5, TH-12*mm, 10, 3.2, 90, GOLD)
-c.setFillColor(col(CREAM)); c.setFont("Script", 22); c.drawCentredString(TW/2, TH-23*mm, "¡Gracias!")
-c.setFillColor(col(CREAM)); c.setFont("Serif", 11); c.drawCentredString(TW/2, TH-31*mm, "Hecho a mano para tu equipo")
-para("Comida natural, sin gluten, sin lácteos y sin azúcar. "
-     "Para que coman todos, sin que nadie quede afuera.", 10*mm, TH-37*mm, 7.5, TW-20*mm, 9.5, "Sans", SAGE, "center")
-c.setFillColor(col(GOLD)); c.setFont("SansB", 7)
-c.drawCentredString(TW/2, 7*mm, "@betinapotap.naturista   ·   11 6629 3150")
-c.showPage()
+def tarjeta():
+    TW, TH = 90*mm, 55*mm
+    c.setPageSize((TW, TH))
+    c.setFillColor(col(FOREST)); c.rect(0, 0, TW, TH, fill=1, stroke=0)
+    c.setStrokeColor(col(SAGE)); c.setLineWidth(0.7); c.setStrokeAlpha(0.5)
+    c.rect(3*mm, 3*mm, TW-6*mm, TH-6*mm, fill=0, stroke=1); c.setStrokeAlpha(1)
+    leaf(TW/2 - 5, TH-12*mm, 10, 3.2, 90, GOLD)
+    c.setFillColor(col(CREAM)); c.setFont("Script", 22); c.drawCentredString(TW/2, TH-23*mm, "¡Gracias!")
+    c.setFillColor(col(CREAM)); c.setFont("Serif", 11); c.drawCentredString(TW/2, TH-31*mm, "Hecho a mano para tu equipo")
+    wrap("Comida natural, sin gluten, sin lácteos y sin azúcar. Para que coman todos, sin que nadie quede afuera.",
+         10*mm, TH-37*mm, 7.5, TW-20*mm, 9.5, "Sans", SAGE, "center")
+    c.setFillColor(col(GOLD)); c.setFont("SansB", 7)
+    c.drawCentredString(TW/2, 7*mm, "@betinapotap.naturista   ·   11 6629 3150")
+    c.showPage()
 
+for p in PRODUCTOS:
+    etiqueta(p)
+tarjeta()
 c.save()
-print("Generado: Etiquetas-y-Tarjeta-Betina-Potap.pdf")
+print(f"Generado: Etiquetas-Betina-Potap.pdf ({len(PRODUCTOS)} etiquetas + tarjeta)")
