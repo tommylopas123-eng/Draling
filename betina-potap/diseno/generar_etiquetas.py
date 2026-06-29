@@ -29,7 +29,7 @@ DEFAULT_CLAIMS = ["SIN GLUTEN", "SIN LÁCTEOS", "SIN AZÚCAR"]
 PRODUCTOS = [
     {"nombre": "Frutos secos activados", "ingredientes": "almendras, nueces, castañas, semillas de calabaza, girasol y sal marina."},
     {"nombre": "Bolitas de dátiles", "ingredientes": "dátiles, almendras, cacao amargo y coco rallado."},
-    {"nombre": "Cookies de avena", "ingredientes": "avena, dátiles, huevo, aceite y naranja."},
+    {"nombre": "Cookies de avena", "ingredientes": "avena sin TACC, dátiles, huevo, aceite y naranja."},
     {"nombre": "Muffins de chocolate", "ingredientes": "harina de almendras, cacao amargo, dátiles, pasta de maní y huevo."},
     {"nombre": "Alfajor de cacao y dátiles", "ingredientes": "harina de arroz, cacao amargo, polvo de hornear, aceite, esencia, leche de almendras, dátiles, pasta de maní, sal marina y coco rallado."},
     {"nombre": "Crackers de zanahoria", "ingredientes": "harina de almendras, zanahoria, chía, sal y aceite."},
