@@ -57,7 +57,8 @@
 > ¡Quedo a disposición!
 
 ### Ganchos para los demás (reemplazar en la plantilla)
-- **Ronda Coworking** (@ronda.coworking): "Vi que tienen patios y terrazas y mucha onda de comunidad, con after office y eventos"
+- **Ronda Coworking** (@ronda.coworking) ✅ VERIFICADO: casa en Belgrano con jardín de 150m², patios/terrazas al aire libre y comedor.
+  → "Me encantó su casa en Belgrano, con el jardín y los espacios al aire libre para la comunidad"
 - **Coreworks** (@coreworks.ar): "Vi que en Núñez tienen cafetería y organizan eventos de networking"
 - **Join Coworking** (@joincoworking): "Vi que tienen áreas de relax y encuentros para la comunidad"
 - **Working&Co** (@workingandcoar): "Vi que hacen los 'Working Moments' con desayunos saludables y fruta para la comunidad"
