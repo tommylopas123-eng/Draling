@@ -69,7 +69,7 @@ def etiqueta(p):
     y = LH - 44*mm
     y = wrap("Ingredientes: " + p["ingredientes"], 8*mm, y, 7, LW-16*mm, 9, "Sans", INK) - 5
     c.setFont("Sans", 7); c.setFillColor(col(INK))
-    c.drawString(8*mm, y, "Sin conservantes · conservar en lugar fresco y seco."); y -= 9.5
+    c.drawString(8*mm, y, "Sin conservantes. Conservar en lugar fresco y seco."); y -= 9.5
     c.drawString(8*mm, y, "Elaborado por Betina Potap. Colegiales. CABA."); y -= 9.5
     c.drawString(8*mm, y, "Fecha de elaboración: ___ / ___ / ___")
     c.setFillColor(col(TEALD)); c.setFont("SansB", 6.5)
