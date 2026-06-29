@@ -59,7 +59,8 @@
 ### Ganchos para los demás (reemplazar en la plantilla)
 - **Ronda Coworking** (@ronda.coworking) ✅ VERIFICADO: casa en Belgrano con jardín de 150m², patios/terrazas al aire libre y comedor.
   → "Me encantó su casa en Belgrano, con el jardín y los espacios al aire libre para la comunidad"
-- **Coreworks** (@coreworks.ar): "Vi que en Núñez tienen cafetería y organizan eventos de networking"
+- **Coreworks** (@coreworks.ar) ✅ VERIFICADO: Núñez, auditorio (120) + estudio audiovisual para eventos corporativos, espacios de relax/balcones, actividades para la comunidad.
+  → "Vi que en Núñez tienen un espacio muy lindo, con auditorio y estudio para eventos, y que organizan actividades para la comunidad" (+ en Catering: "ideal para los que organizan en el auditorio")
 - **Join Coworking** (@joincoworking): "Vi que tienen áreas de relax y encuentros para la comunidad"
 - **Working&Co** (@workingandcoar): "Vi que hacen los 'Working Moments' con desayunos saludables y fruta para la comunidad"
 - **La Maquinita** (@lamaquinitaco): "Vi que hacen desayunos con frutas, clases de cocina y cuidan el lado eco-friendly"
