@@ -63,7 +63,8 @@
   → "Vi que en Núñez tienen un espacio muy lindo, con auditorio y estudio para eventos, y que organizan actividades para la comunidad" (+ en Catering: "ideal para los que organizan en el auditorio")
 - **Join Coworking** (web joincoworking.com · ⚠️ IG SIN CONFIRMAR — buscar en Instagram): +30 espacios, oficinas, salas de reuniones y áreas de recreación, para equipos/PyMEs/freelancers.
   → "Vi que tienen un espacio grande con áreas de recreación y una comunidad de equipos y emprendedores"
-- **Working&Co** (@workingandcoar): "Vi que hacen los 'Working Moments' con desayunos saludables y fruta para la comunidad"
+- **Working&Co** (@workingandcoar) ✅ VERIFICADO: 7 sedes (Palermo/Villa Crespo/Belgrano), salones para eventos, comunidad de emprendimiento y networking. (NO usar lo de "Working Moments/desayunos" → sin confirmar.)
+  → "Vi que tienen varias sedes en la zona y salones para eventos, con una comunidad muy activa de emprendedores" (+ en Catering: "ideal para los salones")
 - **La Maquinita** (@lamaquinitaco): "Vi que hacen desayunos con frutas, clases de cocina y cuidan el lado eco-friendly"
 - **AreaTres** (@areatres): "Sé que son un emblema del ecosistema emprendedor y que organizan eventos como #A3Global"
 - **Manawa** (@manawacoworking): "Vi que tienen coffee break libre para la comunidad en Palermo Soho"
