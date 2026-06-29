@@ -36,7 +36,7 @@
 
 ## Coworkings — gancho de cada uno (para reemplazar [GANCHO])
 
-### 1. Belephant — IG @belephant.co  ✅ (versión final guardada)
+### 1. Belephant — IG @belephant_co · mail frontdesk@belephant.co · WhatsApp 11 3254-4603  ✅ (versión final guardada)
 > Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida
 > natural y saludable en Colegiales. Vi que todas las semanas organizan el taller de
 > redes y marketing para su comunidad, y me pareció una buena oportunidad para acercarles
