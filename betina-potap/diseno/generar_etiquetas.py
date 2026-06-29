@@ -65,8 +65,8 @@ def etiqueta(p):
     c.setFillColor(col(FOREST)); c.setFont("Serif", 12); c.drawCentredString(LW/2, LH-33*mm, p["nombre"])
     c.setFillColor(col(GOLD)); c.setFont("SansB", 7.5)
     c.drawCentredString(LW/2, LH-38*mm, "SIN GLUTEN  ·  SIN LÁCTEOS  ·  SIN AZÚCAR")
-    c.setStrokeColor(col(SAGE)); c.setLineWidth(0.5); c.line(8*mm, LH-41*mm, LW-8*mm, LH-41*mm)
-    y = LH - 43*mm
+    c.setStrokeColor(col(SAGE)); c.setLineWidth(0.5); c.line(8*mm, LH-40*mm, LW-8*mm, LH-40*mm)
+    y = LH - 44*mm
     y = wrap("Ingredientes: " + p["ingredientes"], 8*mm, y, 7, LW-16*mm, 9, "Sans", INK) - 5
     c.setFont("Sans", 7); c.setFillColor(col(INK))
     c.drawString(8*mm, y, "Sin conservantes · conservar en lugar fresco y seco."); y -= 9.5
