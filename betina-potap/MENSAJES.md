@@ -37,14 +37,17 @@
 ## Coworkings — gancho de cada uno (para reemplazar [GANCHO])
 
 ### 1. Belephant — IG @belephant_co · mail frontdesk@belephant.co · WhatsApp 11 3254-4603  ✅ (versión final guardada)
+> Gancho verificado: sedes en Núñez y Belgrano (cerca de Colegiales). NO usar lo del
+> "taller de redes/marketing" → no se pudo confirmar en sus canales oficiales.
+>
 > Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida
-> natural y saludable en Colegiales. Vi que todas las semanas organizan el taller de
-> redes y marketing para su comunidad, y me pareció una buena oportunidad para acercarles
-> una propuesta pensada para cuidar la alimentación del equipo.
+> natural y saludable en Colegiales. Los vengo viendo con sus espacios en Núñez y
+> Belgrano, acá cerquita, y me pareció una buena oportunidad para acercarles una propuesta
+> pensada para cuidar la alimentación de la comunidad que trabaja con ustedes.
 >
 > Trabajo con empresas a través de cuatro opciones:
 > • Box Snacking Semanal para la oficina
-> • Box Coffee Break para reuniones y encuentros (ideal para el taller)
+> • Box Coffee Break para reuniones y encuentros
 > • Welcome Kit / Regalo Corporativo
 > • Catering para eventos
 >
