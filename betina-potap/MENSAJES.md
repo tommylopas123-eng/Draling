@@ -61,7 +61,8 @@
   → "Me encantó su casa en Belgrano, con el jardín y los espacios al aire libre para la comunidad"
 - **Coreworks** (@coreworks.ar) ✅ VERIFICADO: Núñez, auditorio (120) + estudio audiovisual para eventos corporativos, espacios de relax/balcones, actividades para la comunidad.
   → "Vi que en Núñez tienen un espacio muy lindo, con auditorio y estudio para eventos, y que organizan actividades para la comunidad" (+ en Catering: "ideal para los que organizan en el auditorio")
-- **Join Coworking** (@joincoworking): "Vi que tienen áreas de relax y encuentros para la comunidad"
+- **Join Coworking** (web joincoworking.com · ⚠️ IG SIN CONFIRMAR — buscar en Instagram): +30 espacios, oficinas, salas de reuniones y áreas de recreación, para equipos/PyMEs/freelancers.
+  → "Vi que tienen un espacio grande con áreas de recreación y una comunidad de equipos y emprendedores"
 - **Working&Co** (@workingandcoar): "Vi que hacen los 'Working Moments' con desayunos saludables y fruta para la comunidad"
 - **La Maquinita** (@lamaquinitaco): "Vi que hacen desayunos con frutas, clases de cocina y cuidan el lado eco-friendly"
 - **AreaTres** (@areatres): "Sé que son un emblema del ecosistema emprendedor y que organizan eventos como #A3Global"
