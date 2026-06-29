@@ -27,24 +27,10 @@ def col(h): return HexColor(h)
 
 # ====== EDITAR ACÁ: un dict por producto (BORRADOR — confirmar con Betina) ======
 PRODUCTOS = [
-    {"nombre": "Crackers de semillas y orégano",
-     "ingredientes": "harina de garbanzos, semillas de lino, sésamo y girasol, orégano, aceite de oliva y sal marina.",
-     "peso": "250 g"},
-    {"nombre": "Barritas de dátil, maní y cacao",
-     "ingredientes": "dátiles, maní, arroz inflado y cacao amargo.",
-     "peso": "unidad (40 g aprox.)"},
-    {"nombre": "Granola natural",
-     "ingredientes": "frutos secos, semillas, coco rallado, banana y miel.",
-     "peso": "250 g"},
-    {"nombre": "Dátiles rellenos",
-     "ingredientes": "dátiles, pasta de maní, chocolate 80% y sal marina.",
-     "peso": "4 unidades"},
-    {"nombre": "Garbanzos tostados",
-     "ingredientes": "garbanzos, aceite, especias y sal marina.",
-     "peso": "100 g"},
-    {"nombre": "Bomboncitos de dátil y cacao",
-     "ingredientes": "dátiles, almendras y cacao amargo.",
-     "peso": "4 unidades"},
+    {"nombre": "Cookies de avena",
+     "ingredientes": "avena, dátiles, huevo, aceite y naranja.",
+     "peso": ""},
+    # Ir agregando acá los demás productos a medida que Betina pase los ingredientes.
 ]
 
 c = canvas.Canvas("Etiquetas-Betina-Potap.pdf")
