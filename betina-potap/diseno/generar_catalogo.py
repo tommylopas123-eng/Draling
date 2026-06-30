@@ -100,7 +100,7 @@ bg(CREAM); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(34, 34, W - 
 sprig(60, H - 120, 1.5, -20, SAGE, 0.9); sprig(W - 60, 120, 1.5, 160, SAGE, 0.9)
 center_label("ALIMENTOS NATURALES   ·   CABA", H - 150, 10.5, "Sans", TEALD, 3)
 c.setFillColor(col(FOREST)); c.setFont("Display", 58); c.drawCentredString(W / 2, H / 2 + 70, "Betina Potap")
-c.setFillColor(col(GOLD)); c.setFont("Script", 26); c.drawCentredString(W / 2, H / 2 + 30, "hecho a mano con amor y conciencia")
+c.setFillColor(col(GOLD)); c.setFont("Script", 26); c.drawCentredString(W / 2, H / 2 + 30, "hecho a mano con amor y consciencia")
 c.setStrokeColor(col(SAGE)); c.setLineWidth(1); c.line(W / 2 - 90, H / 2 - 2, W / 2 - 18, H / 2 - 2); c.line(W / 2 + 18, H / 2 - 2, W / 2 + 90, H / 2 - 2)
 leaf(W / 2, H / 2 - 11, 18, 6, 90, SAGE)  # hoja centrada (horizontal y vertical) en el divisor
 textc("Catálogo para empresas", H / 2 - 52, 20, "Serif", FOREST)
@@ -172,7 +172,7 @@ parac("Llevamos la comida de nuestro menú —proteico y naturista— a tus even
       "desayunos de equipo y “días saludables”. Todo fresco, artesanal y apto para todas las dietas: "
       "sin gluten, sin lácteos y sin azúcar. Una sola compra donde come todo el equipo, sin que nadie "
       "quede afuera de la mesa.", H - 328, 12.5, W * 0.74, 19, "Sans", INK)
-fmts = [("Almuerzos corporativos", "Para el almuerzo del equipo, al mediodía."),
+fmts = [("Almuerzos de negocios", "Para reuniones de trabajo, al mediodía."),
         ("Días saludables", "Un día sano para todo el equipo."),
         ("Eventos corporativos", "Catering a medida para tu evento.")]
 fy = H - 430; bw = (W - 112 - 40) / 3
@@ -201,14 +201,19 @@ yb = box_card("01", "Versión Seca · base",
          "alfajor de cacao con dátiles y maní, crackers de zanahoria, garbanzos crocantes, "
          "brownies, barritas de semillas y blends de mate y de té.",
          "5 unidades $9.000\n10 unidades $17.000\npor persona", H - 214, TEAL, tsize=19, dsize=11, dlead=14)
-box_card("02", "Versión Plus · fresca",
-         "Todo lo de la versión Seca más una selección de frescos del día.",
+yb2 = box_card("02", "Versión Plus · fresca",
+         "Agrandá tu box con opciones frescas.",
          "todo lo de la Seca + yogurt griego, granola, hummus, mayonesa de zanahoria y cúrcuma, "
          "fruta fresca de estación y tostis de sarraceno y almendras.",
          "5 unidades $11.000\n10 unidades $20.000\npor persona", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14)
-sprig(72, 94, 1.0, -18, SAGE, 0.5); sprig(W - 72, 94, 1.0, 198, SAGE, 0.5)
-parac("Por suscripción · se puede pausar cuando quieras · entregamos en tu oficina, de lunes a viernes.",
-      116, 11, W * 0.72, 15, "SerifI", TEALD)
+ny = yb2 - 24
+c.setFillColor(col(INK)); c.setFont("Sans", 9)
+c.drawCentredString(W / 2, ny, "5 un = 1 picoteo al día   ·   10 un = 2 colaciones al día   ·   mínimo 10 cubiertos")
+c.setFillColor(col(TEALD)); c.setFont("Sans", 9)
+c.drawCentredString(W / 2, ny - 15, "Versión Plus: 5 un = 2 frescas + 3 secas   ·   10 un = 4 frescas + 6 secas")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 11)
+c.drawCentredString(W / 2, ny - 35, "Por suscripción · se puede pausar · entregamos en tu oficina.")
+sprig(70, 46, 0.9, -18, SAGE, 0.45); sprig(W - 70, 46, 0.9, 198, SAGE, 0.45)
 c.showPage()
 
 # ---------- PÁGINA 5 — Box Coffee Break (hero + menú) ----------
@@ -239,8 +244,9 @@ bwc = 330; byc = cbot + 26
 c.setFillColor(col(TEALD)); c.roundRect(W / 2 - bwc / 2, byc, bwc, 46, 8, fill=1, stroke=0)
 c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, byc + 31, "PRECIO")
 c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, byc + 12, "$15.000 por persona")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 12.5); c.drawCentredString(W / 2, cbot - 28, "Incluye 7 unidades por persona.")
 sprig(72, 92, 1.0, -18, SAGE, 0.5); sprig(W - 72, 92, 1.0, 198, SAGE, 0.5)
-parac("Recién hecho · entregamos listo para servir · pedí tu muestra gratis.",
+parac("Recién hecho · entregamos listo para servir · sacá tu muestra gratis.",
       120, 11, W * 0.72, 15, "SerifI", TEALD); c.showPage()
 
 # ---------- PÁGINA 6 — Box Welcome Kit (hero + dos versiones) ----------
