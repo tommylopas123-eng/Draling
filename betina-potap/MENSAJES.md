@@ -69,7 +69,8 @@
   → "Vi que tienen una comunidad muy activa de 'maquineros', con desayunos, after office y hasta clases de cocina" (+ en Coffee Break: "ideal para los desayunos")
 - **AreaTres** (@areatres_workplace) ✅ VERIFICADO (handle corregido): 2 sedes Palermo, jardines y terrazas 400-600m², eventos mensuales de networking (Comunidad A3), partner de Google for Startups.
   → "Me encantaron sus espacios en Palermo, con esos jardines y terrazas, y que organizan eventos de networking para la comunidad" (+ Catering: "ideal para los encuentros de networking")
-- **Manawa** (@manawacoworking): "Vi que tienen coffee break libre para la comunidad en Palermo Soho"
+- **Manawa** (@manawacoworking) ✅ VERIFICADO: casona creativa Palermo Soho (Nicaragua 4817), 3 terrazas, cocina/comedor con comidas compartidas e infusiones libres, after-works y eventos.
+  → "Me encantó su casona creativa en Palermo Soho, con las terrazas y el comedor donde la comunidad comparte comidas"
 - **Huerta** (@huertacoworking): "Vi que tienen una huerta orgánica en la terraza y una comunidad de triple impacto"
 - **Urban Station** (@urbanstation): "Vi que ofrecen café, té y snacks para quienes trabajan ahí"
 
