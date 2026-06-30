@@ -179,25 +179,29 @@ c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, p
 c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 11, "a la medida de tu necesidad")
 center_label("PEDÍ TU PROPUESTA A MEDIDA  ·  MUESTRA GRATIS", 74, 9, "Sans", TEALD, 2.5); c.showPage()
 
-# ---------- PÁGINA 4 — Nuestras propuestas: Box Snacking (Seco / Plus) ----------
-bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 25); c.drawString(56, H - 82, "Descubrí nuestras propuestas")
-c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 108, "Empezamos con nuestro Box Snacking, en dos versiones.")
-GAP = 40
-yb = box_card("01", "Box Seco · base",
-         "Nuestro picoteo de la semana, todo seco y de larga duración. Listo para la oficina.",
+# ---------- PÁGINA 4 — Box Snacking (hero) + dos versiones (Seca / Plus) ----------
+bg(CREAM)
+center_label("NUESTRA PROPUESTA PARA EMPEZAR", H - 92, 10.5, "Sans", TEALD, 3)
+c.setFillColor(col(FOREST)); c.setFont("Display", 46); c.drawCentredString(W / 2, H - 142, "Box Snacking")
+c.setStrokeColor(col(SAGE)); c.setLineWidth(1)
+c.line(W / 2 - 92, H - 162, W / 2 - 18, H - 162); c.line(W / 2 + 18, H - 162, W / 2 + 92, H - 162)
+leaf(W / 2, H - 171, 18, 6, 90, GOLD)
+textc("Picoteo sano de la semana, en dos versiones a elección.", H - 196, 13, "SerifI", TEALD)
+GAP = 30
+yb = box_card("01", "Versión Seca · base",
+         "Todo seco y de larga duración. Listo para la cocina de tu oficina.",
          "frutos secos, bolitas de dátiles, cookies de avena, muffins de choco con dátiles, "
          "alfajor de cacao con dátiles y maní, crackers de zanahoria, garbanzos crocantes, "
          "brownies, barritas de semillas y blends de mate y de té.",
-         "5 unidades $9.000  ·  10 unidades $17.000\npor persona", H - 150, TEAL, tsize=19, dsize=11, dlead=14)
-box_card("02", "Box Plus · fresco",
-         "Todo lo del Box Seco más una selección de frescos del día.",
-         "todo el Box Seco + yogurt griego, granola, hummus, mayonesa de zanahoria y cúrcuma, "
+         "5 unidades $9.000  ·  10 unidades $17.000\npor persona", H - 214, TEAL, tsize=19, dsize=11, dlead=14)
+box_card("02", "Versión Plus · fresca",
+         "Todo lo de la versión Seca más una selección de frescos del día.",
+         "todo lo de la Seca + yogurt griego, granola, hummus, mayonesa de zanahoria y cúrcuma, "
          "fruta fresca de estación y tostis de sarraceno y almendras.",
          "5 unidades $11.000  ·  10 unidades $20.000\npor persona", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14)
-sprig(72, 102, 1.0, -18, SAGE, 0.5); sprig(W - 72, 102, 1.0, 198, SAGE, 0.5)
-c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.setStrokeAlpha(0.6); c.line(170, 150, W - 170, 150); c.setStrokeAlpha(1)
+sprig(72, 94, 1.0, -18, SAGE, 0.5); sprig(W - 72, 94, 1.0, 198, SAGE, 0.5)
 parac("Por suscripción · se puede pausar cuando quieras · entregamos en tu oficina, de lunes a viernes.",
-      126, 11, W * 0.72, 15, "SerifI", TEALD)
+      116, 11, W * 0.72, 15, "SerifI", TEALD)
 c.showPage()
 
 # ---------- PÁGINA 5 — Más propuestas: Coffee Break + Welcome Kit ----------
