@@ -172,7 +172,7 @@ parac("Llevamos la comida de nuestro menú —proteico y naturista— a tus even
       "desayunos de equipo y “días saludables”. Todo fresco, artesanal y apto para todas las dietas: "
       "sin gluten, sin lácteos y sin azúcar. Una sola compra donde come todo el equipo, sin que nadie "
       "quede afuera de la mesa.", H - 328, 12.5, W * 0.74, 19, "Sans", INK)
-fmts = [("Coffee breaks", "Para reuniones y desayunos de equipo."),
+fmts = [("Almuerzos corporativos", "Para el almuerzo del equipo, al mediodía."),
         ("Días saludables", "Un día sano para todo el equipo."),
         ("Eventos corporativos", "Catering a medida para tu evento.")]
 fy = H - 430; bw = (W - 112 - 40) / 3
@@ -180,10 +180,7 @@ for i, (t, d) in enumerate(fmts):
     x = 56 + i * (bw + 20); rrect(x, fy - 98, bw, 98, 12, CARD); leaf(x + bw / 2, fy - 30, 16, 5.5, 90, TEAL)
     c.setFillColor(col(TEALD)); c.setFont("SansB", 12); c.drawCentredString(x + bw / 2, fy - 52, t)
     para(d, x + 12, fy - 70, 9.5, bw - 24, 12, "Sans", INK, "center")
-iy = fy - 132
-c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawCentredString(W / 2, iy, "INCLUYE")
-parac("Bowls, wraps, pollo, pescado y opciones veggie, más colaciones dulces y saladas, a elección.", iy - 18, 11.5, W * 0.78, 16, "Sans", INK)
-pb_y = 150; rrect(W / 2 - 212, pb_y, 424, 74, 12, FOREST)
+pb_y = 158; rrect(W / 2 - 212, pb_y, 424, 74, 12, FOREST)
 c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, pb_y + 52, "PRESUPUESTO")
 c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 30, "Armamos el presupuesto")
 c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 11, "a la medida de tu necesidad")
