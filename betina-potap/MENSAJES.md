@@ -71,7 +71,8 @@
   → "Me encantaron sus espacios en Palermo, con esos jardines y terrazas, y que organizan eventos de networking para la comunidad" (+ Catering: "ideal para los encuentros de networking")
 - **Manawa** (@manawacoworking) ✅ VERIFICADO: casona creativa Palermo Soho (Nicaragua 4817), 3 terrazas, cocina/comedor con comidas compartidas e infusiones libres, after-works y eventos.
   → "Me encantó su casona creativa en Palermo Soho, con las terrazas y el comedor donde la comunidad comparte comidas"
-- **Huerta** (@huertacoworking): "Vi que tienen una huerta orgánica en la terraza y una comunidad de triple impacto"
+- **Huerta** (@huertacoworking) ✅ VERIFICADO: 28k seguidores, Palermo Hollywood (Dorrego 2133/Humboldt), huerta orgánica en el rooftop, comunidad de triple impacto, eventos mensuales (asados, afters, charlas, música).
+  → "Me encantó que tengan una huerta orgánica en la terraza y una comunidad de empresas de triple impacto: vamos para el mismo lado" (+ Catering: "ideal para los asados y afters")
 - **Urban Station** (@urbanstation): "Vi que ofrecen café, té y snacks para quienes trabajan ahí"
 
 > Nota: confirmar el @ exacto de cada uno buscando el nombre en Instagram antes de enviar.
