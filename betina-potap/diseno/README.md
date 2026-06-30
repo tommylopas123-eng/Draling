@@ -16,7 +16,9 @@ Genera `betina-potap/Catalogo-Comercial-Betina-Potap.pdf`.
 
 ## Cómo editarlo
 - **Precios / textos de los boxes:** en `generar_catalogo.py`, buscar las llamadas
-  `box_card(...)` (una por cada propuesta). El penúltimo argumento es el precio.
+  `box_card(...)` (una por cada propuesta). Los argumentos son, en orden:
+  número, título, descripción, qué incluye y **precio** (el 5º). El alto de cada
+  tarjeta se calcula solo según el contenido, así que no hay que tocar medidas.
 - **Contacto:** buscar `11 6629 3150` y `@betinapotap.naturista`.
 - **Colores / fuentes:** variables al principio del script (CREAM, FOREST, TEAL, etc.)
   y el bloque `reg(...)` con las tipografías.
