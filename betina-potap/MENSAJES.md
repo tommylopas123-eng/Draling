@@ -65,7 +65,8 @@
   → "Vi que tienen un espacio grande con áreas de recreación y una comunidad de equipos y emprendedores"
 - **Working&Co** (@workingandcoar) ✅ VERIFICADO: 7 sedes (Palermo/Villa Crespo/Belgrano), salones para eventos, comunidad de emprendimiento y networking. (NO usar lo de "Working Moments/desayunos" → sin confirmar.)
   → "Vi que tienen varias sedes en la zona y salones para eventos, con una comunidad muy activa de emprendedores" (+ en Catering: "ideal para los salones")
-- **La Maquinita** (@lamaquinitaco): "Vi que hacen desayunos con frutas, clases de cocina y cuidan el lado eco-friendly"
+- **La Maquinita** (@lamaquinitaco) ✅ VERIFICADO: +47k seguidores, comunidad "maquineros", varias sedes, eventos (desayunos, after office, clases de cocina), pet/eco-friendly.
+  → "Vi que tienen una comunidad muy activa de 'maquineros', con desayunos, after office y hasta clases de cocina" (+ en Coffee Break: "ideal para los desayunos")
 - **AreaTres** (@areatres): "Sé que son un emblema del ecosistema emprendedor y que organizan eventos como #A3Global"
 - **Manawa** (@manawacoworking): "Vi que tienen coffee break libre para la comunidad en Palermo Soho"
 - **Huerta** (@huertacoworking): "Vi que tienen una huerta orgánica en la terraza y una comunidad de triple impacto"
