@@ -187,7 +187,7 @@ pb_y = 158; rrect(W / 2 - 212, pb_y, 424, 74, 12, FOREST)
 c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, pb_y + 52, "PRESUPUESTO")
 c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 30, "Armamos el presupuesto")
 c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 11, "a la medida de tu necesidad")
-center_label("PEDÍ TU PROPUESTA A MEDIDA  ·  MUESTRA GRATIS", 74, 9, "Sans", TEALD, 2.5); c.showPage()
+center_label("PEDÍ TU PROPUESTA A MEDIDA", 74, 9, "Sans", TEALD, 2.5); c.showPage()
 
 # ---------- PÁGINA 4 — Box Snacking (hero) + dos versiones (Seca / Plus) ----------
 bg(CREAM)
@@ -246,7 +246,7 @@ c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, byc
 c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, byc + 12, "$15.000 por persona")
 c.setFillColor(col(TEALD)); c.setFont("SerifI", 12.5); c.drawCentredString(W / 2, cbot - 28, "Incluye 7 unidades por persona.")
 sprig(72, 92, 1.0, -18, SAGE, 0.5); sprig(W - 72, 92, 1.0, 198, SAGE, 0.5)
-parac("Recién hecho · entregamos listo para servir · sacá tu muestra gratis.",
+parac("Recién hecho · entregamos listo para servir.",
       120, 11, W * 0.72, 15, "SerifI", TEALD); c.showPage()
 
 # ---------- PÁGINA 6 — Box Welcome Kit (hero + dos versiones) ----------
