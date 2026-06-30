@@ -356,6 +356,42 @@ for i, (n, t, d) in enumerate(steps):
     para(d, x + 12, y - 96, 9.5, bw - 24, 12.5, "Sans", CREAM, "center")
 sprig(70, 86, 1.0, -20, SAGE, 0.55); sprig(W - 70, 86, 1.1, 200, SAGE, 0.6); c.showPage()
 
+# ---------- Íconos de redes (vectoriales, monocromo) ----------
+def ig_icon(cx, cy, s, color=SAGE):
+    c.setStrokeColor(col(color)); c.setLineWidth(s * 0.10); c.setLineJoin(1)
+    c.roundRect(cx - s / 2, cy - s / 2, s, s, s * 0.30, stroke=1, fill=0)
+    c.circle(cx, cy, s * 0.27, stroke=1, fill=0)
+    c.setFillColor(col(color)); c.circle(cx + s * 0.30, cy + s * 0.30, s * 0.075, stroke=0, fill=1)
+
+def wa_icon(cx, cy, s, color=SAGE, bg="#2C5A4E"):
+    R = s * 0.5
+    c.setFillColor(col(color)); c.circle(cx, cy, R, stroke=0, fill=1)
+    p = c.beginPath(); p.moveTo(cx - R * 0.62, cy - R * 0.42); p.lineTo(cx - R * 1.02, cy - R * 0.98)
+    p.lineTo(cx - R * 0.16, cy - R * 0.80); p.close(); c.drawPath(p, fill=1, stroke=0)
+    # auricular: arco curvo inclinado 45° con orejera y micrófono en las puntas
+    c.saveState(); c.translate(cx, cy); c.rotate(45)
+    c.setStrokeColor(col(bg)); c.setLineWidth(s * 0.15); c.setLineCap(1); c.setLineJoin(1)
+    p = c.beginPath(); p.moveTo(-s * 0.20, s * 0.06)
+    p.curveTo(-s * 0.07, -s * 0.12, s * 0.07, -s * 0.12, s * 0.20, s * 0.06)
+    c.drawPath(p, stroke=1, fill=0)
+    c.setFillColor(col(bg)); c.circle(-s * 0.205, s * 0.075, s * 0.078, fill=1, stroke=0)
+    c.circle(s * 0.205, s * 0.075, s * 0.078, fill=1, stroke=0); c.restoreState()
+
+def tt_icon(cx, cy, s, color=SAGE):
+    c.setStrokeColor(col(color)); c.setLineWidth(s * 0.13); c.setLineCap(1); c.setLineJoin(1)
+    stemx = cx - s * 0.02
+    c.line(stemx, cy - s * 0.18, stemx, cy + s * 0.44)
+    p = c.beginPath(); p.moveTo(stemx, cy + s * 0.44)
+    p.curveTo(stemx + s * 0.34, cy + s * 0.42, stemx + s * 0.44, cy + s * 0.16, stemx + s * 0.26, cy + s * 0.04)
+    c.drawPath(p, stroke=1, fill=0)
+    c.setFillColor(col(color)); c.saveState(); c.translate(stemx - s * 0.20, cy - s * 0.22); c.rotate(-18)
+    c.ellipse(-s * 0.19, -s * 0.13, s * 0.19, s * 0.13, fill=1, stroke=0); c.restoreState()
+
+def social_icon(name, cx, cy, s):
+    if name == "WhatsApp": wa_icon(cx, cy, s)
+    elif name == "Instagram": ig_icon(cx, cy, s)
+    else: tt_icon(cx, cy, s)
+
 # ---------- PÁGINA 11 — Cierre / contacto ----------
 bg(FOREST); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.setStrokeAlpha(0.5); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1); c.setStrokeAlpha(1)
 sprig(62, H - 76, 1.15, -22, SAGE, 0.55); sprig(W - 66, 84, 1.15, 160, SAGE, 0.45)
@@ -367,8 +403,8 @@ contacts = [("WhatsApp", "11 6629 3150"), ("Instagram", "@betinapotap.naturista"
 cw = (W - 112 - 40) / 3; ch = 116; cy = H - 548
 for i, (lab, val) in enumerate(contacts):
     x = 56 + i * (cw + 20); rrect(x, cy, cw, ch, 12, "#2C5A4E")
-    leaf(x + cw / 2, cy + ch - 28, 14, 5, 90, SAGE)
-    c.setFillColor(col(SAGE)); c.setFont("SansB", 11); c.drawCentredString(x + cw / 2, cy + ch - 54, lab)
+    social_icon(lab, x + cw / 2, cy + ch - 34, 20)
+    c.setFillColor(col(SAGE)); c.setFont("SansB", 11); c.drawCentredString(x + cw / 2, cy + ch - 58, lab)
     c.setFillColor(col(CREAM)); c.setFont("SansB", 12); c.drawCentredString(x + cw / 2, cy + 40, val)
 # Cierre: divisor con hoja + frase de marca para anclar el pie
 dy = 210
