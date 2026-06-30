@@ -127,13 +127,14 @@ sprig(70, 96, 1.1, -15, SAGE, 0.8); sprig(W - 70, 96, 1.1, 195, SAGE, 0.8); c.sh
 # ---------- helper: tarjeta de propuesta ----------
 # El alto se calcula a partir del contenido para que el botón de precio quede
 # pegado al texto (sin huecos). Devuelve el borde inferior de la tarjeta.
-def box_card(num, title, desc, incl, price, y_top, accent=TEAL, tsize=21, dsize=11.5, dlead=16):
+def box_card(num, title, desc, incl, price, y_top, accent=TEAL, tsize=21, dsize=11.5, dlead=16, nota=None):
     x = 56; w = W - 112; btn_h = 46
     n_desc = len(simpleSplit(desc, "Sans", dsize, w - 130))
     n_incl = len(simpleSplit(incl, "Sans", 10.5, w - 130))
     incl_label_y = (y_top - 78) - n_desc * dlead - 6
     incl_end = incl_label_y - 16 - n_incl * 15
-    btn_top = incl_end + 2
+    nota_h = 20 if nota else 0
+    btn_top = incl_end + 2 - nota_h
     card_bottom = btn_top - btn_h - 22
     h = y_top - card_bottom
     rrect(x, card_bottom, w, h, 14, CARD); rrect(x, card_bottom, w, h, 14, CARD, accent, 1.2)
@@ -142,6 +143,8 @@ def box_card(num, title, desc, incl, price, y_top, accent=TEAL, tsize=21, dsize=
     para(desc, x + 92, y_top - 78, dsize, w - 130, dlead, "Sans", INK)
     c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawString(x + 92, incl_label_y, "Incluye")
     para(incl, x + 92, incl_label_y - 16, 10.5, w - 130, 15, "Sans", INK)
+    if nota:
+        c.setFillColor(col(accent)); c.setFont("Sans", 9.2); c.drawString(x + 92, incl_end - 13, nota)
     bx = x + 92; bbw = w - 184
     c.setFillColor(col(accent)); c.roundRect(bx, btn_top - btn_h, bbw, btn_h, 8, fill=1, stroke=0)
     c.setFillColor(col(CREAM))
@@ -194,26 +197,23 @@ c.setStrokeColor(col(SAGE)); c.setLineWidth(1)
 c.line(W / 2 - 92, H - 162, W / 2 - 18, H - 162); c.line(W / 2 + 18, H - 162, W / 2 + 92, H - 162)
 leaf(W / 2, H - 171, 18, 6, 90, GOLD)
 textc("Picoteo sano de la semana, en dos versiones a elección.", H - 196, 13, "SerifI", TEALD)
-GAP = 30
+GAP = 28
 yb = box_card("01", "Versión Seca · base",
          "Todo seco y de larga duración. Listo para la cocina de tu oficina.",
          "frutos secos, bolitas de dátiles, cookies de avena, muffins de choco con dátiles, "
          "alfajor de cacao con dátiles y maní, crackers de zanahoria, garbanzos crocantes, "
          "brownies, barritas de semillas y blends de mate y de té.",
-         "5 unidades $9.000\n10 unidades $17.000\npor persona", H - 214, TEAL, tsize=19, dsize=11, dlead=14)
+         "5 unidades $9.000\n10 unidades $17.000\npor persona", H - 208, TEAL, tsize=19, dsize=11, dlead=14,
+         nota="5 un = 1 picoteo al día      ·      10 un = 2 colaciones al día")
 yb2 = box_card("02", "Versión Plus · fresca",
          "Agrandá tu box con opciones frescas.",
          "todo lo de la Seca + yogurt griego, granola, hummus, mayonesa de zanahoria y cúrcuma, "
          "fruta fresca de estación y tostis de sarraceno y almendras.",
-         "5 unidades $11.000\n10 unidades $20.000\npor persona", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14)
-ny = yb2 - 24
-c.setFillColor(col(INK)); c.setFont("Sans", 9)
-c.drawCentredString(W / 2, ny, "5 un = 1 picoteo al día   ·   10 un = 2 colaciones al día   ·   mínimo 10 cubiertos")
-c.setFillColor(col(TEALD)); c.setFont("Sans", 9)
-c.drawCentredString(W / 2, ny - 15, "Versión Plus: 5 un = 2 frescas + 3 secas   ·   10 un = 4 frescas + 6 secas")
-c.setFillColor(col(TEALD)); c.setFont("SerifI", 11)
-c.drawCentredString(W / 2, ny - 35, "Por suscripción · se puede pausar · entregamos en tu oficina.")
-sprig(70, 46, 0.9, -18, SAGE, 0.45); sprig(W - 70, 46, 0.9, 198, SAGE, 0.45)
+         "5 unidades $11.000\n10 unidades $20.000\npor persona", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14,
+         nota="5 un = 2 frescas + 3 secas      ·      10 un = 4 frescas + 6 secas")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 11.5)
+c.drawCentredString(W / 2, yb2 - 24, "Compra mínima: 10 cubiertos · por suscripción, se puede pausar.")
+sprig(72, 64, 0.95, -18, SAGE, 0.5); sprig(W - 72, 64, 0.95, 198, SAGE, 0.5)
 c.showPage()
 
 # ---------- PÁGINA 5 — Box Coffee Break (hero + menú) ----------
