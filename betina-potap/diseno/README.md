@@ -4,7 +4,19 @@ Acá vive todo lo necesario para regenerar y editar el **catálogo comercial PDF
 
 ## Archivos
 - `generar_catalogo.py` — script que genera `../Catalogo-Comercial-Betina-Potap.pdf`.
+- `prep_fotos.py` — recorta y optimiza las fotos de producto a `fotos/`.
+- `fotos/` — fotos de producto ya recortadas (las usa el catálogo). En `fotos/_src/`
+  quedan copias livianas de los originales por si hay que re-encuadrar.
 - `FILOSOFIA-Jardin-Sereno.md` — la filosofía de diseño (estética del catálogo).
+
+## Fotos de producto
+- Las páginas "Una mesa que nos incluye a todos", "Nuestros productos" y "Y también…"
+  usan las imágenes de `fotos/`.
+- Para cambiar un encuadre: editar el diccionario `FOTOS` en `prep_fotos.py`
+  (cx, cy = centro; wf = ancho; aspect = relación) y correr `python3 diseno/prep_fotos.py`.
+- Las "flechitas" (qué cosa es cada una en las fotos con varios productos) se definen
+  en `generar_catalogo.py`, en las llamadas `photo_multi(...)`: cada item es
+  `(nombre, fracción_horizontal)`.
 
 ## Cómo regenerar el catálogo
 ```bash

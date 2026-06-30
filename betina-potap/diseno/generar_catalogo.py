@@ -214,7 +214,72 @@ parac("Por suscripción · se puede pausar cuando quieras · entregamos en tu of
       116, 11, W * 0.72, 15, "SerifI", TEALD)
 c.showPage()
 
-# ---------- PÁGINA 5 — Más propuestas: Coffee Break + Welcome Kit ----------
+# ===================== SECCIÓN DE FOTOS DE PRODUCTO =====================
+FOTODIR = "diseno/fotos/%s.jpg"
+ASP = {"alfajores": 1.0, "barritas": 1.0, "muffins": 1.0, "brownies": 1.0,
+       "cookies": 1.0, "bolitas": 1.0, "granola_yogurt": 1.85, "frutos_garbanzos": 1.85,
+       "blends": 1.90, "tostis_crackers": 1.95, "salsas": 1.90, "spread": 0.74}
+
+def draw_photo(key, x, y, w, h, frame=SAGE):
+    c.drawImage(FOTODIR % key, x, y, width=w, height=h)
+    if frame:
+        r = 0.045 * min(w, h)
+        c.setStrokeColor(col(frame)); c.setLineWidth(0.8); c.roundRect(x, y, w, h, r, stroke=1, fill=0)
+
+def up_arrow(ax, ty, color=GOLD):
+    p = c.beginPath(); p.moveTo(ax, ty); p.lineTo(ax - 3.6, ty - 6.2); p.lineTo(ax + 3.6, ty - 6.2); p.close()
+    c.setFillColor(col(color)); c.drawPath(p, fill=1, stroke=0)
+
+def photo_multi(key, cx, y_top, w, items, slot, fs=8.4):
+    # foto apaisada + flechitas hacia el nombre de cada cosa
+    h = w / ASP[key]; x = cx - w / 2
+    draw_photo(key, x, y_top - h, w, h)
+    base = y_top - h
+    for name, afx in items:
+        ax = x + afx * w
+        up_arrow(ax, base - 4)
+        para(name, ax - slot / 2, base - 18, fs, slot, fs + 1.5, "Sans", TEALD, "center")
+    return base
+
+# ---------- PÁGINA 5 — "Mesa servida": la foto general ----------
+bg(CREAM); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1)
+sprig(66, 96, 1.1, -20, SAGE, 0.5); sprig(W - 66, 96, 1.1, 200, SAGE, 0.5)
+center_label("TODO HECHO A MANO, PARA TODO EL EQUIPO", H - 92, 10.5, "Sans", TEALD, 2.4)
+c.setFillColor(col(FOREST)); c.setFont("Display", 31); c.drawCentredString(W / 2, H - 134, "Una mesa que")
+c.drawCentredString(W / 2, H - 170, "nos incluye a todos")
+sw = 300; sh = sw / ASP["spread"]; sx = (W - sw) / 2; sy = 150
+draw_photo("spread", sx, sy, sw, sh, frame=SAGE)
+parac("Sin gluten · sin lácteos · sin azúcar — comen todos, sin que nadie quede afuera de la mesa.",
+      120, 11, W * 0.74, 15, "SerifI", TEALD); c.showPage()
+
+# ---------- PÁGINA 6 — Galería de productos (individuales) ----------
+bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 86, "Nuestros productos")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 110, "Hechos a mano, sin gluten, sin lácteos y sin azúcar.")
+singles = [("alfajores", "Alfajores de cacao,\ndátiles y maní"), ("cookies", "Cookies de avena"),
+           ("brownies", "Brownies"), ("muffins", "Muffins de choco\ny dátiles"),
+           ("barritas", "Barritas de semillas"), ("bolitas", "Bolitas de dátiles")]
+gap = 26; cell = (W - 112 - 2 * gap) / 3; pitch = cell + 78
+for i, (key, name) in enumerate(singles):
+    cx = 56 + (i % 3) * (cell + gap); ytop = H - 182 - (i // 3) * pitch
+    draw_photo(key, cx, ytop - cell, cell, cell)
+    para(name.replace("\n", " "), cx, ytop - cell - 18, 10.5, cell, 13, "Serif", FOREST, "center")
+c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.setStrokeAlpha(0.6); c.line(W / 2 - 70, 150, W / 2 + 70, 150); c.setStrokeAlpha(1)
+parac("Todo entra en tu box — lo armamos a medida de tu equipo.", 124, 12.5, W * 0.8, 16, "SerifI", TEALD)
+sprig(72, 88, 1.0, -18, SAGE, 0.5); sprig(W - 72, 88, 1.0, 198, SAGE, 0.5); c.showPage()
+
+# ---------- PÁGINA 7 — Galería: frescos, salsas y blends (con flechitas) ----------
+bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 86, "Y también…")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 110, "Frescos, salsas y blends para tu mesa.")
+pw = 224; lcx = 56 + pw / 2; rcx = W - 56 - pw / 2; slot2 = pw * 0.5
+photo_multi("granola_yogurt", lcx, H - 152, pw, [("Granola", 0.28), ("Yogurt griego", 0.72)], slot2)
+photo_multi("frutos_garbanzos", rcx, H - 152, pw, [("Frutos secos", 0.27), ("Garbanzos crocantes", 0.71)], slot2)
+photo_multi("blends", lcx, H - 152 - 178, pw, [("Blend de té", 0.27), ("Blend de mate", 0.74)], slot2)
+photo_multi("salsas", rcx, H - 152 - 178, pw, [("Mayonesa de zanahoria", 0.28), ("Hummus", 0.72)], slot2)
+photo_multi("tostis_crackers", W / 2, H - 152 - 356, 300,
+            [("Tostis de almendras", 0.17), ("Tostis de sarraceno", 0.5), ("Crackers de zanahoria", 0.83)], 96, fs=8)
+sprig(72, 86, 1.0, -18, SAGE, 0.5); sprig(W - 72, 86, 1.0, 198, SAGE, 0.5); c.showPage()
+
+# ---------- PÁGINA 8 — Más propuestas: Coffee Break + Welcome Kit ----------
 bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 25); c.drawString(56, H - 82, "Más propuestas")
 c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 108, "Para tu coffee break o para regalar a tu equipo y clientes.")
 GAP = 40
