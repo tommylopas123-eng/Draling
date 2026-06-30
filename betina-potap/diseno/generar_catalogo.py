@@ -128,7 +128,7 @@ sprig(70, 96, 1.1, -15, SAGE, 0.8); sprig(W - 70, 96, 1.1, 195, SAGE, 0.8); c.sh
 # El alto se calcula a partir del contenido para que el botón de precio quede
 # pegado al texto (sin huecos). Devuelve el borde inferior de la tarjeta.
 def box_card(num, title, desc, incl, price, y_top, accent=TEAL, tsize=21, dsize=11.5, dlead=16):
-    x = 56; w = W - 112; btn_h = 40
+    x = 56; w = W - 112; btn_h = 46
     n_desc = len(simpleSplit(desc, "Sans", dsize, w - 130))
     n_incl = len(simpleSplit(incl, "Sans", 10.5, w - 130))
     incl_label_y = (y_top - 78) - n_desc * dlead - 6
@@ -142,14 +142,24 @@ def box_card(num, title, desc, incl, price, y_top, accent=TEAL, tsize=21, dsize=
     para(desc, x + 92, y_top - 78, dsize, w - 130, dlead, "Sans", INK)
     c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawString(x + 92, incl_label_y, "Incluye")
     para(incl, x + 92, incl_label_y - 16, 10.5, w - 130, 15, "Sans", INK)
-    c.setFillColor(col(accent)); c.roundRect(x + 92, btn_top - btn_h, w - 184, btn_h, 8, fill=1, stroke=0)
+    bx = x + 92; bbw = w - 184
+    c.setFillColor(col(accent)); c.roundRect(bx, btn_top - btn_h, bbw, btn_h, 8, fill=1, stroke=0)
     c.setFillColor(col(CREAM))
-    if "\n" in price:
-        a, b = price.split("\n")
-        c.setFont("SansB", 12); c.drawCentredString(x + w / 2, btn_top - 17, a)
-        c.setFont("Sans", 10); c.drawCentredString(x + w / 2, btn_top - 32, b)
+    parts = price.split("\n")
+    if len(parts) == 3:
+        # Precio por unidades: dos filas apiladas a la izquierda + "por persona" a la derecha
+        a, b, side = parts
+        lx = bx + 26
+        c.setFont("SansB", 13)
+        c.drawString(lx, btn_top - 18, a)
+        c.drawString(lx, btn_top - 35, b)
+        c.setStrokeColor(col(CREAM)); c.setStrokeAlpha(0.4); c.setLineWidth(0.8)
+        sepx = bx + bbw - 116
+        c.line(sepx, btn_top - 34, sepx, btn_top - 13); c.setStrokeAlpha(1)
+        c.setFillColor(col(CREAM)); c.setFont("Sans", 11)
+        c.drawRightString(bx + bbw - 24, btn_top - 28, side)
     else:
-        c.setFont("SansB", 14); c.drawCentredString(x + w / 2, btn_top - 26, price)
+        c.setFont("SansB", 14); c.drawCentredString(x + w / 2, btn_top - 29, price)
     return card_bottom
 
 # ---------- PÁGINA 3 — PROPUESTA ESTRELLA: CATERING PARA EMPRESAS (página entera, sin número) ----------
@@ -181,7 +191,7 @@ center_label("PEDÍ TU PROPUESTA A MEDIDA  ·  MUESTRA GRATIS", 74, 9, "Sans", T
 
 # ---------- PÁGINA 4 — Box Snacking (hero) + dos versiones (Seca / Plus) ----------
 bg(CREAM)
-center_label("NUESTRA PROPUESTA PARA EMPEZAR", H - 92, 10.5, "Sans", TEALD, 3)
+center_label("DESCUBRÍ NUESTRAS PROPUESTAS", H - 92, 10.5, "Sans", TEALD, 3)
 c.setFillColor(col(FOREST)); c.setFont("Display", 46); c.drawCentredString(W / 2, H - 142, "Box Snacking")
 c.setStrokeColor(col(SAGE)); c.setLineWidth(1)
 c.line(W / 2 - 92, H - 162, W / 2 - 18, H - 162); c.line(W / 2 + 18, H - 162, W / 2 + 92, H - 162)
@@ -193,12 +203,12 @@ yb = box_card("01", "Versión Seca · base",
          "frutos secos, bolitas de dátiles, cookies de avena, muffins de choco con dátiles, "
          "alfajor de cacao con dátiles y maní, crackers de zanahoria, garbanzos crocantes, "
          "brownies, barritas de semillas y blends de mate y de té.",
-         "5 unidades $9.000  ·  10 unidades $17.000\npor persona", H - 214, TEAL, tsize=19, dsize=11, dlead=14)
+         "5 unidades $9.000\n10 unidades $17.000\npor persona", H - 214, TEAL, tsize=19, dsize=11, dlead=14)
 box_card("02", "Versión Plus · fresca",
          "Todo lo de la versión Seca más una selección de frescos del día.",
          "todo lo de la Seca + yogurt griego, granola, hummus, mayonesa de zanahoria y cúrcuma, "
          "fruta fresca de estación y tostis de sarraceno y almendras.",
-         "5 unidades $11.000  ·  10 unidades $20.000\npor persona", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14)
+         "5 unidades $11.000\n10 unidades $20.000\npor persona", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14)
 sprig(72, 94, 1.0, -18, SAGE, 0.5); sprig(W - 72, 94, 1.0, 198, SAGE, 0.5)
 parac("Por suscripción · se puede pausar cuando quieras · entregamos en tu oficina, de lunes a viernes.",
       116, 11, W * 0.72, 15, "SerifI", TEALD)
