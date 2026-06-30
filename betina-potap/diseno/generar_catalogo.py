@@ -387,10 +387,33 @@ def tt_icon(cx, cy, s, color=SAGE):
     c.setFillColor(col(color)); c.saveState(); c.translate(stemx - s * 0.20, cy - s * 0.22); c.rotate(-18)
     c.ellipse(-s * 0.19, -s * 0.13, s * 0.19, s * 0.13, fill=1, stroke=0); c.restoreState()
 
-def social_icon(name, cx, cy, s):
+def social_icon(name, cx, cy, s):  # fallback dibujado a mano
     if name == "WhatsApp": wa_icon(cx, cy, s)
     elif name == "Instagram": ig_icon(cx, cy, s)
     else: tt_icon(cx, cy, s)
+
+# Logos oficiales (paquete simpleicons + svglib) renderizados como vectores nítidos.
+# Si las librerías no están, queda el fallback dibujado de arriba.
+ICON_COLOR = GOLD
+try:
+    import tempfile
+    from simpleicons.icons import si_whatsapp, si_instagram, si_tiktok
+    from svglib.svglib import svg2rlg
+    from reportlab.graphics import renderPDF
+    _SI = {"WhatsApp": si_whatsapp, "Instagram": si_instagram, "TikTok": si_tiktok}
+    _SVGF = {}
+    def _icon_svg(name, color):
+        key = (name, color)
+        if key not in _SVGF:
+            d = f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="{_SI[name].path}" fill="{color}"/></svg>'
+            f = tempfile.NamedTemporaryFile("w", suffix=".svg", delete=False); f.write(d); f.close()
+            _SVGF[key] = f.name
+        return _SVGF[key]
+    def social_icon(name, cx, cy, s, color=ICON_COLOR):
+        dr = svg2rlg(_icon_svg(name, color)); k = s / dr.width
+        dr.scale(k, k); renderPDF.draw(dr, c, cx - s / 2, cy - s / 2)
+except Exception as _e:
+    print("Aviso: uso íconos dibujados (instalá simpleicons y svglib para los logos oficiales):", _e)
 
 # ---------- PÁGINA 11 — Cierre / contacto ----------
 bg(FOREST); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.setStrokeAlpha(0.5); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1); c.setStrokeAlpha(1)
@@ -403,8 +426,8 @@ contacts = [("WhatsApp", "11 6629 3150"), ("Instagram", "@betinapotap.naturista"
 cw = (W - 112 - 40) / 3; ch = 116; cy = H - 548
 for i, (lab, val) in enumerate(contacts):
     x = 56 + i * (cw + 20); rrect(x, cy, cw, ch, 12, "#2C5A4E")
-    social_icon(lab, x + cw / 2, cy + ch - 34, 20)
-    c.setFillColor(col(SAGE)); c.setFont("SansB", 11); c.drawCentredString(x + cw / 2, cy + ch - 58, lab)
+    social_icon(lab, x + cw / 2, cy + ch - 33, 23)
+    c.setFillColor(col(SAGE)); c.setFont("SansB", 11); c.drawCentredString(x + cw / 2, cy + ch - 60, lab)
     c.setFillColor(col(CREAM)); c.setFont("SansB", 12); c.drawCentredString(x + cw / 2, cy + 40, val)
 # Cierre: divisor con hoja + frase de marca para anclar el pie
 dy = 210

@@ -46,6 +46,8 @@ python3 -c "import fitz; d=fitz.open('Catalogo-Comercial-Betina-Potap.pdf'); [p.
 ## Dependencias
 - `reportlab` (genera el PDF)
 - Fuentes: `.claude/skills/canvas-design/canvas-fonts/` (skill canvas-design, Apache 2.0)
+- `simpleicons` + `svglib` (logos oficiales de WhatsApp/Instagram/TikTok en el cierre;
+  si no están, el script usa íconos dibujados como fallback). Color en `ICON_COLOR`.
 - `pymupdf` (opcional, solo para previsualizar)
 
 > ⚠️ IMPORTANTE: este script es la ÚNICA fuente del catálogo. Cualquier cambio al
