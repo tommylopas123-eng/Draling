@@ -100,7 +100,7 @@ bg(CREAM); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(34, 34, W - 
 sprig(60, H - 120, 1.5, -20, SAGE, 0.9); sprig(W - 60, 120, 1.5, 160, SAGE, 0.9)
 center_label("ALIMENTOS NATURALES   ·   CABA", H - 150, 10.5, "Sans", TEALD, 3)
 c.setFillColor(col(FOREST)); c.setFont("Display", 58); c.drawCentredString(W / 2, H / 2 + 70, "Betina Potap")
-c.setFillColor(col(GOLD)); c.setFont("Script", 26); c.drawCentredString(W / 2, H / 2 + 30, "hecho a mano, con tiempo y cuidado")
+c.setFillColor(col(GOLD)); c.setFont("Script", 26); c.drawCentredString(W / 2, H / 2 + 30, "hecho a mano con amor y conciencia")
 c.setStrokeColor(col(SAGE)); c.setLineWidth(1); c.line(W / 2 - 90, H / 2 - 2, W / 2 - 18, H / 2 - 2); c.line(W / 2 + 18, H / 2 - 2, W / 2 + 90, H / 2 - 2)
 leaf(W / 2, H / 2 - 11, 18, 6, 90, SAGE)  # hoja centrada (horizontal y vertical) en el divisor
 textc("Catálogo para empresas", H / 2 - 52, 20, "Serif", FOREST)
@@ -110,7 +110,7 @@ c.showPage()
 
 # ---------- PÁGINA 2 — PROPUESTA DE VALOR ----------
 bg(CREAM); sprig(W - 70, H - 95, 1.2, 150, SAGE, 0.8)
-c.setFillColor(col(FOREST)); c.setFont("Display", 30); c.drawString(56, H - 150, "Comida real e inclusiva"); c.drawString(56, H - 186, "para todo tu equipo.")
+c.setFillColor(col(FOREST)); c.setFont("Display", 30); c.drawString(56, H - 150, "Comida real"); c.drawString(56, H - 186, "para todo tu equipo.")
 y = para("Llevamos comida saludable y artesanal a tu oficina. Una sola compra que incluye a todos "
          "—intolerantes al gluten, veganos, diabéticos y a quienes entrenan. Nada industrial, nada en serie: "
          "hecho a mano, fresco y a medida.", 56, H - 224, 12.5, W - 200, 18, "Sans", INK) - 58
@@ -119,7 +119,7 @@ for i, (a, b) in enumerate(pills):
     x = 56 + i * (bw + 20); rrect(x, y - 110, bw, 100, 10, CARD); leaf(x + bw / 2, y - 34, 18, 6, 90, TEAL)  # hojita centrada en la tarjeta
     c.setFillColor(col(TEALD)); c.setFont("Serif", 17); c.drawCentredString(x + bw / 2, y - 66, a)
     c.setFont("Serif", 20); c.drawCentredString(x + bw / 2, y - 90, b)
-y -= 184; center_label("ARTESANAL   ·   FRESCO   ·   INCLUSIVO", y, 12, "Sans", GOLD, 4); y -= 48
+y -= 184; center_label("ARTESANAL   ·   FRESCO   ·   SALUDABLE", y, 12, "Sans", GOLD, 4); y -= 48
 c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.line(150, y, W - 150, y)
 c.setFillColor(col(INK)); c.setFont("SerifI", 14); c.drawCentredString(W / 2, y - 34, "“Que nadie del equipo quede afuera de la mesa.”")
 sprig(70, 96, 1.1, -15, SAGE, 0.8); sprig(W - 70, 96, 1.1, 195, SAGE, 0.8); c.showPage()
@@ -173,31 +173,54 @@ for i, (t, d) in enumerate(fmts):
 iy = fy - 132
 c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawCentredString(W / 2, iy, "INCLUYE")
 parac("Bowls, wraps, pollo, pescado y opciones veggie, más colaciones dulces y saladas, a elección.", iy - 18, 11.5, W * 0.78, 16, "Sans", INK)
-pb_y = 152; rrect(W / 2 - 188, pb_y, 376, 64, 12, FOREST)
-c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, pb_y + 43, "PRESUPUESTO")
-c.setFillColor(col(CREAM)); c.setFont("SansB", 17); c.drawCentredString(W / 2, pb_y + 21, "A medida, según tu evento")
+pb_y = 150; rrect(W / 2 - 212, pb_y, 424, 74, 12, FOREST)
+c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, pb_y + 52, "PRESUPUESTO")
+c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 30, "Armamos el presupuesto")
+c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 11, "a la medida de tu necesidad")
 center_label("PEDÍ TU PROPUESTA A MEDIDA  ·  MUESTRA GRATIS", 74, 9, "Sans", TEALD, 2.5); c.showPage()
 
-# ---------- PÁGINA 4 — Las otras propuestas (más chicas) ----------
-bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 25); c.drawString(56, H - 82, "Nuestras otras propuestas")
-GAP = 30
-yb = box_card("01", "Box Snacking Semanal",
-         "Picoteo sano de la semana, listo en la cocina de tu oficina. Por suscripción; se puede pausar.",
-         "barritas, granola, crackers, dátiles y bomboncitos (con frescos: + brownie y budín).",
-         "Solo secos $8.000  ·  Con frescos $11.000\npor persona / semana", H - 116, TEAL, tsize=18, dsize=11, dlead=14)
-yb = box_card("02", "Box Coffee Break",
-         "Para reuniones o desayunos de equipo. Llega listo para servir, fresco del día.",
-         "budín, granola, pancakes y dátiles rellenos.",
-         "Precio a confirmar  ·  consultanos", yb - GAP, TEALD, tsize=18, dsize=11, dlead=14)
-box_card("03", "Welcome Kit · Regalo Corporativo",
-         "Para bienvenida, fin de año o regalar a clientes. Podés sumar tu branding.",
-         "barritas, granola, crackers y brownie, en caja con tarjeta.",
-         "Precio a confirmar  ·  consultanos", yb - GAP, GOLD, tsize=16, dsize=11, dlead=14)
+# ---------- PÁGINA 4 — Nuestras propuestas: Box Snacking (Seco / Plus) ----------
+bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 25); c.drawString(56, H - 82, "Descubrí nuestras propuestas")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 108, "Empezamos con nuestro Box Snacking, en dos versiones.")
+GAP = 40
+yb = box_card("01", "Box Seco · base",
+         "Nuestro picoteo de la semana, todo seco y de larga duración. Listo para la oficina.",
+         "frutos secos, bolitas de dátiles, cookies de avena, muffins de choco con dátiles, "
+         "alfajor de cacao con dátiles y maní, crackers de zanahoria, garbanzos crocantes, "
+         "brownies, barritas de semillas y blends de mate y de té.",
+         "5 unidades $9.000  ·  10 unidades $17.000\npor persona", H - 150, TEAL, tsize=19, dsize=11, dlead=14)
+box_card("02", "Box Plus · fresco",
+         "Todo lo del Box Seco más una selección de frescos del día.",
+         "todo el Box Seco + yogurt griego, granola, hummus, mayonesa de zanahoria y cúrcuma, "
+         "fruta fresca de estación y tostis de sarraceno y almendras.",
+         "5 unidades $11.000  ·  10 unidades $20.000\npor persona", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14)
+sprig(72, 102, 1.0, -18, SAGE, 0.5); sprig(W - 72, 102, 1.0, 198, SAGE, 0.5)
+c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.setStrokeAlpha(0.6); c.line(170, 150, W - 170, 150); c.setStrokeAlpha(1)
+parac("Por suscripción · se puede pausar cuando quieras · entregamos en tu oficina, de lunes a viernes.",
+      126, 11, W * 0.72, 15, "SerifI", TEALD)
 c.showPage()
 
-# ---------- PÁGINA 5 — Por qué + Cómo funciona ----------
+# ---------- PÁGINA 5 — Más propuestas: Coffee Break + Welcome Kit ----------
+bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 25); c.drawString(56, H - 82, "Más propuestas")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 108, "Para tu coffee break o para regalar a tu equipo y clientes.")
+GAP = 40
+yb = box_card("03", "Box Coffee Break",
+         "Para reuniones o desayunos de equipo. Llega listo para servir, fresco del día.",
+         "budín, granola, pancakes y dátiles rellenos.",
+         "Precio a confirmar  ·  consultanos", H - 150, TEALD, tsize=19, dsize=11, dlead=14)
+box_card("04", "Welcome Kit · Regalo Corporativo",
+         "Para bienvenida, fin de año o regalar a clientes. Podés sumar tu branding.",
+         "barritas, granola, crackers y brownie, en caja con tarjeta.",
+         "Precio a confirmar  ·  consultanos", yb - GAP, GOLD, tsize=18, dsize=11, dlead=14)
+sprig(72, 102, 1.0, -18, SAGE, 0.5); sprig(W - 72, 102, 1.0, 198, SAGE, 0.5)
+c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.setStrokeAlpha(0.6); c.line(170, 150, W - 170, 150); c.setStrokeAlpha(1)
+parac("Armamos el box a la medida de tu equipo y tu frecuencia de entrega.",
+      126, 11, W * 0.72, 15, "SerifI", TEALD)
+c.showPage()
+
+# ---------- PÁGINA 6 — Por qué + Cómo funciona ----------
 bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 130, "¿Por qué Betina Potap?")
-diffs = [("100% inclusivo", "Sin gluten + sin lácteos + sin azúcar, todo junto. Comen todos."),
+diffs = [("100% alimentación consciente", "Sin gluten + sin lácteos + sin azúcar, todo junto. Comen todos."),
          ("Artesanal y fresco", "Nada industrial ni envasado en serie. Hecho a mano."),
          ("A medida", "Armamos el box para tu equipo y tu frecuencia de entrega."),
          ("Sin riesgo", "Probás con muestra gratis y elegís sin compromiso.")]
@@ -218,7 +241,7 @@ for i, (n, t, d) in enumerate(steps):
     para(d, x + 12, y - 96, 9.5, bw - 24, 12.5, "Sans", CREAM, "center")
 sprig(70, 86, 1.0, -20, SAGE, 0.55); sprig(W - 70, 86, 1.1, 200, SAGE, 0.6); c.showPage()
 
-# ---------- PÁGINA 6 — Cierre / contacto ----------
+# ---------- PÁGINA 7 — Cierre / contacto ----------
 bg(FOREST); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.setStrokeAlpha(0.5); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1); c.setStrokeAlpha(1)
 sprig(62, H - 76, 1.15, -22, SAGE, 0.55); sprig(W - 66, 84, 1.15, 160, SAGE, 0.45)
 c.setFillColor(col(CREAM)); c.setFont("Display", 30); c.drawCentredString(W / 2, H - 196, "¿Lista tu oficina"); c.drawCentredString(W / 2, H - 234, "para comer mejor?")
