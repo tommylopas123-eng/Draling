@@ -12,8 +12,10 @@ Acá vive todo lo necesario para regenerar y editar el **catálogo comercial PDF
 ## Fotos de producto
 - Las páginas "Una mesa que nos incluye a todos", "Nuestros productos" y "Y también…"
   usan las imágenes de `fotos/`.
-- Para cambiar un encuadre: editar el diccionario `FOTOS` en `prep_fotos.py`
-  (cx, cy = centro; wf = ancho; aspect = relación) y correr `python3 diseno/prep_fotos.py`.
+- Las fotos se usan **a frame completo** (sin recorte ni zoom): `prep_fotos.py` sólo
+  corrige orientación, redondea esquinas y exporta a máxima calidad. Si se reemplaza
+  una foto, actualizar la ruta en el diccionario `FOTOS` y correr
+  `python3 diseno/prep_fotos.py`.
 - Las "flechitas" (qué cosa es cada una en las fotos con varios productos) se definen
   en `generar_catalogo.py`, en las llamadas `photo_multi(...)`: cada item es
   `(nombre, fracción_horizontal)`.
