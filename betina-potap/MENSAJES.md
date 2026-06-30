@@ -73,7 +73,8 @@
   → "Me encantó su casona creativa en Palermo Soho, con las terrazas y el comedor donde la comunidad comparte comidas"
 - **Huerta** (@huertacoworking) ✅ VERIFICADO: 28k seguidores, Palermo Hollywood (Dorrego 2133/Humboldt), huerta orgánica en el rooftop, comunidad de triple impacto, eventos mensuales (asados, afters, charlas, música).
   → "Me encantó que tengan una huerta orgánica en la terraza y una comunidad de empresas de triple impacto: vamos para el mismo lado" (+ Catering: "ideal para los asados y afters")
-- **Urban Station** (@urbanstation): "Vi que ofrecen café, té y snacks para quienes trabajan ahí"
+- **Urban Station** (⚠️ IG SIN CONFIRMAR — FB: UrbanStationBA, buscar el @ real) ✅ gancho VERIFICADO: recepción tipo café con fruta, infusiones y medialunas; espacio para eventos. Varias sedes (Palermo Soho, San Telmo, Microcentro).
+  → "Vi que su recepción funciona como un café, con fruta, infusiones y algo rico para picar, y me pareció una buena oportunidad para sumar una opción más saludable"
 
 > Nota: confirmar el @ exacto de cada uno buscando el nombre en Instagram antes de enviar.
 > Productoras/agencias y el gancho de cada una: ver el Google Doc de mensajes (Drive).
