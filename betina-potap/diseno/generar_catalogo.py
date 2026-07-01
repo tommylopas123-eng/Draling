@@ -208,6 +208,7 @@ for i, (a, b) in enumerate(pills):
 y -= 184; center_label("ARTESANAL   ·   FRESCO   ·   SALUDABLE", y, 12, "Sans", GOLD, 4); y -= 48
 c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.line(150, y, W - 150, y)
 c.setFillColor(col(INK)); c.setFont("SerifI", 14); c.drawCentredString(W / 2, y - 34, "“Que nadie del equipo quede afuera de la mesa.”")
+_pv = 88; draw_photo("cookies", W - 56 - _pv, 498, _pv, _pv / aspect("cookies"))  # foto-acento
 sprig(70, 96, 1.1, -15, SAGE, 0.8); sprig(W - 70, 96, 1.1, 195, SAGE, 0.8); c.showPage()
 
 # ---------- PÁGINA 3 — "Mesa servida": la foto general (temprano, como gancho) ----------
@@ -243,6 +244,7 @@ pb_y = 158; rrect(W / 2 - 212, pb_y, 424, 74, 12, FOREST)
 c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, pb_y + 52, "PRESUPUESTO")
 c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 30, "Armamos el presupuesto")
 c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 11, "a la medida de tu necesidad")
+_pc = 84; draw_photo("salsas", 50, 646, _pc, _pc / aspect("salsas"))  # foto-acento (arriba izq.)
 center_label("PEDÍ TU PROPUESTA A MEDIDA", 74, 9, "Sans", TEALD, 2.5); c.showPage()
 
 # ---------- PÁGINA 5 — Box Snacking (hero) + dos versiones (Seca / Plus) ----------
@@ -269,6 +271,7 @@ yb2 = box_card("02", "Versión Plus · fresca",
          nota="5 un = 2 frescas + 3 secas      ·      10 un = 4 frescas + 6 secas")
 c.setFillColor(col(TEALD)); c.setFont("SerifI", 11.5)
 c.drawCentredString(W / 2, yb2 - 24, "Compra mínima: 10 cubiertos · por suscripción, se puede pausar.")
+_ps = 80; draw_photo("bolitas", 48, 672, _ps, _ps / aspect("bolitas"))  # foto-acento (arriba izq.)
 sprig(72, 64, 0.95, -18, SAGE, 0.5); sprig(W - 72, 64, 0.95, 198, SAGE, 0.5)
 c.showPage()
 
