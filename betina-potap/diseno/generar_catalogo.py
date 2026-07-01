@@ -103,8 +103,9 @@ def rrect(x, y, w, h, r, fill, stroke=None, sw=1):
 # ---------- tarjeta de propuesta (box_card) ----------
 # El alto se calcula a partir del contenido para que el botón de precio quede
 # pegado al texto (sin huecos). Devuelve el borde inferior de la tarjeta.
-def box_card(num, title, desc, incl, price, y_top, accent=TEAL, tsize=21, dsize=11.5, dlead=16, nota=None):
-    x = 56; w = W - 112; btn_h = 46
+def box_card(num, title, desc, incl, price, y_top, accent=TEAL, tsize=21, dsize=11.5, dlead=16, nota=None, x=56, w=None):
+    if w is None: w = W - 112
+    btn_h = 46
     n_desc = len(simpleSplit(desc, "Sans", dsize, w - 130))
     n_incl = len(simpleSplit(incl, "Sans", 10.5, w - 130))
     incl_label_y = (y_top - 78) - n_desc * dlead - 6
@@ -178,6 +179,17 @@ def photo_multi(key, x, y_top, w, items, fs=8):
         up_arrow(ax, base - 4)
         para(name, ax - slot / 2, base - 17, fs, slot - 3, fs + 1.3, "Sans", TEALD, "center")
     return base
+
+def photo_at(key, x, y_bottom, w, cap=None, arrows=None, capcolor=FOREST):
+    # Una foto vertical integrada en la página (esquina/lateral), con nombre opcional.
+    h = w / aspect(key); draw_photo(key, x, y_bottom, w, h)
+    if arrows:  # [(nombre, fracción_horizontal), ...]
+        for name, afx in arrows:
+            ax = x + afx * w; up_arrow(ax, y_bottom - 4)
+            para(name, ax - w / len(arrows) / 2, y_bottom - 17, 7.5, w / len(arrows) - 3, 9, "Sans", TEALD, "center")
+    elif cap:
+        para(cap, x - 8, y_bottom - 15, 9, w + 16, 11, "Serif", capcolor, "center")
+    return y_bottom + h
 
 # ============================== PÁGINAS ==============================
 
@@ -272,71 +284,50 @@ c.drawCentredString(W / 2, yb2 - 24, "Compra mínima: 10 cubiertos · por suscri
 sprig(72, 64, 0.95, -18, SAGE, 0.5); sprig(W - 72, 64, 0.95, 198, SAGE, 0.5)
 c.showPage()
 
-# ---------- PÁGINA 6 — Fotos: dulces y snacks del Box Snacking ----------
-bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 80, "Dulces y snacks")
-c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 104, "Algunos de los que entran en tu Box Snacking, hechos a mano.")
-singles = [("alfajores", "Alfajores de cacao y dátiles"), ("cookies", "Cookies de avena"),
-           ("brownies", "Brownies"), ("muffins", "Muffins de choco y dátiles"),
-           ("barritas", "Barritas de semillas"), ("bolitas", "Bolitas de dátiles")]
-gap = 26; cell = (W - 112 - 2 * gap) / 3; ph = cell / aspect("alfajores"); pitch = ph + 50
-for i, (key, name) in enumerate(singles):
-    cx = 56 + (i % 3) * (cell + gap); ytop = H - 138 - (i // 3) * pitch
-    draw_photo(key, cx, ytop - ph, cell, ph)
-    para(name, cx - 6, ytop - ph - 16, 10, cell + 12, 12.5, "Serif", FOREST, "center")
-c.showPage()
-
-# ---------- PÁGINA 7 — Box Coffee Break (hero + menú) ----------
+# ---------- PÁGINA 6 — Box Coffee Break (hero + menú) ----------
 box_hero("PARA REUNIONES Y DESAYUNOS DE EQUIPO", "Box Coffee Break",
          "Un desayuno completo, recién hecho y listo para servir.")
 incl_cb = ("Tostadas de sarraceno · Huevos revueltos y palta · Crackers con hummus · "
            "Dip de zanahoria · Yogur griego con granola y frutos rojos · Fruta fresca de "
            "estación · Budín de choco · Pancakes de banana y cacao con miel · "
            "Crocante dulce · Blend de mate y té · Limonada")
-cx0 = 56; cw0 = W - 112; ctop = H - 332
-lns = simpleSplit(incl_cb, "Sans", 11.5, cw0 - 96)
-chh = 32 + len(lns) * 17 + 26 + 46 + 26; cbot = ctop - chh
+# Dos columnas: menú a la izquierda, foto a la derecha
+pw = 168; px = W - 56 - pw
+cx0 = 56; cw0 = px - 56 - 22; cxc = cx0 + cw0 / 2; ctop = H - 300
+lns = simpleSplit(incl_cb, "Sans", 10.5, cw0 - 52)
+chh = 30 + len(lns) * 15.5 + 24 + 46 + 22; cbot = ctop - chh
 rrect(cx0, cbot, cw0, chh, 14, CARD); rrect(cx0, cbot, cw0, chh, 14, CARD, TEALD, 1.2)
-c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawCentredString(W / 2, ctop - 32, "I N C L U Y E")
-yy = ctop - 56
+c.setFillColor(col(TEALD)); c.setFont("SansB", 10); c.drawCentredString(cxc, ctop - 28, "I N C L U Y E")
+yy = ctop - 50
 for ln in lns:
-    c.setFillColor(col(INK)); c.setFont("Sans", 11.5); c.drawCentredString(W / 2, yy, ln); yy -= 17
-bwc = 330; byc = cbot + 26
-c.setFillColor(col(TEALD)); c.roundRect(W / 2 - bwc / 2, byc, bwc, 46, 8, fill=1, stroke=0)
-c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, byc + 31, "PRECIO")
-c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, byc + 12, "$15.000 por persona")
-c.setFillColor(col(TEALD)); c.setFont("SerifI", 12.5); c.drawCentredString(W / 2, cbot - 28, "Incluye 7 unidades por persona.")
-sprig(72, 92, 1.0, -18, SAGE, 0.5); sprig(W - 72, 92, 1.0, 198, SAGE, 0.5)
+    c.setFillColor(col(INK)); c.setFont("Sans", 10.5); c.drawCentredString(cxc, yy, ln); yy -= 15.5
+bwc = cw0 - 36; byc = cbot + 22
+c.setFillColor(col(TEALD)); c.roundRect(cxc - bwc / 2, byc, bwc, 46, 8, fill=1, stroke=0)
+c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(cxc, byc + 31, "PRECIO")
+c.setFillColor(col(CREAM)); c.setFont("SansB", 14); c.drawCentredString(cxc, byc + 12, "$15.000 por persona")
+# Foto a la derecha, alineada con la tarjeta
+photo_at("granola_yogurt", px, cbot, pw, arrows=[("Granola", 0.29), ("Yogurt", 0.72)])
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 12); c.drawCentredString(cxc, cbot - 24, "Incluye 7 unidades por persona.")
+sprig(72, 96, 1.0, -18, SAGE, 0.5); sprig(W - 72, 96, 1.0, 198, SAGE, 0.5)
 parac("Recién hecho · entregamos listo para servir.",
       120, 11, W * 0.72, 15, "SerifI", TEALD); c.showPage()
 
-# ---------- PÁGINA 8 — Fotos: frescos, salsas y blends (con flechitas) ----------
-bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 80, "Frescos y salsas")
-c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 104, "Los frescos del Coffee Break y de la Versión Plus.")
-gap = 26; cell = (W - 112 - 2 * gap) / 3; ph = cell / aspect("blends"); pitch = ph + 56
-r1 = H - 138
-photo_multi("granola_yogurt", 56, r1, cell, [("Granola", 0.29), ("Yogurt griego", 0.72)])
-photo_multi("frutos_garbanzos", 56 + cell + gap, r1, cell, [("Frutos secos", 0.27), ("Garbanzos crocantes", 0.71)])
-photo_multi("blends", 56 + 2 * (cell + gap), r1, cell, [("Blend de té", 0.27), ("Blend de mate", 0.74)])
-r2 = r1 - pitch; sx2 = 56 + (W - 112 - (2 * cell + gap)) / 2
-photo_multi("salsas", sx2, r2, cell, [("Mayonesa de zanahoria", 0.28), ("Hummus", 0.72)])
-photo_multi("tostis_crackers", sx2 + cell + gap, r2, cell,
-            [("Tostis almendras", 0.17), ("Tostis sarraceno", 0.5), ("Crackers zanahoria", 0.83)], fs=7.5)
-c.showPage()
-
-# ---------- PÁGINA 9 — Box Welcome Kit (hero + dos versiones) ----------
+# ---------- PÁGINA 7 — Box Welcome Kit (hero + dos versiones) ----------
 box_hero("PARA REGALAR A TU EQUIPO Y A TUS CLIENTES", "Box Welcome Kit",
          "Para bienvenidas, fin de año o clientes. Podés sumar tu branding.")
-GAP = 30
+# Dos columnas: las dos versiones a la izquierda, foto a la derecha
+pwk = 170; pxk = W - 56 - pwk; ckw = pxk - 56 - 22
+GAP = 26
 yb = box_card("01", "Clásico",
          "Para bienvenidas, fin de año o regalar a clientes.",
-         "barritas, crackers, hummus, 1 pan de sarraceno, granola, budín de choco y "
-         "blend de mate y té.",
-         "$35.000 · por kit", H - 214, TEAL, tsize=19, dsize=11, dlead=14)
-box_card("02", "Premium",
+         "barritas, crackers, hummus, 1 pan de sarraceno, granola, budín de choco y blend de mate y té.",
+         "$35.000 · por kit", H - 214, TEAL, tsize=18, dsize=10.5, dlead=13, x=56, w=ckw)
+yb3 = box_card("02", "Premium",
          "Todo lo del Clásico, con un plus para destacarte.",
          "todo lo del Clásico + dátiles con maní y choco y wrap proteico.",
-         "$55.000 · por kit", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14)
-sprig(72, 96, 1.0, -18, SAGE, 0.5); sprig(W - 72, 96, 1.0, 198, SAGE, 0.5)
+         "$55.000 · por kit", yb - GAP, GOLD, tsize=18, dsize=10.5, dlead=13, x=56, w=ckw)
+photo_at("brownies", pxk, yb3, pwk)
+sprig(72, 92, 1.0, -18, SAGE, 0.5); sprig(W - 72, 92, 1.0, 198, SAGE, 0.5)
 parac("Sumá tu logo y una tarjeta personalizada — armamos el kit a tu medida.",
       120, 11, W * 0.72, 15, "SerifI", TEALD); c.showPage()
 
@@ -349,7 +340,8 @@ diffs = [("100% alimentación consciente", "Sin gluten + sin lácteos + sin azú
 y = H - 172
 for t, d in diffs:
     leaf(64, y + 3, 18, 6, 20, TEAL); c.setFillColor(col(TEALD)); c.setFont("SansB", 13); c.drawString(92, y, t)
-    para(d, 92, y - 17, 11, W - 220, 15, "Sans", INK); y -= 66
+    para(d, 92, y - 17, 11, W - 300, 15, "Sans", INK); y -= 66
+photo_at("frutos_garbanzos", 402, 462, 130, arrows=[("Frutos secos", 0.27), ("Garbanzos", 0.71)])
 y -= 8; c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.line(56, y, W - 56, y); y -= 52
 c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, y, "Cómo funciona"); y -= 38
 steps = [("1", "Probás", "Te mandamos una muestra gratis para que el equipo la pruebe."),
