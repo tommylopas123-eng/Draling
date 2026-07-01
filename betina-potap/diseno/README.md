@@ -10,8 +10,9 @@ Acá vive todo lo necesario para regenerar y editar el **catálogo comercial PDF
 - `FILOSOFIA-Jardin-Sereno.md` — la filosofía de diseño (estética del catálogo).
 
 ## Fotos de producto
-- Las páginas "Una mesa que nos incluye a todos", "Nuestros productos" y "Y también…"
-  usan las imágenes de `fotos/`.
+- Las fotos van **intercaladas** con la presentación (no todas juntas al final):
+  "Una mesa que nos incluye a todos" (temprano), "Dulces y snacks" (tras el Box
+  Snacking) y "Frescos y salsas" (tras el Coffee Break). Usan las imágenes de `fotos/`.
 - Las fotos se usan **a frame completo** (sin recorte ni zoom): `prep_fotos.py` sólo
   corrige orientación, redondea esquinas y exporta a máxima calidad. Si se reemplaza
   una foto, actualizar la ruta en el diccionario `FOTOS` y correr

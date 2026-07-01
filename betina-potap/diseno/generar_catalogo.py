@@ -13,6 +13,10 @@ Para previsualizar páginas como PNG: pip install pymupdf y usar fitz.
 
 NOTA: si se mueven las fuentes, ajustar la variable FD.
 Para editar precios/textos: buscar las llamadas box_card(...) y los textos de cada página.
+
+Las fotos de producto se intercalan con la presentación (no van todas juntas al final):
+mesa servida (temprano), dulces/snacks tras el Box Snacking, y frescos/salsas tras el
+Coffee Break.
 """
 import math
 from reportlab.pdfgen import canvas
@@ -95,36 +99,8 @@ def rrect(x, y, w, h, r, fill, stroke=None, sw=1):
     if stroke: c.setStrokeColor(col(stroke)); c.setLineWidth(sw)
     c.roundRect(x, y, w, h, r, fill=1, stroke=1 if stroke else 0)
 
-# ---------- PÁGINA 1 — PORTADA ----------
-bg(CREAM); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1)
-sprig(60, H - 120, 1.5, -20, SAGE, 0.9); sprig(W - 60, 120, 1.5, 160, SAGE, 0.9)
-center_label("ALIMENTOS NATURALES   ·   CABA", H - 150, 10.5, "Sans", TEALD, 3)
-c.setFillColor(col(FOREST)); c.setFont("Display", 58); c.drawCentredString(W / 2, H / 2 + 70, "Betina Potap")
-c.setFillColor(col(GOLD)); c.setFont("Script", 26); c.drawCentredString(W / 2, H / 2 + 30, "hecho a mano con amor y consciencia")
-c.setStrokeColor(col(SAGE)); c.setLineWidth(1); c.line(W / 2 - 90, H / 2 - 2, W / 2 - 18, H / 2 - 2); c.line(W / 2 + 18, H / 2 - 2, W / 2 + 90, H / 2 - 2)
-leaf(W / 2, H / 2 - 11, 18, 6, 90, SAGE)  # hoja centrada (horizontal y vertical) en el divisor
-textc("Catálogo para empresas", H / 2 - 52, 20, "Serif", FOREST)
-parac("Snacks · Coffee breaks · Regalos corporativos · Catering", H / 2 - 80, 11.5, W * 0.8, 16, "Sans", INK)
-center_label("@BETINAPOTAP.NATURISTA   ·   WHATSAPP 11 6629 3150", 70, 9, "Sans", TEALD, 2.5)
-c.showPage()
-
-# ---------- PÁGINA 2 — PROPUESTA DE VALOR ----------
-bg(CREAM); sprig(W - 70, H - 95, 1.2, 150, SAGE, 0.8)
-c.setFillColor(col(FOREST)); c.setFont("Display", 30); c.drawString(56, H - 150, "Comida real"); c.drawString(56, H - 186, "para todo tu equipo.")
-y = para("Llevamos comida saludable y artesanal a tu oficina. Una sola compra que incluye a todos "
-         "—intolerantes al gluten, veganos, diabéticos y a quienes entrenan. Nada industrial, nada en serie: "
-         "hecho a mano, fresco y a medida.", 56, H - 224, 12.5, W - 200, 18, "Sans", INK) - 58
-pills = [("Sin", "gluten"), ("Sin", "lácteos"), ("Sin", "azúcar")]; bw = (W - 112 - 40) / 3
-for i, (a, b) in enumerate(pills):
-    x = 56 + i * (bw + 20); rrect(x, y - 110, bw, 100, 10, CARD); leaf(x + bw / 2, y - 34, 18, 6, 90, TEAL)  # hojita centrada en la tarjeta
-    c.setFillColor(col(TEALD)); c.setFont("Serif", 17); c.drawCentredString(x + bw / 2, y - 66, a)
-    c.setFont("Serif", 20); c.drawCentredString(x + bw / 2, y - 90, b)
-y -= 184; center_label("ARTESANAL   ·   FRESCO   ·   SALUDABLE", y, 12, "Sans", GOLD, 4); y -= 48
-c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.line(150, y, W - 150, y)
-c.setFillColor(col(INK)); c.setFont("SerifI", 14); c.drawCentredString(W / 2, y - 34, "“Que nadie del equipo quede afuera de la mesa.”")
-sprig(70, 96, 1.1, -15, SAGE, 0.8); sprig(W - 70, 96, 1.1, 195, SAGE, 0.8); c.showPage()
-
-# ---------- helper: tarjeta de propuesta ----------
+# ========================= HELPERS DE CONTENIDO =========================
+# ---------- tarjeta de propuesta (box_card) ----------
 # El alto se calcula a partir del contenido para que el botón de precio quede
 # pegado al texto (sin huecos). Devuelve el borde inferior de la tarjeta.
 def box_card(num, title, desc, incl, price, y_top, accent=TEAL, tsize=21, dsize=11.5, dlead=16, nota=None):
@@ -165,58 +141,7 @@ def box_card(num, title, desc, incl, price, y_top, accent=TEAL, tsize=21, dsize=
         c.setFont("SansB", 14); c.drawCentredString(x + w / 2, btn_top - 29, price)
     return card_bottom
 
-# ---------- PÁGINA 3 — PROPUESTA ESTRELLA: CATERING PARA EMPRESAS (página entera, sin número) ----------
-bg(CREAM); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1)
-sprig(W - 60, H - 105, 1.2, 150, SAGE, 0.6); sprig(60, 110, 1.2, -25, SAGE, 0.6)
-leaf(W / 2, H - 165, 80, 27, 90, GOLD)  # hoja entera grande = protagonista de la propuesta estrella
-center_label("NUESTRA PROPUESTA ESTRELLA PARA EMPRESAS", H - 205, 10.5, "Sans", TEALD, 3)
-c.setFillColor(col(FOREST)); c.setFont("Display", 33); c.drawCentredString(W / 2, H - 250, "Catering para empresas"); c.drawCentredString(W / 2, H - 289, "y oficinas")
-parac("Llevamos la comida de nuestro menú —proteico y naturista— a tus eventos, capacitaciones, "
-      "desayunos de equipo y “días saludables”. Todo fresco, artesanal y apto para todas las dietas: "
-      "sin gluten, sin lácteos y sin azúcar. Una sola compra donde come todo el equipo, sin que nadie "
-      "quede afuera de la mesa.", H - 328, 12.5, W * 0.74, 19, "Sans", INK)
-fmts = [("Almuerzos de negocios", "Para reuniones de trabajo, al mediodía."),
-        ("Días saludables", "Un día sano para todo el equipo."),
-        ("Eventos corporativos", "Catering a medida para tu evento.")]
-fy = H - 430; bw = (W - 112 - 40) / 3
-for i, (t, d) in enumerate(fmts):
-    x = 56 + i * (bw + 20); rrect(x, fy - 98, bw, 98, 12, CARD); leaf(x + bw / 2, fy - 30, 16, 5.5, 90, TEAL)
-    c.setFillColor(col(TEALD)); c.setFont("SansB", 12); c.drawCentredString(x + bw / 2, fy - 52, t)
-    para(d, x + 12, fy - 70, 9.5, bw - 24, 12, "Sans", INK, "center")
-pb_y = 158; rrect(W / 2 - 212, pb_y, 424, 74, 12, FOREST)
-c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, pb_y + 52, "PRESUPUESTO")
-c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 30, "Armamos el presupuesto")
-c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 11, "a la medida de tu necesidad")
-center_label("PEDÍ TU PROPUESTA A MEDIDA", 74, 9, "Sans", TEALD, 2.5); c.showPage()
-
-# ---------- PÁGINA 4 — Box Snacking (hero) + dos versiones (Seca / Plus) ----------
-bg(CREAM)
-center_label("DESCUBRÍ NUESTRAS PROPUESTAS", H - 92, 10.5, "Sans", TEALD, 3)
-c.setFillColor(col(FOREST)); c.setFont("Display", 46); c.drawCentredString(W / 2, H - 142, "Box Snacking")
-c.setStrokeColor(col(SAGE)); c.setLineWidth(1)
-c.line(W / 2 - 92, H - 162, W / 2 - 18, H - 162); c.line(W / 2 + 18, H - 162, W / 2 + 92, H - 162)
-leaf(W / 2, H - 171, 18, 6, 90, GOLD)
-textc("Picoteo sano de la semana, en dos versiones a elección.", H - 196, 13, "SerifI", TEALD)
-GAP = 28
-yb = box_card("01", "Versión Seca · base",
-         "Todo seco y de larga duración. Listo para la cocina de tu oficina.",
-         "frutos secos, bolitas de dátiles, cookies de avena, muffins de choco con dátiles, "
-         "alfajor de cacao con dátiles y maní, crackers de zanahoria, garbanzos crocantes, "
-         "brownies, barritas de semillas y blends de mate y de té.",
-         "5 unidades $9.000\n10 unidades $17.000\npor persona", H - 208, TEAL, tsize=19, dsize=11, dlead=14,
-         nota="5 un = 1 picoteo al día      ·      10 un = 2 colaciones al día")
-yb2 = box_card("02", "Versión Plus · fresca",
-         "Agrandá tu box con opciones frescas.",
-         "todo lo de la Seca + yogurt griego, granola, hummus, mayonesa de zanahoria y cúrcuma, "
-         "fruta fresca de estación y tostis de sarraceno y almendras.",
-         "5 unidades $11.000\n10 unidades $20.000\npor persona", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14,
-         nota="5 un = 2 frescas + 3 secas      ·      10 un = 4 frescas + 6 secas")
-c.setFillColor(col(TEALD)); c.setFont("SerifI", 11.5)
-c.drawCentredString(W / 2, yb2 - 24, "Compra mínima: 10 cubiertos · por suscripción, se puede pausar.")
-sprig(72, 64, 0.95, -18, SAGE, 0.5); sprig(W - 72, 64, 0.95, 198, SAGE, 0.5)
-c.showPage()
-
-# ---------- PÁGINA 5 — Box Coffee Break (hero + menú) ----------
+# ---------- encabezado hero de una box ----------
 def box_hero(eyebrow, title, subtitle, tsize=44):
     bg(CREAM)
     center_label(eyebrow, H - 92, 10.5, "Sans", TEALD, 2.6)
@@ -226,48 +151,7 @@ def box_hero(eyebrow, title, subtitle, tsize=44):
     leaf(W / 2, H - 171, 18, 6, 90, GOLD)
     textc(subtitle, H - 196, 13, "SerifI", TEALD)
 
-box_hero("PARA REUNIONES Y DESAYUNOS DE EQUIPO", "Box Coffee Break",
-         "Un desayuno completo, recién hecho y listo para servir.")
-incl_cb = ("Tostadas de sarraceno · Huevos revueltos y palta · Crackers con hummus · "
-           "Dip de zanahoria · Yogur griego con granola y frutos rojos · Fruta fresca de "
-           "estación · Budín de choco · Pancakes de banana y cacao con miel · "
-           "Crocante dulce · Blend de mate y té · Limonada")
-cx0 = 56; cw0 = W - 112; ctop = H - 332
-lns = simpleSplit(incl_cb, "Sans", 11.5, cw0 - 96)
-chh = 32 + len(lns) * 17 + 26 + 46 + 26; cbot = ctop - chh
-rrect(cx0, cbot, cw0, chh, 14, CARD); rrect(cx0, cbot, cw0, chh, 14, CARD, TEALD, 1.2)
-c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawCentredString(W / 2, ctop - 32, "I N C L U Y E")
-yy = ctop - 56
-for ln in lns:
-    c.setFillColor(col(INK)); c.setFont("Sans", 11.5); c.drawCentredString(W / 2, yy, ln); yy -= 17
-bwc = 330; byc = cbot + 26
-c.setFillColor(col(TEALD)); c.roundRect(W / 2 - bwc / 2, byc, bwc, 46, 8, fill=1, stroke=0)
-c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, byc + 31, "PRECIO")
-c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, byc + 12, "$15.000 por persona")
-c.setFillColor(col(TEALD)); c.setFont("SerifI", 12.5); c.drawCentredString(W / 2, cbot - 28, "Incluye 7 unidades por persona.")
-sprig(72, 92, 1.0, -18, SAGE, 0.5); sprig(W - 72, 92, 1.0, 198, SAGE, 0.5)
-parac("Recién hecho · entregamos listo para servir.",
-      120, 11, W * 0.72, 15, "SerifI", TEALD); c.showPage()
-
-# ---------- PÁGINA 6 — Box Welcome Kit (hero + dos versiones) ----------
-box_hero("PARA REGALAR A TU EQUIPO Y A TUS CLIENTES", "Box Welcome Kit",
-         "Para bienvenidas, fin de año o clientes. Podés sumar tu branding.")
-GAP = 30
-yb = box_card("01", "Clásico",
-         "Para bienvenidas, fin de año o regalar a clientes.",
-         "barritas, crackers, hummus, 1 pan de sarraceno, granola, budín de choco y "
-         "blend de mate y té.",
-         "$35.000 · por kit", H - 214, TEAL, tsize=19, dsize=11, dlead=14)
-box_card("02", "Premium",
-         "Todo lo del Clásico, con un plus para destacarte.",
-         "todo lo del Clásico + dátiles con maní y choco y wrap proteico.",
-         "$55.000 · por kit", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14)
-sprig(72, 96, 1.0, -18, SAGE, 0.5); sprig(W - 72, 96, 1.0, 198, SAGE, 0.5)
-parac("Sumá tu logo y una tarjeta personalizada — armamos el kit a tu medida.",
-      120, 11, W * 0.72, 15, "SerifI", TEALD); c.showPage()
-
-# ===================== SECCIÓN DE FOTOS DE PRODUCTO =====================
-# Fotos a frame completo (sin recorte). Ver diseno/prep_fotos.py.
+# ---------- fotos de producto (frame completo). Ver diseno/prep_fotos.py ----------
 FOTODIR = "diseno/fotos/%s.jpg"
 _ASP = {}
 def aspect(key):
@@ -295,7 +179,38 @@ def photo_multi(key, x, y_top, w, items, fs=8):
         para(name, ax - slot / 2, base - 17, fs, slot - 3, fs + 1.3, "Sans", TEALD, "center")
     return base
 
-# ---------- PÁGINA 7 — "Mesa servida": la foto general ----------
+# ============================== PÁGINAS ==============================
+
+# ---------- PÁGINA 1 — PORTADA ----------
+bg(CREAM); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1)
+sprig(60, H - 120, 1.5, -20, SAGE, 0.9); sprig(W - 60, 120, 1.5, 160, SAGE, 0.9)
+center_label("ALIMENTOS NATURALES   ·   CABA", H - 150, 10.5, "Sans", TEALD, 3)
+c.setFillColor(col(FOREST)); c.setFont("Display", 58); c.drawCentredString(W / 2, H / 2 + 70, "Betina Potap")
+c.setFillColor(col(GOLD)); c.setFont("Script", 26); c.drawCentredString(W / 2, H / 2 + 30, "hecho a mano con amor y consciencia")
+c.setStrokeColor(col(SAGE)); c.setLineWidth(1); c.line(W / 2 - 90, H / 2 - 2, W / 2 - 18, H / 2 - 2); c.line(W / 2 + 18, H / 2 - 2, W / 2 + 90, H / 2 - 2)
+leaf(W / 2, H / 2 - 11, 18, 6, 90, SAGE)  # hoja centrada (horizontal y vertical) en el divisor
+textc("Catálogo para empresas", H / 2 - 52, 20, "Serif", FOREST)
+parac("Snacks · Coffee breaks · Regalos corporativos · Catering", H / 2 - 80, 11.5, W * 0.8, 16, "Sans", INK)
+center_label("@BETINAPOTAP.NATURISTA   ·   WHATSAPP 11 6629 3150", 70, 9, "Sans", TEALD, 2.5)
+c.showPage()
+
+# ---------- PÁGINA 2 — PROPUESTA DE VALOR ----------
+bg(CREAM); sprig(W - 70, H - 95, 1.2, 150, SAGE, 0.8)
+c.setFillColor(col(FOREST)); c.setFont("Display", 30); c.drawString(56, H - 150, "Comida real"); c.drawString(56, H - 186, "para todo tu equipo.")
+y = para("Llevamos comida saludable y artesanal a tu oficina. Una sola compra que incluye a todos "
+         "—intolerantes al gluten, veganos, diabéticos y a quienes entrenan. Nada industrial, nada en serie: "
+         "hecho a mano, fresco y a medida.", 56, H - 224, 12.5, W - 200, 18, "Sans", INK) - 58
+pills = [("Sin", "gluten"), ("Sin", "lácteos"), ("Sin", "azúcar")]; bw = (W - 112 - 40) / 3
+for i, (a, b) in enumerate(pills):
+    x = 56 + i * (bw + 20); rrect(x, y - 110, bw, 100, 10, CARD); leaf(x + bw / 2, y - 34, 18, 6, 90, TEAL)  # hojita centrada en la tarjeta
+    c.setFillColor(col(TEALD)); c.setFont("Serif", 17); c.drawCentredString(x + bw / 2, y - 66, a)
+    c.setFont("Serif", 20); c.drawCentredString(x + bw / 2, y - 90, b)
+y -= 184; center_label("ARTESANAL   ·   FRESCO   ·   SALUDABLE", y, 12, "Sans", GOLD, 4); y -= 48
+c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.line(150, y, W - 150, y)
+c.setFillColor(col(INK)); c.setFont("SerifI", 14); c.drawCentredString(W / 2, y - 34, "“Que nadie del equipo quede afuera de la mesa.”")
+sprig(70, 96, 1.1, -15, SAGE, 0.8); sprig(W - 70, 96, 1.1, 195, SAGE, 0.8); c.showPage()
+
+# ---------- PÁGINA 3 — "Mesa servida": la foto general (temprano, como gancho) ----------
 bg(CREAM); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1)
 sprig(66, 96, 1.1, -20, SAGE, 0.5); sprig(W - 66, 96, 1.1, 200, SAGE, 0.5)
 center_label("TODO HECHO A MANO, PARA TODO EL EQUIPO", H - 92, 10.5, "Sans", TEALD, 2.4)
@@ -306,9 +221,60 @@ draw_photo("spread", sx, sy, sw, sh, frame=SAGE)
 parac("Sin gluten · sin lácteos · sin azúcar — comen todos, sin que nadie quede afuera de la mesa.",
       158, 11, W * 0.74, 15, "SerifI", TEALD); c.showPage()
 
-# ---------- PÁGINA 8 — Galería de productos (individuales) ----------
-bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 80, "Nuestros productos")
-c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 104, "Hechos a mano, sin gluten, sin lácteos y sin azúcar.")
+# ---------- PÁGINA 4 — PROPUESTA ESTRELLA: CATERING PARA EMPRESAS ----------
+bg(CREAM); c.setStrokeColor(col(SAGE)); c.setLineWidth(0.8); c.rect(34, 34, W - 68, H - 68, fill=0, stroke=1)
+sprig(W - 60, H - 105, 1.2, 150, SAGE, 0.6); sprig(60, 110, 1.2, -25, SAGE, 0.6)
+leaf(W / 2, H - 165, 80, 27, 90, GOLD)  # hoja entera grande = protagonista de la propuesta estrella
+center_label("NUESTRA PROPUESTA ESTRELLA PARA EMPRESAS", H - 205, 10.5, "Sans", TEALD, 3)
+c.setFillColor(col(FOREST)); c.setFont("Display", 33); c.drawCentredString(W / 2, H - 250, "Catering para empresas"); c.drawCentredString(W / 2, H - 289, "y oficinas")
+parac("Llevamos la comida de nuestro menú —proteico y naturista— a tus eventos, capacitaciones, "
+      "desayunos de equipo y “días saludables”. Todo fresco, artesanal y apto para todas las dietas: "
+      "sin gluten, sin lácteos y sin azúcar. Una sola compra donde come todo el equipo, sin que nadie "
+      "quede afuera de la mesa.", H - 328, 12.5, W * 0.74, 19, "Sans", INK)
+fmts = [("Almuerzos de negocios", "Para reuniones de trabajo, al mediodía."),
+        ("Días saludables", "Un día sano para todo el equipo."),
+        ("Eventos corporativos", "Catering a medida para tu evento.")]
+fy = H - 430; bw = (W - 112 - 40) / 3
+for i, (t, d) in enumerate(fmts):
+    x = 56 + i * (bw + 20); rrect(x, fy - 98, bw, 98, 12, CARD); leaf(x + bw / 2, fy - 30, 16, 5.5, 90, TEAL)
+    c.setFillColor(col(TEALD)); c.setFont("SansB", 12); c.drawCentredString(x + bw / 2, fy - 52, t)
+    para(d, x + 12, fy - 70, 9.5, bw - 24, 12, "Sans", INK, "center")
+pb_y = 158; rrect(W / 2 - 212, pb_y, 424, 74, 12, FOREST)
+c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, pb_y + 52, "PRESUPUESTO")
+c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 30, "Armamos el presupuesto")
+c.setFont("SansB", 15); c.drawCentredString(W / 2, pb_y + 11, "a la medida de tu necesidad")
+center_label("PEDÍ TU PROPUESTA A MEDIDA", 74, 9, "Sans", TEALD, 2.5); c.showPage()
+
+# ---------- PÁGINA 5 — Box Snacking (hero) + dos versiones (Seca / Plus) ----------
+bg(CREAM)
+center_label("DESCUBRÍ NUESTRAS PROPUESTAS", H - 92, 10.5, "Sans", TEALD, 3)
+c.setFillColor(col(FOREST)); c.setFont("Display", 46); c.drawCentredString(W / 2, H - 142, "Box Snacking")
+c.setStrokeColor(col(SAGE)); c.setLineWidth(1)
+c.line(W / 2 - 92, H - 162, W / 2 - 18, H - 162); c.line(W / 2 + 18, H - 162, W / 2 + 92, H - 162)
+leaf(W / 2, H - 171, 18, 6, 90, GOLD)
+textc("Picoteo sano de la semana, en dos versiones a elección.", H - 196, 13, "SerifI", TEALD)
+GAP = 28
+yb = box_card("01", "Versión Seca · base",
+         "Todo seco y de larga duración. Listo para la cocina de tu oficina.",
+         "frutos secos, bolitas de dátiles, cookies de avena, muffins de choco con dátiles, "
+         "alfajor de cacao con dátiles y maní, crackers de zanahoria, garbanzos crocantes, "
+         "brownies, barritas de semillas y blends de mate y de té.",
+         "5 unidades $9.000\n10 unidades $17.000\npor persona", H - 208, TEAL, tsize=19, dsize=11, dlead=14,
+         nota="5 un = 1 picoteo al día      ·      10 un = 2 colaciones al día")
+yb2 = box_card("02", "Versión Plus · fresca",
+         "Agrandá tu box con opciones frescas.",
+         "todo lo de la Seca + yogurt griego, granola, hummus, mayonesa de zanahoria y cúrcuma, "
+         "fruta fresca de estación y tostis de sarraceno y almendras.",
+         "5 unidades $11.000\n10 unidades $20.000\npor persona", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14,
+         nota="5 un = 2 frescas + 3 secas      ·      10 un = 4 frescas + 6 secas")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 11.5)
+c.drawCentredString(W / 2, yb2 - 24, "Compra mínima: 10 cubiertos · por suscripción, se puede pausar.")
+sprig(72, 64, 0.95, -18, SAGE, 0.5); sprig(W - 72, 64, 0.95, 198, SAGE, 0.5)
+c.showPage()
+
+# ---------- PÁGINA 6 — Fotos: dulces y snacks del Box Snacking ----------
+bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 80, "Dulces y snacks")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 104, "Algunos de los que entran en tu Box Snacking, hechos a mano.")
 singles = [("alfajores", "Alfajores de cacao y dátiles"), ("cookies", "Cookies de avena"),
            ("brownies", "Brownies"), ("muffins", "Muffins de choco y dátiles"),
            ("barritas", "Barritas de semillas"), ("bolitas", "Bolitas de dátiles")]
@@ -319,9 +285,33 @@ for i, (key, name) in enumerate(singles):
     para(name, cx - 6, ytop - ph - 16, 10, cell + 12, 12.5, "Serif", FOREST, "center")
 c.showPage()
 
-# ---------- PÁGINA 9 — Galería: frescos, salsas y blends (con flechitas) ----------
-bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 80, "Y también…")
-c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 104, "Frescos, salsas y blends para tu mesa.")
+# ---------- PÁGINA 7 — Box Coffee Break (hero + menú) ----------
+box_hero("PARA REUNIONES Y DESAYUNOS DE EQUIPO", "Box Coffee Break",
+         "Un desayuno completo, recién hecho y listo para servir.")
+incl_cb = ("Tostadas de sarraceno · Huevos revueltos y palta · Crackers con hummus · "
+           "Dip de zanahoria · Yogur griego con granola y frutos rojos · Fruta fresca de "
+           "estación · Budín de choco · Pancakes de banana y cacao con miel · "
+           "Crocante dulce · Blend de mate y té · Limonada")
+cx0 = 56; cw0 = W - 112; ctop = H - 332
+lns = simpleSplit(incl_cb, "Sans", 11.5, cw0 - 96)
+chh = 32 + len(lns) * 17 + 26 + 46 + 26; cbot = ctop - chh
+rrect(cx0, cbot, cw0, chh, 14, CARD); rrect(cx0, cbot, cw0, chh, 14, CARD, TEALD, 1.2)
+c.setFillColor(col(TEALD)); c.setFont("SansB", 10.5); c.drawCentredString(W / 2, ctop - 32, "I N C L U Y E")
+yy = ctop - 56
+for ln in lns:
+    c.setFillColor(col(INK)); c.setFont("Sans", 11.5); c.drawCentredString(W / 2, yy, ln); yy -= 17
+bwc = 330; byc = cbot + 26
+c.setFillColor(col(TEALD)); c.roundRect(W / 2 - bwc / 2, byc, bwc, 46, 8, fill=1, stroke=0)
+c.setFillColor(col(GOLD)); c.setFont("SansB", 9); c.drawCentredString(W / 2, byc + 31, "PRECIO")
+c.setFillColor(col(CREAM)); c.setFont("SansB", 15); c.drawCentredString(W / 2, byc + 12, "$15.000 por persona")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 12.5); c.drawCentredString(W / 2, cbot - 28, "Incluye 7 unidades por persona.")
+sprig(72, 92, 1.0, -18, SAGE, 0.5); sprig(W - 72, 92, 1.0, 198, SAGE, 0.5)
+parac("Recién hecho · entregamos listo para servir.",
+      120, 11, W * 0.72, 15, "SerifI", TEALD); c.showPage()
+
+# ---------- PÁGINA 8 — Fotos: frescos, salsas y blends (con flechitas) ----------
+bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 80, "Frescos y salsas")
+c.setFillColor(col(TEALD)); c.setFont("SerifI", 13); c.drawString(56, H - 104, "Los frescos del Coffee Break y de la Versión Plus.")
 gap = 26; cell = (W - 112 - 2 * gap) / 3; ph = cell / aspect("blends"); pitch = ph + 56
 r1 = H - 138
 photo_multi("granola_yogurt", 56, r1, cell, [("Granola", 0.29), ("Yogurt griego", 0.72)])
@@ -332,6 +322,23 @@ photo_multi("salsas", sx2, r2, cell, [("Mayonesa de zanahoria", 0.28), ("Hummus"
 photo_multi("tostis_crackers", sx2 + cell + gap, r2, cell,
             [("Tostis almendras", 0.17), ("Tostis sarraceno", 0.5), ("Crackers zanahoria", 0.83)], fs=7.5)
 c.showPage()
+
+# ---------- PÁGINA 9 — Box Welcome Kit (hero + dos versiones) ----------
+box_hero("PARA REGALAR A TU EQUIPO Y A TUS CLIENTES", "Box Welcome Kit",
+         "Para bienvenidas, fin de año o clientes. Podés sumar tu branding.")
+GAP = 30
+yb = box_card("01", "Clásico",
+         "Para bienvenidas, fin de año o regalar a clientes.",
+         "barritas, crackers, hummus, 1 pan de sarraceno, granola, budín de choco y "
+         "blend de mate y té.",
+         "$35.000 · por kit", H - 214, TEAL, tsize=19, dsize=11, dlead=14)
+box_card("02", "Premium",
+         "Todo lo del Clásico, con un plus para destacarte.",
+         "todo lo del Clásico + dátiles con maní y choco y wrap proteico.",
+         "$55.000 · por kit", yb - GAP, GOLD, tsize=19, dsize=11, dlead=14)
+sprig(72, 96, 1.0, -18, SAGE, 0.5); sprig(W - 72, 96, 1.0, 198, SAGE, 0.5)
+parac("Sumá tu logo y una tarjeta personalizada — armamos el kit a tu medida.",
+      120, 11, W * 0.72, 15, "SerifI", TEALD); c.showPage()
 
 # ---------- PÁGINA 10 — Por qué + Cómo funciona ----------
 bg(CREAM); c.setFillColor(col(FOREST)); c.setFont("Display", 26); c.drawString(56, H - 130, "¿Por qué Betina Potap?")
@@ -356,7 +363,7 @@ for i, (n, t, d) in enumerate(steps):
     para(d, x + 12, y - 96, 9.5, bw - 24, 12.5, "Sans", CREAM, "center")
 sprig(70, 86, 1.0, -20, SAGE, 0.55); sprig(W - 70, 86, 1.1, 200, SAGE, 0.6); c.showPage()
 
-# ---------- Íconos de redes (vectoriales, monocromo) ----------
+# ---------- Íconos de redes ----------
 def ig_icon(cx, cy, s, color=SAGE):
     c.setStrokeColor(col(color)); c.setLineWidth(s * 0.10); c.setLineJoin(1)
     c.roundRect(cx - s / 2, cy - s / 2, s, s, s * 0.30, stroke=1, fill=0)
@@ -368,7 +375,6 @@ def wa_icon(cx, cy, s, color=SAGE, bg="#2C5A4E"):
     c.setFillColor(col(color)); c.circle(cx, cy, R, stroke=0, fill=1)
     p = c.beginPath(); p.moveTo(cx - R * 0.62, cy - R * 0.42); p.lineTo(cx - R * 1.02, cy - R * 0.98)
     p.lineTo(cx - R * 0.16, cy - R * 0.80); p.close(); c.drawPath(p, fill=1, stroke=0)
-    # auricular: arco curvo inclinado 45° con orejera y micrófono en las puntas
     c.saveState(); c.translate(cx, cy); c.rotate(45)
     c.setStrokeColor(col(bg)); c.setLineWidth(s * 0.15); c.setLineCap(1); c.setLineJoin(1)
     p = c.beginPath(); p.moveTo(-s * 0.20, s * 0.06)
