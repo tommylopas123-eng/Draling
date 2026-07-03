@@ -1,7 +1,7 @@
-# Replai — Guía para Claude
+# Draling — Guía para Claude
 
 ## Contexto
-- **Replai**: empresa a futuro (ver `VISION.md`) — plataforma de automatización con IA para empresas.
+- **Draling**: empresa a futuro (ver `VISION.md`) — plataforma de automatización con IA para empresas.
 - **Proyecto actual**: ayudar al negocio de la madre del usuario, **Betina Potap –
   Alimentos Naturales** (CABA), a vender a empresas/startups (canal B2B).
   - Info del negocio: `betina-potap/EMPRESA.md`

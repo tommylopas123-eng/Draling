@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Draling — Automatización con IA para pymes | Buenos Aires</title>
+<meta name="description" content="Automatizamos tu negocio con IA: WhatsApp que responde solo, pedidos y planillas que se cargan solos, reportes automáticos. Diagnóstico gratis para pymes argentinas.">
+<style>
+  :root{
+    --bg:#0b0d14; --bg-soft:#12151f; --card:#171b28; --border:#252b3d;
+    --text:#eef0f6; --muted:#9aa3b8;
+    --accent:#7c5cff; --accent-2:#4dd6c1; --accent-soft:rgba(124,92,255,.14);
+    --wa:#25d366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  section{padding:72px 0}
+  h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+  h2{font-size:clamp(26px,4vw,38px);text-align:center;margin-bottom:14px}
+  .lead{color:var(--muted);text-align:center;max-width:640px;margin:0 auto 44px;font-size:17px}
+
+  /* NAV */
+  nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+  .logo{font-size:22px;font-weight:800;letter-spacing:-.03em}
+  .logo span{color:var(--accent)}
+  .nav-cta{font-size:14px;font-weight:600;color:var(--text);text-decoration:none;border:1px solid var(--border);padding:9px 18px;border-radius:99px;transition:.2s}
+  .nav-cta:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* HERO */
+  .hero{padding:84px 0 90px;text-align:center;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-220px;left:50%;transform:translateX(-50%);width:720px;height:520px;background:radial-gradient(closest-side,var(--accent-soft),transparent);pointer-events:none}
+  .eyebrow{display:inline-block;font-size:13.5px;font-weight:600;color:var(--accent-2);background:rgba(77,214,193,.1);border:1px solid rgba(77,214,193,.25);padding:7px 16px;border-radius:99px;margin-bottom:26px}
+  .hero h1{font-size:clamp(38px,7vw,64px);font-weight:800;max-width:760px;margin:0 auto 22px}
+  .hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{color:var(--muted);font-size:clamp(16px,2.2vw,19px);max-width:640px;margin:0 auto 36px}
+  .btn{display:inline-block;background:linear-gradient(90deg,var(--accent),#9b7bff);color:#fff;font-size:17px;font-weight:700;text-decoration:none;padding:16px 34px;border-radius:14px;box-shadow:0 8px 30px rgba(124,92,255,.35);transition:.2s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(124,92,255,.45)}
+  .micro{font-size:13.5px;color:var(--muted);margin-top:14px}
+
+  /* CARDS */
+  .grid{display:grid;gap:18px}
+  .grid-3{grid-template-columns:repeat(3,1fr)}
+  .grid-2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:760px){.grid-3,.grid-2{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:26px}
+  .card h3{font-size:17.5px;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:15px}
+  .card .ico{font-size:26px;margin-bottom:14px;display:block}
+  .pain .card{border-top:3px solid #e0556c}
+  .sol .card{border-top:3px solid var(--accent-2)}
+
+  /* AGITATE BAND */
+  .band{background:var(--bg-soft);border-block:1px solid var(--border);padding:44px 0;text-align:center}
+  .band p{font-size:clamp(17px,2.6vw,21px);max-width:720px;margin:0 auto;color:var(--text);font-weight:500}
+  .band strong{color:var(--accent-2)}
+
+  /* STEPS */
+  .step{text-align:center;padding:26px 18px}
+  .stepnum{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:800;font-size:19px;margin-bottom:16px;border:1px solid rgba(124,92,255,.35)}
+
+  /* CASE */
+  .case{background:linear-gradient(135deg,rgba(124,92,255,.10),rgba(77,214,193,.08));border:1px solid var(--border);border-radius:20px;padding:36px;max-width:760px;margin:0 auto;text-align:center}
+  .case blockquote{font-size:17px;color:var(--text);margin-bottom:14px}
+  .case cite{color:var(--muted);font-style:normal;font-size:14.5px}
+
+  /* FAQ */
+  details{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 22px;margin-bottom:12px;max-width:760px;margin-inline:auto}
+  summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  summary::after{content:"+";color:var(--accent);font-size:22px;font-weight:400;flex-shrink:0}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted);font-size:15px;margin-top:12px}
+
+  /* FINAL CTA */
+  .final{text-align:center;background:var(--bg-soft);border-top:1px solid var(--border)}
+  .final h2{max-width:640px;margin-inline:auto}
+
+  footer{padding:34px 0;text-align:center;color:var(--muted);font-size:13.5px;border-top:1px solid var(--border)}
+
+  /* WhatsApp float */
+  .wa-float{position:fixed;right:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.4);z-index:50;text-decoration:none;font-size:28px}
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <nav>
+    <div class="logo">Dral<span>ing</span></div>
+    <a class="nav-cta" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Quiero%20un%20diagn%C3%B3stico%20gratis%20para%20mi%20negocio">Diagnóstico gratis</a>
+  </nav>
+</header>
+
+<section class="hero wrap">
+  <span class="eyebrow">⚡ Automatización con IA para pymes argentinas</span>
+  <h1>Tu negocio, en <em>piloto automático</em>.</h1>
+  <p>Draling automatiza lo repetitivo de tu empresa con inteligencia artificial: el WhatsApp responde solo, los pedidos se cargan solos y los reportes se arman solos. Vos te dedicás a vender.</p>
+  <a class="btn" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Quiero%20un%20diagn%C3%B3stico%20gratis%20para%20mi%20negocio">Quiero mi diagnóstico gratis</a>
+  <p class="micro">30 minutos, por WhatsApp o videollamada. Sin compromiso.</p>
+</section>
+
+<section class="pain">
+  <div class="wrap">
+    <h2>¿Te suena?</h2>
+    <p class="lead">Si tenés un negocio, seguro vivís alguna de estas tres.</p>
+    <div class="grid grid-3">
+      <div class="card"><span class="ico">📱</span><h3>“No doy abasto con el WhatsApp”</h3><p>Respondés hasta un domingo a la noche. Y cuando tardás, el cliente ya le compró a otro.</p></div>
+      <div class="card"><span class="ico">📋</span><h3>“Vivo cargando planillas”</h3><p>Cada pedido lo pasás a mano: de WhatsApp a la planilla, de la planilla a la factura. Horas por semana que no vuelven.</p></div>
+      <div class="card"><span class="ico">🌫️</span><h3>“No sé cuánto gané este mes”</h3><p>Los números están repartidos entre cuadernos, planillas y la cabeza. Decidís a ciegas.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <p>Cada semana que tu negocio depende de tareas manuales, perdés <strong>ventas, horas y tranquilidad</strong>. Y contratar a alguien más no lo arregla: multiplica el costo.</p>
+</div>
+
+<section class="sol">
+  <div class="wrap">
+    <h2>Qué automatizamos</h2>
+    <p class="lead">Automatizaciones concretas, funcionando en días. Sin proyectos eternos ni jerga técnica.</p>
+    <div class="grid grid-3">
+      <div class="card"><span class="ico">🤖</span><h3>Atención por WhatsApp e Instagram</h3><p>Un asistente con IA responde precios, horarios y consultas al instante, 24/7. Y deriva a un humano cuando hace falta.</p></div>
+      <div class="card"><span class="ico">🛒</span><h3>Toma de pedidos</h3><p>El pedido llega por chat y se registra solo: producto, cantidad, cliente, total.</p></div>
+      <div class="card"><span class="ico">📊</span><h3>Carga de datos y planillas</h3><p>Facturas, gastos y ventas se anotan solos donde ya trabajás (Google Sheets o tu sistema).</p></div>
+      <div class="card"><span class="ico">💸</span><h3>Recordatorios de cobro</h3><p>Aviso automático a los clientes que deben pagar. Sin perseguir a nadie.</p></div>
+      <div class="card"><span class="ico">📬</span><h3>Reportes automáticos</h3><p>Cada lunes te llega un resumen: cuánto vendiste, qué se vendió más, quién debe.</p></div>
+      <div class="card"><span class="ico">🔗</span><h3>Conexión entre tus herramientas</h3><p>WhatsApp + Mercado Pago + planillas + mail, trabajando juntos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Cómo funciona</h2>
+    <p class="lead">De la primera charla a tu automatización funcionando, en tres pasos.</p>
+    <div class="grid grid-3">
+      <div class="step"><span class="stepnum">1</span><h3>Diagnóstico gratis</h3><p style="color:var(--muted);font-size:15px">Nos contás cómo trabaja tu negocio (30 min). Detectamos las 2 o 3 tareas que más tiempo te roban.</p></div>
+      <div class="step"><span class="stepnum">2</span><h3>Armamos tu automatización</h3><p style="color:var(--muted);font-size:15px">En días, no meses. Precio fijo acordado antes de empezar, sin sorpresas.</p></div>
+      <div class="step"><span class="stepnum">3</span><h3>La probás y la usás</h3><p style="color:var(--muted);font-size:15px">Te la dejamos funcionando, te enseñamos a usarla y quedamos disponibles para ajustes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="case">
+      <blockquote>“Digitalizamos el catálogo y el circuito de pedidos B2B de un negocio real de alimentos naturales: menos carga manual, respuestas más rápidas y ningún pedido perdido.”</blockquote>
+      <cite>Primer caso: Betina Potap – Alimentos Naturales (CABA)</cite>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <p class="lead">Lo que todos preguntan antes de arrancar.</p>
+    <details><summary>¿Cuánto cuesta?</summary><p>Depende de qué automaticemos. Trabajamos con precio fijo por automatización, acordado antes de empezar. El diagnóstico es gratis y ahí te decimos el número exacto.</p></details>
+    <details><summary>No entiendo nada de tecnología, ¿es para mí?</summary><p>Sí. No tenés que tocar nada: lo armamos, lo probamos con vos y te enseñamos. Si sabés usar WhatsApp, sabés usar esto.</p></details>
+    <details><summary>¿La IA no va a contestar cualquier cosa?</summary><p>El asistente responde solo lo que definimos juntos (precios, horarios, pedidos). Ante cualquier duda, deriva a una persona. Vos tenés el control.</p></details>
+    <details><summary>¿Y si después se rompe o quiero cambiar algo?</summary><p>Ofrecemos mantenimiento mensual opcional con soporte directo por WhatsApp.</p></details>
+    <details><summary>¿Mis clientes se van a dar cuenta de que es un bot?</summary><p>El asistente se presenta como asistente virtual del negocio y resuelve al instante. A tus clientes les importa la respuesta rápida, no quién la escribe.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>¿Cuántas horas por semana te está robando lo repetitivo?</h2>
+    <p class="lead" style="margin-bottom:32px">Contanos cómo trabaja tu negocio y te decimos exactamente qué se puede automatizar y cuánto cuesta. Gratis, 30 minutos.</p>
+    <a class="btn" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Quiero%20un%20diagn%C3%B3stico%20gratis%20para%20mi%20negocio">Agendar mi diagnóstico gratis</a>
+    <p class="micro">Respondemos en el día. Buenos Aires, Argentina 🇦🇷</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Draling — Automatización con IA para empresas · Buenos Aires · hola@draling.com</div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/54911XXXXXXXX?text=Hola!%20Quiero%20un%20diagn%C3%B3stico%20gratis%20para%20mi%20negocio" aria-label="Escribinos por WhatsApp">💬</a>
+
+</body>
+</html>

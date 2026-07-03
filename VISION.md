@@ -1,10 +1,10 @@
-# Replai — Visión de la empresa
+# Draling — Visión de la empresa
 
-> Documento central. Guarda la idea fundacional de Replai. Última actualización: 2026-06-23.
+> Documento central. Guarda la idea fundacional de Draling. Última actualización: 2026-06-23.
 
-## ¿Qué es Replai?
+## ¿Qué es Draling?
 
-Replai es una empresa (proyecto a futuro) que ofrecerá una plataforma con
+Draling es una empresa (proyecto a futuro) que ofrecerá una plataforma con
 **distintas categorías** donde otras empresas puedan **automatizar sus tareas
 diarias mediante inteligencia artificial**.
 
@@ -36,8 +36,11 @@ la gestión de su negocio sin necesidad de equipos técnicos grandes.
 
 ## Estado actual
 
-- Fase: **idea / concepto**
-- Repositorio recién creado, sin código aún.
+- Fase: **arranque comercial (Fase 1: servicio de automatización)**
+- Estrategia en dos fases: primero agencia/servicio de automatización con IA
+  para pymes (facturar + aprender), después la plataforma todo-en-uno.
+- Material de marketing, estudio de mercado y plan de trabajo en `draling/`.
+- Contexto de marketing: `.agents/product-marketing.md`.
 
 ## Notas
 
