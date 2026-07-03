@@ -78,3 +78,109 @@
 
 > Nota: confirmar el @ exacto de cada uno buscando el nombre en Instagram antes de enviar.
 > Productoras/agencias y el gancho de cada una: ver el Google Doc de mensajes (Drive).
+
+---
+
+## 🆕 TANDA 2 — 5 coworkings nuevos (2026-07) · ganchos verificados por web
+
+> Mismo formato (DM de IG). Cada mensaje ya tiene el [GANCHO] reemplazado. ✅ = IG y gancho verificados.
+
+### 11. Conecta Coworking — IG @coworkingconecta (Colegiales) · @conecta_belgrano (Belgrano) ✅
+> ⭐ MISMO BARRIO que Betina. Verificado: sede en Colegiales + Belgrano, espacio verde/jardín para
+> descansar, after office y cursos para la comunidad.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable acá en Colegiales. Los vengo viendo en el barrio —¡somos vecinos!—, con su espacio
+> verde para descansar y los after office y cursos que arman para la comunidad, y me pareció una
+> buena oportunidad para acercarles una propuesta pensada para cuidar la alimentación de la gente
+> que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros (ideal para los after office y cursos)
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que la
+> comunidad coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto
+> les acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 12. Usina Cowork — IG @usinacowork ✅
+> Verificado: sedes en Chacarita (Castillo 1366, pegado a Colegiales) y San Isidro; impronta de
+> comunidad que comparte recursos, naturaleza e impacto positivo. 10k seguidores.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Me encantó su espacio en Chacarita, acá al ladito, con esa impronta de
+> comunidad que comparte, intercambia y busca generar un impacto positivo, y me pareció una buena
+> oportunidad para acercarles una propuesta pensada para cuidar la alimentación de la comunidad que
+> trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 13. Hit Cowork — IG @hitcowork ✅
+> Verificado: red HIT, varias sedes en Buenos Aires (algunas en Belgrano: Pampa y Migueletes),
+> terrazas con vistas y cafetería en planta baja. 25k seguidores.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Vi que tienen varias sedes con terrazas hermosas —algunas en Belgrano,
+> cerca nuestro— y hasta cafetería en planta baja, y me pareció una buena oportunidad para acercarles
+> una propuesta pensada para cuidar la alimentación de la comunidad que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros (ideal para sumar a la cafetería)
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 14. Joy Cowork — IG @joycowork · Villa Crespo (Av. Dorrego 864) ✅
+> Verificado: Villa Crespo, 3 niveles con terraza al aire libre y mini-cocinas (heladera/microondas)
+> en cada nivel, auditorios. (Mail: ventas@joy.com.ar por si prefiere ese canal.)
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales, acá cerca. Vi su espacio en Villa Crespo, con la terraza al aire libre y
+> las cocinas en cada nivel, y me pareció una buena oportunidad para acercarles una propuesta pensada
+> para cuidar la alimentación de la comunidad que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina (ideal para las cocinas de cada nivel)
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 15. Urbana Vicente López — IG @urbanavicentelopez ✅
+> Verificado: Vicente López, se presentan como "el mayor centro empresarial de Zona Norte" (muchas
+> empresas y equipos en un mismo lugar). 3,1k seguidores. Dentro de tu zona de entrega.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Los vi en Vicente López, siendo el mayor centro empresarial de la Zona
+> Norte, con tantas empresas y equipos en un mismo lugar, y me pareció una buena oportunidad para
+> acercarles una propuesta pensada para cuidar la alimentación de la comunidad que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina (ideal para el espacio común y las empresas que alojan)
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+> Antes de enviar: reconfirmar el @ de cada uno en Instagram (los coworkings a veces cambian de
+> handle o tienen uno por sede). Joy también tiene mail (ventas@joy.com.ar).
