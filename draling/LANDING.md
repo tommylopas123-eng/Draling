@@ -3,7 +3,7 @@
 > Skill usada: `write-landing`. Framework: **PAS** (Problema → Agitación → Solución),
 > ideal para tráfico frío que llega desde redes.
 > La página lista para publicar está en `draling/landing/index.html`.
-> **⚠️ Antes de publicar: reemplazar `54911XXXXXXXX` por tu número de WhatsApp real.**
+> **WhatsApp configurado: +54 9 11 2614-6803 ✅**
 
 ## Estrategia
 

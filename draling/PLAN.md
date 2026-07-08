@@ -9,9 +9,10 @@
 - [x] Estudio de mercado + precios — `ESTUDIO-MERCADO.md`
 - [x] Lista de prospección — `PROSPECTOS.csv`
 - [x] Ruta de aprendizaje de automatización — `APRENDER-AUTOMATIZACION.md`
-- [ ] Reemplazar `54911XXXXXXXX` por el WhatsApp real en la landing
+- [x] Configurar el WhatsApp real en la landing (+54 9 11 2614-6803)
 - [ ] Publicar la landing (Netlify/Vercel gratis — pedirle a Claude)
-- [ ] Crear cuentas: @draling.ia en Instagram y TikTok + página LinkedIn
+- [x] Crear cuenta de Instagram
+- [ ] Crear cuenta de TikTok + página de LinkedIn
 
 ## Fase 1 — Primeros 30 días
 - [ ] Semanas 1-2 de la ruta de aprendizaje (Make + n8n básico)
