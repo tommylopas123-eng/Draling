@@ -205,3 +205,108 @@
 
 > Antes de enviar: reconfirmar el @ de cada uno en Instagram (los coworkings a veces cambian de
 > handle o tienen uno por sede). Joy también tiene mail (ventas@joy.com.ar).
+
+---
+
+## 🆕 TANDA 3 — 5 coworkings nuevos (2026-07) · ganchos verificados por web
+
+> Mismo formato (DM de IG). Cada mensaje ya tiene el [GANCHO] reemplazado. ✅ = IG y gancho verificados.
+
+### 17. Bresca CoWork — IG @bresca_cowork (Recoleta) ✅
+> Verificado: coworking en pleno Recoleta, pensado para tener tu escritorio todos los días y hacer
+> contactos. 3,3k seguidores.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Los vengo viendo con su espacio en Recoleta, ideal para tener el escritorio
+> todos los días y para que la gente conecte, y me pareció una buena oportunidad para acercarles una
+> propuesta pensada para cuidar la alimentación de la comunidad que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 18. People Coworking — IG @peoplecoworking (Caballito) ✅
+> Verificado: Caballito (Galería París, Rivadavia 4975), cocina-comedor equipada y coffee bar propio,
+> comunidad joven, salas para talleres y capacitaciones. 1,8k seguidores.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Me encantó su espacio en Caballito, con la cocina-comedor y el coffee bar,
+> y esa comunidad joven que arma talleres y capacitaciones, y me pareció una buena oportunidad para
+> acercarles una propuesta pensada para cuidar la alimentación de la gente que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina (ideal para sumar al coffee bar)
+> • Box Coffee Break para reuniones y encuentros (ideal para los talleres y capacitaciones)
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 19. Céspedes Coworking — IG/FB @cespedescoworking (Colegiales) ⭐ VECINOS · ⚠️ reconfirmar @ en IG
+> Verificado (web CoTrabajar/Foursquare): loft en una fábrica reciclada en pleno Colegiales
+> (Céspedes 3249), 17 puestos, espacios comunes para relajarse y sala de reuniones.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable acá en Colegiales —¡somos vecinos!—. Me encantó su loft en la fábrica reciclada, con los
+> espacios comunes para relajarse, y me pareció una buena oportunidad para acercarles una propuesta
+> pensada para cuidar la alimentación de la gente que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Como estamos a la vuelta, la
+> muestra se las acerco cuando quieran, sin compromiso. ¡Quedo a disposición!
+
+### 20. Cescohaus — web cescohaus.com (Colegiales) ⭐ VECINOS · ⚠️ reconfirmar @ en IG
+> Verificado (web): espacio de trabajo en el corazón de Colegiales, para equipos chicos y
+> profesionales independientes, con oficinas hasta 4 personas y acceso flexible (incluso 24/7).
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable acá en Colegiales, a pasos de ustedes. Me gustó mucho su espacio en el barrio, pensado
+> para equipos chicos y profesionales, y me pareció una buena oportunidad para acercarles una
+> propuesta para cuidar la alimentación de la gente que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Al estar en el mismo barrio, la
+> muestra se las acerco cuando quieran, sin compromiso. ¡Quedo a disposición!
+
+### 21. Mooi Coworking — IG @mooicoworking (Belgrano / Caballito) · ⚠️ reconfirmar @ en IG
+> Verificado: dos sedes (Belgrano y Caballito), espacio luminoso y moderno, y —clave— con un menú
+> propio de opciones ricas y saludables. Buen match con la propuesta de Betina.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Me encantó su espacio, luminoso y moderno, y sobre todo que ya cuiden la
+> alimentación con un menú de opciones ricas y saludables: vamos para el mismo lado. Por eso me
+> pareció una buena oportunidad para acercarles una propuesta para complementar eso y cuidar a la
+> comunidad que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina (ideal para sumar a lo que ya ofrecen)
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+> Antes de enviar: reconfirmar el @ de Céspedes, Cescohaus y Mooi en Instagram (buscá el nombre;
+> algunos tienen sólo Facebook o web). Bresca y People están confirmados.
