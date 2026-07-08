@@ -182,5 +182,26 @@
 > equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
 > acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
 
+### 16. Music Hub — Coworking & Studios · IG @musichub.ar ✅
+> Verificado: el primer coworking & studios para la industria audiovisual/música de Argentina.
+> Sede principal Bonpland 1937 (Palermo Hollywood, cerca de Colegiales) + Soho, Villa Crespo,
+> Microcentro y Zona Norte. Estudios de grabación, auditorio y espacios para eventos corporativos.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Me encantó que sean el primer coworking & studios para la industria
+> audiovisual, ahí en Palermo Hollywood cerca nuestro, con auditorio, estudios y espacios para
+> eventos, y me pareció una buena oportunidad para acercarles una propuesta pensada para cuidar la
+> alimentación de la comunidad que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos (ideal para las presentaciones y eventos en el auditorio)
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
 > Antes de enviar: reconfirmar el @ de cada uno en Instagram (los coworkings a veces cambian de
 > handle o tienen uno por sede). Joy también tiene mail (ventas@joy.com.ar).
