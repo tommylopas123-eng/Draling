@@ -1,0 +1,327 @@
+<title>Demo — Bot de WhatsApp Draling</title>
+<style>
+  :root{
+    --bg:#0b0d14; --panel:#12151f; --border:#252b3d; --text:#eef0f6; --muted:#9aa3b8;
+    --accent:#7c5cff; --teal:#4dd6c1;
+    --wa-header:#008069; --wa-bg:#e5ddd3; --wa-out:#d9fdd3; --wa-in:#ffffff; --wa-ink:#111b21;
+    --sheet-head:#188038;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;min-height:100vh}
+  .top{max-width:1080px;margin:0 auto;padding:26px 16px 10px}
+  .brand{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .logo{font-weight:800;font-size:19px;letter-spacing:-.02em}
+  .logo span{color:var(--accent)}
+  .badge{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);border:1px solid rgba(77,214,193,.35);background:rgba(77,214,193,.08);padding:4px 10px;border-radius:99px}
+  .top h1{font-size:clamp(21px,4vw,28px);letter-spacing:-.02em;margin-top:14px;text-wrap:balance}
+  .top p.sub{color:var(--muted);font-size:14.5px;max-width:640px;margin-top:6px}
+  .top p.sub strong{color:var(--text)}
+
+  .stage{max-width:1080px;margin:18px auto 40px;padding:0 16px;display:grid;grid-template-columns:400px 1fr;gap:22px;align-items:start}
+  @media(max-width:860px){.stage{grid-template-columns:1fr}}
+
+  /* ---------- Teléfono / chat ---------- */
+  .phone{background:#0f1115;border:1px solid var(--border);border-radius:26px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.5)}
+  .wa-top{background:var(--wa-header);color:#fff;display:flex;align-items:center;gap:11px;padding:12px 14px}
+  .avatar{width:40px;height:40px;border-radius:50%;background:#c8e6c9;color:#0b5b45;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+  .wa-top .who{min-width:0}
+  .wa-top .name{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .wa-top .status{font-size:12px;opacity:.85}
+  .chat{height:56vh;min-height:420px;overflow-y:auto;background:var(--wa-bg);background-image:radial-gradient(rgba(0,0,0,.045) 1px,transparent 1.4px);background-size:22px 22px;padding:14px 10px;display:flex;flex-direction:column;gap:7px}
+  .msg{max-width:82%;padding:7px 11px 8px;border-radius:9px;font-size:14px;color:var(--wa-ink);box-shadow:0 1px 1px rgba(0,0,0,.12);white-space:pre-line;overflow-wrap:break-word}
+  .msg .t{display:block;font-size:10.5px;color:rgba(17,27,33,.45);text-align:right;margin-top:3px;font-variant-numeric:tabular-nums}
+  .in{background:var(--wa-in);align-self:flex-start;border-top-left-radius:2px}
+  .out{background:var(--wa-out);align-self:flex-end;border-top-right-radius:2px}
+  .typing{align-self:flex-start;background:var(--wa-in);border-radius:9px;border-top-left-radius:2px;padding:11px 14px;box-shadow:0 1px 1px rgba(0,0,0,.12);display:flex;gap:4px}
+  .typing i{width:7px;height:7px;border-radius:50%;background:#9aa3ab;animation:blink 1.1s infinite}
+  .typing i:nth-child(2){animation-delay:.18s}.typing i:nth-child(3){animation-delay:.36s}
+  @keyframes blink{0%,60%,100%{opacity:.3}30%{opacity:1}}
+  @media(prefers-reduced-motion:reduce){.typing i{animation:none;opacity:.6}}
+  .chips{display:flex;gap:7px;overflow-x:auto;padding:10px;background:#0f1115;border-top:1px solid var(--border)}
+  .chips button{flex-shrink:0;background:none;border:1px solid var(--accent);color:#b9a8ff;font-size:12.5px;padding:6px 12px;border-radius:99px;cursor:pointer;font-family:inherit}
+  .chips button:hover,.chips button:focus-visible{background:rgba(124,92,255,.15);outline:none}
+  .inputbar{display:flex;gap:8px;padding:9px 10px 12px;background:#0f1115}
+  .inputbar input{flex:1;min-width:0;background:#1c212b;border:1px solid var(--border);color:var(--text);border-radius:99px;padding:10px 16px;font-size:14px;font-family:inherit}
+  .inputbar input:focus{outline:none;border-color:var(--accent)}
+  .inputbar button{width:44px;height:44px;border-radius:50%;border:none;background:var(--wa-header);color:#fff;font-size:18px;cursor:pointer;flex-shrink:0}
+  .inputbar button:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+
+  /* ---------- Columna derecha ---------- */
+  .side{display:flex;flex-direction:column;gap:18px}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:20px}
+  .card h2{font-size:15px;letter-spacing:.02em;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .card p{font-size:13.5px;color:var(--muted)}
+  .card p+p{margin-top:8px}
+  .card p strong{color:var(--text)}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);flex-shrink:0}
+
+  .sheet{background:#fff;border-radius:10px;overflow:hidden;margin-top:12px}
+  .sheet-cap{background:#f1f3f4;color:#3c4043;font-size:12px;padding:7px 12px;display:flex;align-items:center;gap:7px;border-bottom:1px solid #dadce0}
+  .sheet-cap b{color:#188038}
+  .sheet-wrap{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;font-size:12.5px;color:#202124;min-width:520px}
+  th{background:var(--sheet-head);color:#fff;text-align:left;padding:7px 10px;font-weight:600;white-space:nowrap}
+  td{border:1px solid #e0e3e7;padding:7px 10px;vertical-align:top;background:#fff}
+  td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+  .estado{background:#e6f4ea;color:#188038;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:99px;white-space:nowrap}
+  .empty td{color:#80868b;text-align:center;padding:16px}
+  tr.flash td{animation:rowin .9s ease}
+  @keyframes rowin{from{background:#fff3c4}to{background:#fff}}
+  @media(prefers-reduced-motion:reduce){tr.flash td{animation:none}}
+
+  .note{border-left:3px solid var(--accent);background:rgba(124,92,255,.08);border-radius:0 10px 10px 0;padding:12px 14px;font-size:13px;color:var(--muted)}
+  .note strong{color:var(--text)}
+  footer{max-width:1080px;margin:0 auto;padding:0 16px 34px;color:var(--muted);font-size:12.5px}
+</style>
+
+<div class="top">
+  <div class="brand">
+    <div class="logo">Dral<span>ing</span></div>
+    <span class="badge">Demo interactiva</span>
+  </div>
+  <h1>Bot de WhatsApp — Betina Potap · Alimentos Naturales</h1>
+  <p class="sub">Escribile como si fueras un cliente: preguntá precios, pedí el menú o hacé un pedido.
+  Cuando confirmes, mirá cómo <strong>la planilla de pedidos se llena sola</strong>. →</p>
+</div>
+
+<div class="stage">
+  <section class="phone" aria-label="Chat de demostración">
+    <div class="wa-top">
+      <div class="avatar">BP</div>
+      <div class="who">
+        <div class="name">Betina Potap · Alimentos Naturales</div>
+        <div class="status">en línea · responde al instante 🤖</div>
+      </div>
+    </div>
+    <div class="chat" id="chat" aria-live="polite"></div>
+    <div class="chips" id="chips">
+      <button data-q="Hola!">👋 Hola</button>
+      <button data-q="Ver el menú">📋 Ver el menú</button>
+      <button data-q="¿Cuánto sale el hummus?">💲 Precio del hummus</button>
+      <button data-q="Quiero 2 brownies y un pan de lino">🛒 Hacer un pedido</button>
+      <button data-q="Confirmar pedido">✅ Confirmar</button>
+      <button data-q="¿Hacen envíos?">🚚 Envíos</button>
+    </div>
+    <form class="inputbar" id="form">
+      <input id="input" type="text" placeholder="Escribí un mensaje…" autocomplete="off" aria-label="Mensaje">
+      <button type="submit" aria-label="Enviar">➤</button>
+    </form>
+  </section>
+
+  <div class="side">
+    <div class="card">
+      <h2><span class="dot"></span>Planilla de pedidos — se carga sola</h2>
+      <p>Esto es lo que ve el negocio. Cada pedido confirmado en el chat aparece acá al instante: sin copiar, sin errores, sin perder pedidos.</p>
+      <div class="sheet">
+        <div class="sheet-cap"><b>■</b> Pedidos Betina Potap — Google Sheets (simulado)</div>
+        <div class="sheet-wrap">
+        <table id="sheet">
+          <thead><tr><th>Fecha/Hora</th><th>Cliente</th><th>Pedido</th><th>Total</th><th>Estado</th></tr></thead>
+          <tbody id="rows">
+            <tr class="empty" id="emptyrow"><td colspan="5">Todavía no hay pedidos — confirmá uno en el chat 👈</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+    <div class="note">
+      <strong>Qué estás viendo:</strong> una simulación que corre en tu navegador, con el catálogo real
+      y respuestas pre-armadas. La versión de producción corre en <strong>WhatsApp de verdad</strong> y usa
+      <strong>IA</strong> que entiende cualquier forma de escribir — esta demo sigue un guion, la real conversa.
+      Probarla con el número de prueba de Meta cuesta <strong>$0</strong>.
+    </div>
+  </div>
+</div>
+
+<footer>Draling — Automatización con IA para empresas · Demo con el catálogo real de Betina Potap (CABA)</footer>
+
+<script>
+(function(){
+  "use strict";
+  /* ---------- Catálogo (subset del catálogo real) ---------- */
+  var CAT = [
+    {n:"Bowl salmón", k:["bowl salmon","salmon"], p:18000, u:"$18.000", c:"proteico"},
+    {n:"Pollo mediterráneo", k:["mediterraneo"], p:15000, u:"$15.000", c:"proteico"},
+    {n:"Pollo thai", k:["thai"], p:15000, u:"$15.000", c:"proteico"},
+    {n:"Pollo crispy", k:["crispy"], p:15000, u:"$15.000", c:"proteico"},
+    {n:"Omelette con verduras", k:["omelette","omelet"], p:12000, u:"$12.000", c:"proteico"},
+    {n:"Bowl veggie", k:["bowl veggie"], p:12000, u:"$12.000", c:"proteico"},
+    {n:"Wrap proteico", k:["wrap"], p:14000, u:"$14.000", c:"proteico"},
+    {n:"Ensalada de atún y quinoa", k:["ensalada de atun","atun y quinoa"], p:14000, u:"$14.000", c:"proteico"},
+    {n:"Hamburguesas de merluza", k:["hamburguesa","merluza"], p:15000, u:"$15.000", c:"proteico"},
+    {n:"Shakshuka", k:["shakshuka"], p:12000, u:"$12.000", c:"proteico"},
+    {n:"Tarta de pollo y calabaza", k:["tarta de pollo"], p:14000, u:"$14.000", c:"proteico"},
+    {n:"Cheesecake proteico", k:["cheesecake"], p:10000, u:"$10.000", c:"proteico"},
+    {n:"Mousse de chocolate proteico", k:["mousse"], p:10000, u:"$10.000", c:"proteico"},
+    {n:"Parfait", k:["parfait"], p:10000, u:"$10.000", c:"proteico"},
+    {n:"Pan de trigo sarraceno", k:["pan de sarraceno","pan de trigo"], p:12000, u:"$12.000", c:"naturista"},
+    {n:"Pan de lino", k:["pan de lino","lino"], p:12000, u:"$12.000", c:"naturista"},
+    {n:"Pan de mijo", k:["pan de mijo"], p:12000, u:"$12.000", c:"naturista"},
+    {n:"Pan de almendras", k:["pan de almendra"], p:14000, u:"$14.000", c:"naturista"},
+    {n:"Bagels (docena)", k:["bagel"], p:12000, u:"$12.000 la docena", c:"naturista"},
+    {n:"Veggie burger", k:["veggie burger","burger"], p:11000, u:"$11.000 (quinoa y zanahoria $12.000)", c:"naturista"},
+    {n:"Soufflé", k:["souffle","suffle"], p:10000, u:"$10.000", c:"naturista"},
+    {n:"Tarta de trigo sarraceno", k:["tarta"], p:12000, u:"$12.000", c:"naturista"},
+    {n:"Milanesas de gírgolas (1/4 kg)", k:["girgola","milanesa"], p:12000, u:"1/4 kg $12.000 · 1/2 kg $20.000", c:"naturista"},
+    {n:"Empanada de trigo sarraceno", k:["empanada"], p:4000, u:"$4.000 c/u · $40.000 la docena", c:"naturista"},
+    {n:"Pizzetas de coliflor (x3)", k:["pizzeta","pizza"], p:10000, u:"3 x $10.000 · 6 x $18.000", c:"naturista"},
+    {n:"Tortillas/Fajitas (x12)", k:["tortilla","fajita"], p:17000, u:"12 unidades $17.000", c:"naturista"},
+    {n:"Hummus de garbanzos", k:["hummus"], p:9000, u:"pote $9.000 (dips) · porción 100 g $10.000", c:"naturista"},
+    {n:"Garbanzos tostados", k:["garbanzos tostados","garbanzo tostado"], p:7000, u:"$7.000", c:"naturista"},
+    {n:"Crackers", k:["cracker"], p:9000, u:"1/4 $9.000 · 1/2 $16.000", c:"naturista"},
+    {n:"Granola (250 g)", k:["granola"], p:10000, u:"250 g $10.000 · 500 g $18.000", c:"naturista"},
+    {n:"Budín", k:["budin"], p:12000, u:"$12.000", c:"naturista"},
+    {n:"Brownie", k:["brownie"], p:4000, u:"$4.000 c/u · $13.000 x4", c:"naturista"},
+    {n:"Barrita", k:["barrita"], p:3000, u:"$3.000 c/u · $29.000 x12", c:"naturista"},
+    {n:"Pancakes de banana y cacao (x4)", k:["pancake"], p:5000, u:"$5.000 x4 · $9.000 x12", c:"naturista"},
+    {n:"Dátiles rellenos (x4)", k:["datiles","datil"], p:5000, u:"$5.000 x4 · $9.000 x12", c:"naturista"},
+    {n:"Bomboncitos (x4)", k:["bombon"], p:7000, u:"$7.000 x4 · $16.000 x12", c:"naturista"},
+    {n:"Crocante dulce (x4)", k:["crocante"], p:7000, u:"$7.000 x4 · $16.000 x12", c:"naturista"},
+    {n:"Blend de hierbas para mate (100 g)", k:["blend","mate","hierbas"], p:6000, u:"100 g $6.000 · 200 g $13.000", c:"naturista"},
+    {n:"Gomasio", k:["gomasio"], p:7500, u:"$7.500", c:"naturista"},
+    {n:"Rawmesan", k:["rawmesan","queso vegano"], p:8000, u:"$8.000", c:"naturista"}
+  ];
+  var NUMS = {"un":1,"una":1,"uno":1,"dos":2,"tres":3,"cuatro":4,"cinco":5,"seis":6,"siete":7,"ocho":8,"media docena":6,"docena":12};
+
+  var chat = document.getElementById("chat");
+  var rows = document.getElementById("rows");
+  var order = [];
+  var greeted = false;
+
+  function norm(s){return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");}
+  function now(){var d=new Date();return String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");}
+  function fmt(n){return "$"+n.toLocaleString("es-AR");}
+
+  function add(kind,text){
+    var div=document.createElement("div");
+    div.className="msg "+kind;
+    div.textContent=text;
+    var t=document.createElement("span");t.className="t";t.textContent=now();
+    div.appendChild(t);
+    chat.appendChild(div);
+    chat.scrollTop=chat.scrollHeight;
+  }
+  function botSay(text,delay,cb){
+    var ty=document.createElement("div");ty.className="typing";
+    ty.innerHTML="<i></i><i></i><i></i>";
+    chat.appendChild(ty);chat.scrollTop=chat.scrollHeight;
+    setTimeout(function(){
+      ty.remove();add("in",text);
+      if(cb)cb();
+    },delay||700);
+  }
+
+  /* ---------- Cerebro del bot (guionado) ---------- */
+  function findProducts(q){
+    var found=[];
+    CAT.forEach(function(item){
+      item.k.some(function(kw){
+        if(q.indexOf(kw)>-1){found.push(item);return true;}
+        return false;
+      });
+    });
+    return found;
+  }
+  function qtyBefore(q,kw){
+    var idx=q.indexOf(kw);
+    var pre=q.slice(Math.max(0,idx-22),idx);
+    var m=pre.match(/(\d+)\s*(?:kg|k)?\s*(?:de\s*)?$/);
+    if(m)return parseInt(m[1],10);
+    for(var w in NUMS){
+      if(new RegExp("\\b"+w+"\\s+(?:de\\s+)?$").test(pre))return NUMS[w];
+    }
+    return 1;
+  }
+  function reply(raw){
+    var q=norm(raw);
+
+    // saludo
+    if(/\b(hola|buenas|buen dia|buenos dias|que tal)\b/.test(q) && q.length<30){
+      greeted=true;
+      return "¡Hola! 👋 Soy el asistente de Betina Potap · Alimentos Naturales.\n\nPuedo ayudarte con:\n1️⃣ Ver el menú (proteico y naturista)\n2️⃣ Precios de un producto\n3️⃣ Tomar tu pedido\n4️⃣ Envíos y horarios\n\n¿Qué necesitás?";
+    }
+    // menú
+    if(/\b(menu|catalogo|lista|carta|opciones|que (tenes|tienen|hay|venden))\b/.test(q) || q==="1"){
+      return "Tenemos dos menús 🌱\n\n🥗 MENÚ PROTEICO: bowls (salmón, veggie), pollo thai/crispy/mediterráneo, wraps, shakshuka, cheesecake y mousse proteicos…\n\n🌾 MENÚ NATURISTA (sin gluten, sin lácteos, sin azúcar): panes (lino, mijo, sarraceno, almendras), veggie burgers, tartas, milanesas de gírgolas, empanadas, pizzetas, granola, brownies, budines…\n\nPreguntame el precio de lo que quieras o directamente pedime, ej: \"quiero 2 brownies y un pan de lino\" 😉";
+    }
+    // envíos / horarios
+    if(/\b(envio|delivery|mandan|llega|zona|horario|cuando|entrega)\b/.test(q) || q==="4"){
+      return "🚚 Hacemos entregas en CABA. Los pedidos se preparan frescos: pedidos confirmados antes de las 12 hs se entregan al día siguiente.\n\n¿Querés que te tome un pedido?";
+    }
+    // confirmar
+    if(/\b(confirm|listo|dale|si, confirmo|cerra el pedido)\b/.test(q)){
+      if(order.length===0)return "Todavía no tenés productos en el pedido 🙂 Decime qué querés, ej: \"quiero 2 brownies y un pan de lino\".";
+      var total=order.reduce(function(s,i){return s+i.p*i.q;},0);
+      var resumen=order.map(function(i){return i.q+"× "+i.n;}).join(", ");
+      addRow(resumen,total);
+      order=[];
+      return "¡Pedido confirmado! ✅\n\n"+resumen+"\nTotal: "+fmt(total)+"\n\n📋 Ya quedó cargado en la planilla de pedidos (miralo a la derecha). Betina lo ve al instante, sin cargar nada a mano.\n\n¿Algo más?";
+    }
+    // ver pedido
+    if(/\b(mi pedido|que pedi|ver pedido|carrito)\b/.test(q)){
+      if(order.length===0)return "Tu pedido está vacío por ahora 🙂";
+      var t2=order.reduce(function(s,i){return s+i.p*i.q;},0);
+      return "Tu pedido hasta ahora:\n"+order.map(function(i){return "• "+i.q+"× "+i.n+" — "+fmt(i.p*i.q);}).join("\n")+"\n\nTotal parcial: "+fmt(t2)+"\n\nEscribí \"confirmar\" para cerrarlo ✅";
+    }
+    // pedido
+    var wantsOrder=/\b(quiero|dame|mandame|agrega|suma|pedime|encarga|me gustaria|pedir|anota)\b/.test(q) || q==="3";
+    var matches=findProducts(q);
+    if(wantsOrder && matches.length>0){
+      var added=[];
+      matches.forEach(function(item){
+        var kw=item.k.find(function(k){return q.indexOf(k)>-1;});
+        var qty=qtyBefore(q,kw);
+        order.push({n:item.n,p:item.p,q:qty});
+        added.push(qty+"× "+item.n+" ("+fmt(item.p*qty)+")");
+      });
+      var tot=order.reduce(function(s,i){return s+i.p*i.q;},0);
+      return "¡Anotado! 📝\n"+added.join("\n")+"\n\nTotal parcial del pedido: "+fmt(tot)+"\n\n¿Agregás algo más o escribís \"confirmar\"?";
+    }
+    // precio
+    if(matches.length>0){
+      if(matches.length===1)return "El precio de "+matches[0].n+" es "+matches[0].u+" 💚\n\n¿Te lo anoto? Decime cuántos querés.";
+      return "Encontré esto en el catálogo:\n"+matches.slice(0,5).map(function(i){return "• "+i.n+": "+i.u;}).join("\n")+"\n\n¿Te anoto alguno?";
+    }
+    if(/\b(precio|cuanto|sale|vale|cuesta)\b/.test(q) || q==="2"){
+      return "Decime qué producto querés saber 🙂 Por ejemplo: \"¿cuánto sale la granola?\" o \"precio del pan de lino\".";
+    }
+    // gracias / chau
+    if(/\b(gracias|genial|barbaro|joya|perfecto)\b/.test(q)){
+      return "¡De nada! 💚 Cualquier otra cosa, escribime. ¡Que tengas un lindo día!";
+    }
+    // fallback → derivación humana (feature, no bug)
+    return "Esa consulta se la paso directo a Betina para que te responda personalmente 😊 Mientras tanto, ¿te muestro el menú o te tomo un pedido?\n\n(👆 Esto es la derivación a humano: el bot resuelve lo repetitivo y lo difícil lo pasa a una persona.)";
+  }
+
+  /* ---------- Planilla ---------- */
+  function addRow(resumen,total){
+    var empty=document.getElementById("emptyrow");
+    if(empty)empty.remove();
+    var d=new Date();
+    var fecha=String(d.getDate()).padStart(2,"0")+"/"+String(d.getMonth()+1).padStart(2,"0")+" "+now();
+    var tr=document.createElement("tr");
+    tr.className="flash";
+    tr.innerHTML="<td class='num'>"+fecha+"</td><td>Vos (demo) · +54 9 11 …</td><td>"+resumen+"</td><td class='num'>"+fmt(total)+"</td><td><span class='estado'>Nuevo ✅</span></td>";
+    rows.prepend(tr);
+  }
+
+  /* ---------- Wiring ---------- */
+  function send(text){
+    if(!text.trim())return;
+    add("out",text.trim());
+    var r=reply(text);
+    botSay(r, 600+Math.min(900,r.length*4));
+  }
+  document.getElementById("form").addEventListener("submit",function(e){
+    e.preventDefault();
+    var inp=document.getElementById("input");
+    send(inp.value);inp.value="";inp.focus();
+  });
+  document.getElementById("chips").addEventListener("click",function(e){
+    var b=e.target.closest("button");
+    if(b)send(b.getAttribute("data-q"));
+  });
+
+  botSay("¡Hola! 👋 Soy el asistente virtual de Betina Potap · Alimentos Naturales.\n\nPuedo mostrarte el menú, decirte precios y tomar tu pedido al instante, a cualquier hora.\n\nProbá tocando los botones de abajo 👇 o escribime lo que quieras.",900);
+})();
+</script>
