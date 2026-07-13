@@ -310,3 +310,107 @@
 
 > Antes de enviar: reconfirmar el @ de Céspedes, Cescohaus y Mooi en Instagram (buscá el nombre;
 > algunos tienen sólo Facebook o web). Bresca y People están confirmados.
+
+---
+
+## 🆕 TANDA 4 — 5 coworkings de Zona Norte (2026-07) · ganchos verificados por web
+
+> Mismo formato (DM de IG). Todos dentro de tu zona de entrega (Vicente López / Olivos / San Isidro).
+
+### 22. La Comu Cowork — IG @lacomucowork (Olivos) ✅
+> Verificado: Olivos (San Lorenzo 2240), 8,8k seguidores, espacios amplios y tranquilos, café siempre
+> listo, comunidad activa con workshops (incluso de café). Mail: lacomucowork@gmail.com.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Me encantó su espacio en Olivos, tan amplio y tranquilo, con el café
+> siempre listo y esos workshops que arman para la comunidad, y me pareció una buena oportunidad para
+> acercarles una propuesta pensada para cuidar la alimentación de la gente que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros (ideal para los workshops)
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 23. MiO Coworking — IG @miocoworking (Boulogne / San Isidro) ✅
+> Verificado: Boulogne (Santa Rita 2731, a metros de la salida Nordelta de Panamericana) + Microcentro.
+> Empresa de Triple Impacto (criterios económico, social y ambiental). Oficinas 3-6, salas 4-8.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Me encantó que sean una empresa de triple impacto, cuidando lo económico,
+> lo social y lo ambiental —vamos para el mismo lado— y me pareció una buena oportunidad para
+> acercarles una propuesta pensada para cuidar también la alimentación de la gente que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 24. Office Club — web officeclub.com.ar (Vicente López / Florida) · ⚠️ reconfirmar @ en IG
+> Verificado (web): Zona Norte (San Martín y Panamericana), auditorio para 30 personas, aulas para
+> cursos (6-12), oficinas privadas (2-7) y salas de reunión. "Todo resuelto para que te enfoques en tu negocio."
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Vi su espacio en Zona Norte, con el auditorio y las aulas para cursos y
+> eventos, y me pareció una buena oportunidad para acercarles una propuesta pensada para cuidar la
+> alimentación de la gente que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros (ideal para los cursos del aula)
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos (ideal para las jornadas del auditorio)
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 25. Espacio453 — IG @espacio_453 (San Isidro) ✅
+> Verificado: coworking en San Isidro (más chico y personal). Mail: espacio453@gmail.com.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Vengo viendo su espacio en San Isidro, con esa impronta cuidada y cercana,
+> y me pareció una buena oportunidad para acercarles una propuesta pensada para cuidar la alimentación
+> de la gente que trabaja con ustedes.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+### 26. HQ — web hq.com · IG @hqcoworking (Vicente López / Olivos / San Isidro) · ⚠️ cadena, mejor por web
+> Verificado: 3 sedes en Zona Norte (Libertador 101 VL, Libertador 2442 Olivos, Las Lomas San Isidro),
+> acceso 24/7 con app, cocinas y áreas de descanso. Es cadena grande (grupo IWG): prioridad menor,
+> conviene el formulario/mail de la web más que el DM.
+>
+> Hola, ¿cómo están? Mi nombre es Betina Potap y tengo un emprendimiento de comida natural y
+> saludable en Colegiales. Vi que tienen varias sedes en Zona Norte, con cocinas y áreas de descanso
+> para los equipos, y me pareció una buena oportunidad para acercarles una propuesta pensada para
+> cuidar la alimentación de la gente que trabaja en sus espacios.
+>
+> Trabajo con empresas a través de cuatro opciones:
+> • Box Snacking Semanal para la oficina (ideal para las cocinas de cada sede)
+> • Box Coffee Break para reuniones y encuentros
+> • Welcome Kit / Regalo Corporativo
+> • Catering para eventos
+>
+> Todo es natural y casero, sin TACC, sin lácteos y sin azúcar: comida rica que ayuda a que el
+> equipo coma mejor, con más energía y bienestar durante la jornada. Si les interesa, con gusto les
+> acerco una muestra sin compromiso para que la conozcan. ¡Quedo a disposición!
+
+> Antes de enviar: La Comu, MiO y Espacio453 tienen IG confirmado. Office Club y HQ conviene
+> contactarlos por su web/mail (son más formales / cadena).
